@@ -1,0 +1,50 @@
+doctype
+html(lang='en')
+    head        
+        meta(charset='utf-8')
+        title 컨벤션
+        link(rel='stylesheet' type='text/css' href='/css/style.css')
+        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Marcellus+SC|Roboto')
+        link(rel='stylesheet' type='text/css' href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css')
+        link(rel='stylesheet' type='text/css' href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css')
+        link(rel='stylesheet' type='text/css' href='/css/shThemeEclipse.css')
+        
+        script(type='text/javascript' src='/js/jquery/jquery.min.js')
+        script(type='text/javascript' src='/js/sh/shCore.js')
+        script(type='text/javascript' src='/js/sh/shBrushAS3.js')
+        script(type='text/javascript' src='/js/sh/shBrushCss.js')
+        script(type='text/javascript' src='/js/sh/shBrushJScript.js')
+        script(type='text/javascript' src='/js/sh/shBrushPlain.js')
+        script(type='text/javascript' src='/js/sh/shBrushXml.js')
+        script(type='text/javascript').
+            SyntaxHighlighter.all();
+            
+            $(window).scroll(handleScroll);
+            
+            function handleScroll(){
+                if($(window).scrollTop() > 115){
+                    $('#leftmenu').css({paddingTop : 0});
+                }else{
+                    $('#leftmenu').css({paddingTop : 115 - $(window).scrollTop()});
+                }
+            }
+            
+    body
+        div#wrap
+            include header
+            
+            div#container
+                if name != false && secondName != false
+                    include leftmenu
+                
+                
+                if name == false || secondName == false
+                    div#contents.nofound 
+                        span 페이지가 존재하지 않습니다.
+                else 
+                    div#contents
+                        div.inner
+                            h2!= secondName
+                            div.content-box
+                                h3!= categoryName
+                                !{resultHtml}

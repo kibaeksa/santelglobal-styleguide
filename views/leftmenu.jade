@@ -1,0 +1,21 @@
+div#leftmenu
+    div.inner
+        div.menu_wrap        
+                
+                each val , key in menuItems.menu
+                    h3 !{val.name} 
+                    ul.menu
+                        
+                        - var isThisMenu = key == secondParam;
+                
+                        each subVal , subKey in val.menu
+                            if isThisMenu && categoryParam == subKey
+                                li.on
+                                    a(href=subVal.path) !{subVal.name}
+                            else
+                                li
+                                    a(href=subVal.path) !{subVal.name}
+                            
+                    
+                    
+                

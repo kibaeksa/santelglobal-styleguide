@@ -1,0 +1,328 @@
+@import 'reset.css';
+@import 'code_component.css';
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@media screen and (max-width: 320px) {
+	html{
+		font-size: 10px;
+	}
+}
+@media screen and (min-width: 320px) and (min-width: 640px) {
+	html{
+		font-size: 11px;
+	}
+}
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+	html{
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	html{
+		font-size: 13px;
+	}
+}
+
+/**
+ * @license
+ * Copyright (C) 2015 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ #wrap #contents .code-wrap .syntaxhighlighter *{
+     font-size: 1.1rem !important;
+     font-family:"Consolas", 'noto sans kr',"Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+ }
+
+ #wrap #contents .code-wrap .syntaxhighlighter .toolbar{
+     display: none !important;
+ }
+
+ #wrap #contents .code-wrap .syntaxhighlighter table td.gutter .line{
+     font-size: 0.9rem !important;
+ }
+
+ #wrap #contents .code-wrap .syntaxhighlighter textarea{
+     display: none !important;
+ }
+
+ #wrap #contents .code-wrap .syntaxhighlighter table td.code .line,
+ #wrap #contents .code-wrap .syntaxhighlighter table td.gutter .line{
+     height: 16px !important;
+     padding:0.2rem 1rem !important;
+ }
+
+
+html , body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    width: 100%;
+    overflow: auto;
+}
+
+#wrap{
+    width: 100%;
+	height: 100%;
+    position: relative;
+}
+
+#wrap #header{
+    width: 100%;
+    height: 115px;
+    position: relative;
+    z-index: 50;
+}
+
+#wrap #header>div{
+    width: 100%;
+    height: 70px;
+    padding: 2rem 1.5rem;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    background: #fff;
+
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#wrap #header h1{
+    font:700 1.8rem/1.8rem 'Roboto', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+#wrap #header p{
+    font:100 1.4rem/1.4rem 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+#wrap #header>nav{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    height: 45px;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #f0f0f0;
+}
+
+#wrap #header>nav a{
+    display: block;
+    text-align: center;
+    padding: 0 1.5rem;
+    font:100 1.2rem/45px 'Roboto','noto sans kr', sans-serif;
+    text-transform: capitalize;
+    color: #666;
+
+    transition:background 0.1s;
+}
+
+#wrap #header>nav a.on,
+#wrap #header>nav a:hover{
+    background: #ddd;
+    color: #000;
+}
+
+#wrap #header>nav a.on{
+    font-weight: 700;
+}
+
+#wrap #leftmenu{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 115px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow:inset 0px 0px 100px #ddd;
+    z-index: 10;
+}
+
+#wrap #leftmenu>.inner{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#wrap #leftmenu>.inner::after{
+    content:'';
+    width: 1px;
+    height:20px;
+    display: block;
+}
+
+#wrap #leftmenu h3{
+    padding: 1rem 1rem 0;
+    color: #000;
+    font: 700 1.1rem 'noto sans kr';
+}
+
+#wrap #leftmenu ul.menu{
+    padding: 0.5rem 1rem 1rem;
+}
+
+#wrap #leftmenu ul.menu a{
+    position: relative;
+    display: block;
+    padding: 4px 0 4px 10px;
+    color: #666;
+    font:300 1.05rem/1.05rem 'noto sans kr';
+}
+
+#wrap #leftmenu ul.menu a:hover{
+    color: #000;
+}
+
+#wrap #leftmenu ul.menu .on a{
+    font-weight: 700;
+    color: #000;
+}
+
+#wrap #leftmenu ul.menu a:after{
+    content:'';
+    display: block;
+    width: 2px;
+    height: 2px;
+    background: #666;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+#wrap #leftmenu ul.menu .on a:after{
+    background: #000;
+}
+
+#wrap #contents{
+    width: 100%;
+	padding: 0 0 100px 200px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#wrap #contents.nofound{
+	height:100%;
+	padding-left: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#wrap #contents.nofound span{
+	font:900 2.2rem 'noto sans kr';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate3d(-50%,-50%,0);
+	-webkit-transform:translate3d(-50%,-50%,0);
+	letter-spacing: 1px;
+}
+
+#wrap #contents>.inner{
+    padding: 1.5rem;
+}
+
+#wrap #contents h2{
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid  #eaecef;
+    color:#000;
+    font:700 1.8rem/1.8rem 'noto sans kr';
+	text-transform: uppercase;
+}
+
+#wrap #contents h3{
+    padding-left: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color:#000;
+    font:700 1.35rem/1.35rem 'noto sans kr';
+}
+
+#wrap #contents h3::after{
+    content: '';
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+}
+
+#wrap #contents .content-box{
+    margin-top: 50px;
+}
+
+#wrap #contents .content-box:nth-child(2){
+    margin-top: 0;
+}
+
+#wrap #contents .code-wrap{
+    margin-bottom: 60px;
+}
+
+#wrap #contents .code-wrap:last-child{
+	margin-bottom: 0;
+}
+
+#wrap #contents .code-wrap:last-child{
+    margin-bottom: 0;
+}
+
+#wrap #contents .code-wrap .prefix{
+    padding-left: 10px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    font:700 1.15rem/1.15rem 'noto sans kr';
+    color: #333;
+}
+
+#wrap #contents .code-wrap .prefix::after{
+    content:'';
+    display: block;
+    width: 2px;
+    height: 2px;
+    border-radius:50%;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: #333;
+}
+
+#wrap #contents .code-wrap .desc{
+    padding: 1.5rem 0px 0.5rem;
+    font:300 1.1rem/1.1rem 'noto sans kr';
+}
+
+#wrap #contents .code-wrap .code-box{
+	margin-bottom: 10px;
+    border-radius:5px;
+    border: 1px solid  #ccc;
+    padding: 1rem;
+}

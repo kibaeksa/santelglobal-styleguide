@@ -1,0 +1,10 @@
+#header
+    div
+        h1 SANTELGLOBAL
+        p Style guide and coding convention
+    nav
+        each menu , key in allMenu
+            if name == key
+                a.on(href=menu.path) !{menu.name}
+            else
+                a(href=menu.path) !{menu.name}
