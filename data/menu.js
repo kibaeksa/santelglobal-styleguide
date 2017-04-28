@@ -4,6 +4,20 @@ var menu = {
         name : '아디다스 웹',
         path : '/adidasWeb',
         menu : {
+            common : {
+                name : '기본',
+                path : '/adidasWeb/common',
+                menu : {
+                    layout : {
+                        name : '레이아웃',
+                        path : '/adidasWeb/common/layout'
+                    },
+                    className : {
+                        name : '클래스 속성 사용',
+                        path : '/adidasWeb/common/className'
+                    }
+                }
+            },
             event : {
                 name : '이벤트',
                 path : '/adidasWeb/event',
@@ -29,6 +43,18 @@ var menu = {
                     customForm : {
                         name : '커스텀 폼',
                         path : '/adidasWeb/ui/customForm'
+                    },
+                    modalPopup : {
+                        name : '모달 팝업',
+                        path : '/adidasWeb/ui/modalPopup'
+                    },
+                    swipers : {
+                        name : 'Swipers 슬라이드',
+                        path : '/adidasWeb/ui/swipers'
+                    },
+                    productsListSlider : {
+                        name : '제품리스트 슬라이드',
+                        path : '/adidasWeb/ui/productsListSlider'
                     }
                 }
             },

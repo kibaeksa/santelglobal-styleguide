@@ -20,7 +20,7 @@ module.exports = `
         <div class="code-box">
             <pre class="brush: html">
 
-                <div class="image-grids init-parallax loaded" data-cparallax="">
+                <div class="image-grids init-parallax">
                     <div class="col fix igrid1"><img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_vert_tcm49-116520.jpg" alt=""></div>
                     <div class="image-grid">
                         <div class="col clfix igrid2">
@@ -47,7 +47,7 @@ module.exports = `
 
         <div class="result_box">
             <div class="campaign-content">
-                <div class="image-grids init-parallax loaded" data-cparallax="">
+                <div class="image-grids init-parallax">
                     <div class="col fix igrid1"><img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_vert_tcm49-116520.jpg" alt=""></div>
                     <div class="image-grid">
                         <div class="col clfix igrid2">
