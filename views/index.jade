@@ -22,10 +22,12 @@ html(lang='en')
             $(window).scroll(handleScroll);
             
             function handleScroll(){
-                if($(window).scrollTop() > 115){
-                    $('#leftmenu').css({paddingTop : 0});
+                if($(window).scrollTop() > 70){
+                    $('#leftmenu').css({paddingTop : 30});
+                    $('nav').addClass('fixed');
                 }else{
                     $('#leftmenu').css({paddingTop : 115 - $(window).scrollTop()});
+                    $('nav').removeClass('fixed');
                 }
             }
             

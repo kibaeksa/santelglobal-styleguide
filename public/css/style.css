@@ -118,6 +118,7 @@ body{
 }
 
 #wrap #header>nav{
+	width: 100%;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -126,6 +127,24 @@ body{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     background: #f0f0f0;
+}
+
+#wrap #header>nav.fixed{
+	height: 30px;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	box-shadow:0 0 20px rgba(0,0,0,0.3);
+
+	transition:box-shadow 0.6s;
+	-webkit-transition:box-shadow 0.6s;
+}
+
+#wrap #header>nav.fixed a{
+	height: 30px;
+	font-size: 1rem;
+	line-height: 30px;
 }
 
 #wrap #header>nav a{
@@ -179,6 +198,7 @@ body{
     padding: 1rem 1rem 0;
     color: #000;
     font: 700 1.1rem 'noto sans kr';
+	text-transform: uppercase;
 }
 
 #wrap #leftmenu ul.menu{
@@ -280,6 +300,43 @@ body{
 
 #wrap #contents .content-box:nth-child(2){
     margin-top: 0;
+}
+
+#wrap #contents .content-box .notice{
+	margin-bottom: 3rem;
+}
+
+#wrap #contents .content-box .notice dt{
+	margin-bottom: 0.3rem;
+	font:700 1.15rem 'noto sans kr';
+}
+
+#wrap #contents .content-box .notice li{
+	position: relative;
+	padding-left: 10px;
+	line-height: 1.3rem;
+	margin-bottom: 0.6rem;
+	font: 1.1rem/1.3rem 'noto sans kr';
+}
+
+#wrap #contents .content-box .notice li .code{
+	font:1.1rem/1.3rem 'Consolas';
+}
+
+#wrap #contents .content-box .notice li:last-child{
+	margin-bottom: 0;
+}
+
+#wrap #contents .content-box .notice li::after{
+	content:'';
+	width: 3px;
+	height: 3px;
+	display: block;
+	background: #000;
+	position: absolute;
+	top: 6px;
+	left: 0;
+	border-radius:3px;
 }
 
 #wrap #contents .code-wrap{

@@ -8,26 +8,6 @@ var menu = {
                 name : '이벤트',
                 path : '/adidasWeb/event',
                 menu : {
-                    topVisual : {
-                        name : '상단 비주얼',
-                        path : '/adidasWeb/event/topVisual'
-                    },
-                    fetures : {
-                        name : '피쳐스',
-                        path : '/adidasWeb/event/fetures'
-                    },
-                    sliders1 : {
-                        name : '슬라이더 1',
-                        path : '/adidasWeb/event/sliders1'
-                    },
-                    sliders2 : {
-                        name : '슬라이더 2',
-                        path : '/adidasWeb/event/sliders2'
-                    },
-                    sliders3 : {
-                        name : '슬라이더 3',
-                        path : '/adidasWeb/event/sliders3'
-                    },
                     gridImage : {
                         name : '이미지 그리드',
                         path : '/adidasWeb/event/gridImage'
@@ -63,11 +43,27 @@ var menu = {
                 }
             }
         }
-    }/*,
-    adidasWeb : {
-        name : 'adidas web',
-        path : '/adidasWeb'
     },
+    adidasMobile : {
+        name : '아디다스 모바일',
+        path : '/adidasMobile',
+        menu : {
+            fonts: {
+                name : 'fonts',
+                path : '/adidasMobile/fonts',
+                menu : {
+                    fonts : {
+                        name : 'fonts',
+                        path : '/adidasMobile/fonts/fonts'
+                    },
+                    glyphicons: {
+                        name : 'Glyphicons',
+                        path : '/adidasMobile/fonts/glyphicons',
+                    }
+                }
+            }
+        }
+    }/*,
     adidasMobile : {
         name : 'adidas mobile',
         path : '/adidasMobile'
