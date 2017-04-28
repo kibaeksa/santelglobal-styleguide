@@ -56,7 +56,7 @@ module.exports = `
 
     </style>
     <div class="code-wrap">
-        <div class="prefix">PDP (Product Display Page)</div>
+        <div class="prefix">기본 슬라이드</div>
         <div class="desc">HTML</div>
         <div class="code-box">
             <pre class="brush: html">
@@ -93,10 +93,6 @@ module.exports = `
                     width : 700,
                     height : 300,
                     duration : 600,
-                    easing : 'easeOutQuad',
-                    auto : true,
-                    loop: true,
-                    autoTime : 3000,
                     callback : function( index , prevIdx ){
                         $('.indicator a').removeClass('on').eq(index).addClass('on');
                     }
@@ -128,9 +124,9 @@ module.exports = `
 
 
             <div class="control">
-                <a class="prev-button" href="javascript:void(0)">&lt;</a>
-                <a class="next-button" href="javascript:void(0)">&gt;</a>
-                <div class="indicator">
+                <a id="prev1" class="prev-button" href="javascript:void(0)">&lt;</a>
+                <a id="next1" class="next-button" href="javascript:void(0)">&gt;</a>
+                <div class="indicator" id="indicator1">
                     <a href="javascript:void(0)" class="on"></a>
                     <a href="javascript:void(0)"></a>
                     <a href="javascript:void(0)"></a>
@@ -143,10 +139,20 @@ module.exports = `
 
     <script src="//image.adidas.co.kr/js/jquery/easing/jquery.easing.1.3.js"></script>
     <script type="text/javascript">
-        $.fn.Swipers=function(a){function m(){f.loop&&(c.prepend($(d[d.length-1]).clone()),c.append($(d[0]).clone()),d=c.children()),f.easing&&!$.easing[f.easing]&&(f.easing=!1),b.css({width:f.width,height:f.height,position:"relative",overflow:"hidden"}),c.css({width:f.loop?(d.length+2)*j:d.length*j,height:f.height,position:"absolute",overflow:"hidden",left:f.loop?-1*f.width:0}),d.css({width:f.width,height:f.height,float:"left"}),f.auto&&(k=setInterval(function(){o(g+1,!0)},f.autoTime)),f.init&&f.init.call(b.get(0),i)}function n(a){h=g,g=a}function o(a,b){var d=b?e.autoDuration||e.duration:e.duration,g={isAuto:b,duration:d||void 0};if(f.loop)a<0?(n(i-1),c.css({left:(i+1)*j*-1}),g.num=i):a>=i?(n(0),c.css({left:0}),g.num=1):(g.num=a+1,n(a));else{if(b)a<0?g.num=i-1:a>i-1&&(g.num=0);else if(a<0||a>i-1)return!1;n(a)}p(g)}function p(a){var b=a.duration,e=a.num,i=a.isAuto?"easeOutSine":f.easing;f.autoTime&&!a.isAuto&&clearInterval(k),c.stop().animate({left:j*e*-1},b,i),f.callback&&f.callback.call($(d[g]),g,h),setTimeout(function(){l=!1,f.autoTime&&!a.isAuto&&(clearInterval(k),k=setInterval(function(){o(g+1,!0)},f.autoTime))},b)}var k,b=$(this),c=b.children(),d=c.children(),e={width:$(d[0]).get(0).clientWidth,height:$(d[0]).get(0).clientHeight,loop:!1,auto:!1,autoTime:!!a.auto&&3e3,dragable:!1,easing:!1,duration:800,autoDuration:800},f=$.extend(e,a),g=0,h=-1,i=d.length,j=f.moveValue?f.moveValue:f.width,l=!1;return m(),{prev:function(){return o(g-1),!1},next:function(){return o(g+1),!1},move:function(a){return a!==g&&o(a),!1}}};
+        $.fn.Swipers=function(a){function m(){f.loop&&(c.prepend($(d[d.length-1]).clone()),c.append($(d[0]).clone()),d=c.children()),f.easing&&!$.easing[f.easing]&&(f.easing=!1),b.css({width:f.width,height:f.height,position:"relative",overflow:"hidden"}),c.css({width:f.loop?(d.length+2)*j:d.length*j,height:f.height,position:"absolute",overflow:"hidden",left:f.loop?-1*f.width:0}),d.css({width:f.width,height:f.height,float:"left"}),f.auto&&(k=setInterval(function(){o(g+1,!0)},f.autoTime)),f.init&&f.init.call(b.get(0),i)}function n(a){h=g,g=a}function o(a,b){var d=b?e.autoDuration||e.duration:e.duration,g={isAuto:b,duration:d||void 0};if(f.loop)a<0?(n(i-1),c.css({left:(i+1)*j*-1}),g.num=i):a>=i?(n(0),c.css({left:0}),g.num=1):(g.num=a+1,n(a));else{if(0==a||a==i-1)return;g.num=a,n(a)}p(g)}function p(a){var b=a.duration,e=a.num,i=a.isAuto?"easeOutSine":f.easing;f.autoTime&&!a.isAuto&&clearInterval(k),c.stop().animate({left:j*e*-1},b,i),f.callback&&f.callback.call($(d[g]),g,h),setTimeout(function(){l=!1,f.autoTime&&!a.isAuto&&(clearInterval(k),k=setInterval(function(){o(g+1,!0)},f.autoTime))},b)}var b=$(this),c=b.children(),d=c.children(),e={width:$(d[0]).get(0).clientWidth,height:$(d[0]).get(0).clientHeight,loop:!1,auto:!1,autoTime:!!a.auto&&3e3,dragable:!1,easing:!1,duration:800,autoDuration:800},f=$.extend(e,a);f.auto&&!f.loop&&(f.loop=!0);var k,g=0,h=-1,i=d.length,j=f.moveValue?f.moveValue:f.width,l=!1;return m(),{prev:function(){return o(g-1),!1},next:function(){return o(g+1),!1},move:function(a){return a!==g&&o(a),!1}}};
 
 
         var sliders = $('#sliders-real').Swipers({
+            width : 700,
+            height : 300,
+            duration : 600,
+            callback : function(index,prevIdx){
+                $('.indicator a').removeClass('on').eq(index).addClass('on');
+            }
+        });
+
+        /*
+        var sliders2 = $('#sliders-real2').Swipers({
             width : 700,
             height : 300,
             duration : 600,
@@ -158,16 +164,17 @@ module.exports = `
                 $('.indicator a').removeClass('on').eq(index).addClass('on');
             }
         });
+        */
 
-        $('.prev-button').bind('click',function(){
+        $('#prev1').bind('click',function(){
             sliders.prev();
             });
 
-        $('.next-button').bind('click',function(){
+        $('#next1').bind('click',function(){
             sliders.next();
         });
 
-        $('.indicator a').bind('click',function(){
+        $('#indicator1 a').bind('click',function(){
             sliders.move($(this).index());
         });
 
