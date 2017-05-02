@@ -13,7 +13,7 @@ var menu = {
                         path : '/adidasWeb/common/layout'
                     },
                     className : {
-                        name : '클래스 속성 사용',
+                        name : '공통클래스 사용',
                         path : '/adidasWeb/common/className'
                     }
                 }
