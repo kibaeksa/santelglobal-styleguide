@@ -89,6 +89,18 @@ var menu = {
                     customForm : {
                         name : '커스텀 폼',
                         path : '/adidasMobile/ui/customForm'
+                    },
+                    modalPopup : {
+                        name : '모달 팝업',
+                        path : '/adidasMobile/ui/modalPopup'
+                    },
+                    owlCarousel  : {
+                        name : 'owl carousel',
+                        path : '/adidasMobile/ui/owlCarousel'
+                    },
+                    swipe  : {
+                        name : 'swipe',
+                        path : '/adidasMobile/ui/swipe'
                     }
                 }
             },

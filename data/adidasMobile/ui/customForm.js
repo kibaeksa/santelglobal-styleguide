@@ -1,4 +1,5 @@
 module.exports = `
+
     <style>
         .chk_box1,
         .rdo_box1{
@@ -106,6 +107,11 @@ module.exports = `
         	background: #027dbf !important;
         }
 
+        .adipro{
+        	font-family:'adinenuPro-regular' !important;
+        	letter-spacing: 0;
+        }
+
     </style>
     <div class="code-wrap">
         <div class="prefix">체크박스</div>
@@ -154,16 +160,15 @@ module.exports = `
         <div class="code-box">
             <pre class="brush: html">
                 // 기본 라디오버튼
-                <div class="rdo_box1">
-                    <input type="radio" id="radio_real2" name="radio_group" value="OPS2">
-                    <label for="cart_prod_all">
-                        타입1
-                    </label>
-                </div>
+                <div class="rdo_box1 blue" style="margin-right:40px;">
+    				<input type="radio" id="order_mem" name="order_choice" >
+    				<label for="order_mem" class="adipro-r">타입1</label>
+    			</div>
+
                 // 파란 라디오버튼
                 <div class="rdo_box1 blue">
-                    <input type="radio" id="order_mem2" name="order_choice" value="Y" checked="">
-                    <label for="order_mem2" class="adipro-r" id="loginLabel">타입2</label>
+                    <input type="radio" id="order_mem2" name="order_choice">
+                    <label for="order_mem2" class="adipro-r" >타입2</label>
                 </div>
             </pre>
         </div>
@@ -171,13 +176,13 @@ module.exports = `
         <div class="result_box">
 
             <div class="rdo_box1 blue" style="margin-right:40px;">
-				<input type="radio" id="order_mem" name="order_choice" value="Y" checked="">
-				<label for="order_mem" class="adipro-r" id="loginLabel">타입1</label>
+				<input type="radio" id="order_mem" name="order_choice" >
+				<label for="order_mem" class="adipro">타입1</label>
 			</div>
 
             <div class="rdo_box1 blue">
-                <input type="radio" id="order_mem2" name="order_choice" value="Y" checked="">
-                <label for="order_mem2" class="adipro-r" id="loginLabel">타입2</label>
+                <input type="radio" id="order_mem2" name="order_choice">
+                <label for="order_mem2" class="adipro" >타입2</label>
             </div>
 
         </div>

@@ -168,6 +168,7 @@ module.exports = `
         	transform:rotate(45deg);
         	-webkit-transform:rotate(45deg);
         }
+        #nav_menu_overlay{display:none !important;}
 
     </style>
     <div class="code-wrap">
@@ -176,7 +177,7 @@ module.exports = `
             <pre class="brush: html">
                 <div class="sel_boxtype sel_design">
                     <a href="#" class="toggle_arw"><span>베스트순</span></a>
-                    <select name="order_by" id="order_by" onchange="javascript:fnSearch();">
+                    <select name="order_by" id="order_by">
                         <option value="1" selected="">베스트순</option>
                         <option value="2">신상품순</option>
                         <option value="5">상품평순</option>
@@ -188,9 +189,10 @@ module.exports = `
         </div>
 
         <div class="result_box" style="width:400px;">
+
             <div class="sel_boxtype sel_design">
                 <a href="#" class="toggle_arw"><span>베스트순</span></a>
-                <select name="order_by" id="order_by" onchange="javascript:fnSearch();">
+                <select name="order_by" id="order_by">
                     <option value="1" selected="">베스트순</option>
                     <option value="2">신상품순</option>
                     <option value="5">상품평순</option>
@@ -198,26 +200,15 @@ module.exports = `
                     <option value="4">낮은가격순</option>
                 </select>
             </div>
+
         </div>
     </div>
 
 
 
-    <script type="text/javascript" src="//image.adidas.co.kr/js/customForm.js"></script>
+    <script type="text/javascript" src="http://imagem.adidas.co.kr/js/adidas/common.js"></script>
     <script type="text/javascript">
-        $.fn.fnSearch();
 
-        $('#bind-selectbox-result').fnSearch({
-            before : function(currentValue , index){
-                console.log(currentValue , index);
-                console.log(this);
-            },
-            after : function(currentValue , index){
-                alert('값 : '+currentValue);
-                console.log(currentValue , index);
-                console.log(this);
-            }
-        });
     </script>
 
 `;
