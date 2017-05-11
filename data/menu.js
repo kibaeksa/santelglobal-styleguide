@@ -74,6 +74,20 @@ var menu = {
         name : '아디다스 모바일',
         path : '/adidasMobile',
         menu : {
+            common : {
+                name : '기본',
+                path : '/adidasMobile/common',
+                menu : {
+                    layout : {
+                        name : '레이아웃',
+                        path : '/adidasMobile/common/layout'
+                    },
+                    className : {
+                        name : '공통클래스 사용',
+                        path : '/adidasMobile/common/className'
+                    }
+                }
+            },
             ui:{
                 name : 'ui',
                 path : '/adidasMobile/ui',

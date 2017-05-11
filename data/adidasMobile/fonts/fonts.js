@@ -332,11 +332,11 @@ module.exports = `
         <div class="code-box">
             <pre class="brush: css">
                 Bold {
-                    font:25px 'adihaus-din-bold';
+                    font:25px 'AdihausDIN-Bold';
                 }
 
                 Regular {
-                    font:25px 'adihaus-din';
+                    font:25px 'Adihaus-regular';
                 }
             </pre>
         </div>
@@ -352,19 +352,23 @@ module.exports = `
         <div class="code-box">
             <pre class="brush: css">
                 Bold {
-                    font:25px 'adihaus-din-cond-bold';
+                    font:25px 'AdihausDIN-Cond';
+                    font-weight:'bold';
                 }
 
                 Bold Italic {
-                    font:25px 'adihaus-din-cond-bold-it';
+                    font:25px 'AdihausDIN-Cond';
+                    font-weight:'bold';
+                	font-style:'italic';
                 }
 
                 Italic {
-                    font:25px 'adihaus-din-cond-it';
+                    font:25px 'AdihausDIN-Cond';
+                    font-style:'italic';
                 }
 
                 Regular {
-                    font:25px 'adihaus-din-cond-regular';
+                    font:25px 'AdihausDIN-Cond';
                 }
 
             </pre>
@@ -408,7 +412,7 @@ module.exports = `
                 }
 
                 Light {
-                    font:25px 'YEEZY TSTAR-Regular';
+                    font:25px 'YEEZY TSTAR-Ligh';
                 }
 
             </pre>
