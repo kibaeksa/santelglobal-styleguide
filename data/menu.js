@@ -104,6 +104,10 @@ var menu = {
                         name : '커스텀 폼',
                         path : '/adidasMobile/ui/customForm'
                     },
+                    paging : {
+                        name : '페이징',
+                        path : '/adidasMobile/ui/paging'
+                    },
                     modalPopup : {
                         name : '모달 팝업',
                         path : '/adidasMobile/ui/modalPopup'
