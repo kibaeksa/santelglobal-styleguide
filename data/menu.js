@@ -74,6 +74,20 @@ var menu = {
         name : '아디다스 모바일',
         path : '/adidasMobile',
         menu : {
+            common : {
+                name : '기본',
+                path : '/adidasMobile/common',
+                menu : {
+                    layout : {
+                        name : '레이아웃',
+                        path : '/adidasMobile/common/layout'
+                    },
+                    className : {
+                        name : '공통클래스 사용',
+                        path : '/adidasMobile/common/className'
+                    }
+                }
+            },
             ui:{
                 name : 'ui',
                 path : '/adidasMobile/ui',
@@ -89,6 +103,22 @@ var menu = {
                     customForm : {
                         name : '커스텀 폼',
                         path : '/adidasMobile/ui/customForm'
+                    },
+                    paging : {
+                        name : '페이징',
+                        path : '/adidasMobile/ui/paging'
+                    },
+                    modalPopup : {
+                        name : '모달 팝업',
+                        path : '/adidasMobile/ui/modalPopup'
+                    },
+                    owlCarousel  : {
+                        name : 'owl carousel',
+                        path : '/adidasMobile/ui/owlCarousel'
+                    },
+                    swipe  : {
+                        name : 'swipe',
+                        path : '/adidasMobile/ui/swipe'
                     }
                 }
             },
