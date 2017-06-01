@@ -126,6 +126,7 @@ module.exports = `
 
         $('#bind-selectbox-result').ctmSelectSetCallback({
             before : function(currentValue , index){
+                alert('값 : '+currentValue);
                 console.log(currentValue , index);
                 console.log(this);
             },

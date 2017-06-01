@@ -167,6 +167,51 @@ module.exports = `
         </div>
     </div>
 
+    <div class="code-wrap">
+        <div class="prefix">callback 이벤트 설정하기</div>
+        <div class="code-box">
+            <pre class="brush: html">
+                <div class="input-ctm input-radio-ctm">
+                    <input type="radio" id="radio1" name="radio_group" value="OPS1">
+                    <label for="radio1"><span class="ctm-box spt_bg"><span class="spt_bg"></span></span>선택1</label>
+                </div>
+
+                <div class="input-ctm input-radio-ctm">
+                    <input type="radio" id="radio2" name="radio_group" value="OPS2">
+                    <label for="radio2"><span class="ctm-box spt_bg"><span class="spt_bg"></span></span>선택2</label>
+                </div>
+
+                // checked 추가
+                // checked 는 input 태그에 넣어야 합니다.
+                <div class="input-ctm input-radio-ctm">
+                    <input type="radio" id="radio3" name="radio_group" value="OPS3" checked>
+                    <label for="radio3"><span class="ctm-box spt_bg"><span class="spt_bg"></span></span>선택3</label>
+                </div>
+
+            </pre>
+        </div>
+
+        <div class="result_box">
+
+            <div class="input-ctm input-radio-ctm" style="margin-right:40px;">
+                <input type="radio" id="radio_real1" name="radio_group" value="OPS1">
+                <label for="radio_real1"><span class="ctm-box spt_bg"><span class="spt_bg"></span></span>선택1</label>
+            </div>
+
+            <div class="input-ctm input-radio-ctm" style="margin-right:40px;">
+                <input type="radio" id="radio_real2" name="radio_group" value="OPS2">
+                <label for="radio_real2"><span class="ctm-box spt_bg"><span class="spt_bg"></span></span>선택2</label>
+            </div>
+
+
+            <div class="input-ctm input-radio-ctm">
+                <input type="radio" id="radio_real3" name="radio_group" value="OPS3" checked>
+                <label for="radio_real3"><span class="ctm-box spt_bg"><span class="spt_bg"></span></span>선택3</label>
+            </div>
+
+        </div>
+    </div>
+
     <script type="text/javascript" src="//image.adidas.co.kr/js/customForm.js"></script>
     <script type="text/javascript">
         $.fn.cmtInputInit ();

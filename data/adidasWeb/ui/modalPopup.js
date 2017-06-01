@@ -1,5 +1,10 @@
 module.exports = `
-
+    <div>
+        <ul style="margin-bottom:30px;">
+            <li style="margin-bottom:3px;font-size:13px;">* 팝업은 <strong style="font:700 italic 14px 'noto sans kr';">modal-popup-wrapper</strong> 클래스를 넣어주어야 합니다.</li>
+            <li style="font-size:13px;">* 클릭부분은 <strong style="font:700 italic 14px 'noto sans kr';">modal-popup-click</strong> 클래스를 넣어주어야 합니다.</li>
+        </ul>
+    </div>
     <div class="code-wrap">
         <div class="prefix">기본 팝업</div>
         <div class="code-box">
@@ -22,12 +27,12 @@ module.exports = `
                     &lt;/div&gt;
                 &lt;/div&gt;
 
-                &lt;button data-modalpop-click="default-popup"&gt;팝업 열기&lt;/button&gt;
+                &lt;button class="modal-popup-click" data-modalpop-click="default-popup"&gt;팝업 열기&lt;/button&gt;
             </pre>
         </div>
 
         <div class="result_box">
-            <button data-modalpop-click="default-popup-real">팝업 열기</button>
+            <button class="modal-popup-click" data-modalpop-click="default-popup-real">팝업 열기</button>
         </div>
     </div>
 
@@ -81,13 +86,13 @@ module.exports = `
                     &lt;/div&gt;
                 &lt;/div&gt;
 
-                &lt;button data-modalpop-click="fade-popup"&gt;팝업 열기&lt;/button&gt;
+                &lt;button class="modal-popup-click" data-modalpop-click="fade-popup"&gt;팝업 열기&lt;/button&gt;
 
             </pre>
         </div>
 
         <div class="result_box">
-            <button data-modalpop-click="fade-popup-real">팝업 열기</button>
+            <button class="modal-popup-click" data-modalpop-click="fade-popup-real">팝업 열기</button>
         </div>
     </div>
 
@@ -149,6 +154,6 @@ module.exports = `
         </div>
     </div>
 
-    <script type="text/javascript" src="//image.adidas.co.kr/js/modalPopup.min.js"></script>
+    <script type="text/javascript" src="/js/modalPopup.js"></script>
 
 `;
