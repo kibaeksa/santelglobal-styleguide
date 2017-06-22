@@ -8,6 +8,10 @@ var menu = {
                 name : '기본',
                 path : '/adidasWeb/common',
                 menu : {
+                    rules : {
+                        name : '간단한 코딩 규칙',
+                        path : '/adidasWeb/common/rules'
+                    },
                     layout : {
                         name : '레이아웃',
                         path : '/adidasWeb/common/layout'

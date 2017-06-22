@@ -4,27 +4,32 @@ module.exports = `
             margin-bottom:3px;
         }
         @font-face{
-        	font-family: 'NotoSansKRBold';
+        	font-family: 'NotoSansKR';
+            font-weight:700;
         	src: url('//image.adidas.co.kr/fonts/NotoSansKr/woff/NotoSansKr-bold.woff') format('woff');
         }
 
         @font-face{
-        	font-family: 'NotoSansKRThin';
+        	font-family: 'NotoSansKR';
+            font-weight:100;
         	src: url('//image.adidas.co.kr/fonts/NotoSansKr/woff/NotoSansKr-thin.woff') format('woff');
         }
 
         @font-face{
-        	font-family: 'NotoSansKRLight';
+        	font-family: 'NotoSansKR';
+            font-weight:300;
         	src: url('//image.adidas.co.kr/fonts/NotoSansKr/woff/NotoSansKr-light.woff') format('woff');
         }
 
         @font-face{
-        	font-family: 'NotoSansKRRegular';
+        	font-family: 'NotoSansKR';
+            font-weight:400;
         	src: url('//image.adidas.co.kr/fonts/NotoSansKr/woff/NotoSansKr-regular.woff') format('woff');
         }
 
         @font-face{
         	font-family: 'NotoSansKR';
+            font-weight:500;
         	src: url('//image.adidas.co.kr/fonts/NotoSansKr/woff/NotoSansKr-medium.woff') format('woff');
         }
 
@@ -167,19 +172,19 @@ module.exports = `
         	}
 
         .notoSansBold{
-            font:25px 'NotoSansKRBold';
+            font:700 25px 'NotoSansKR';
         }
         .notoSansMedium{
-            font:25px 'NotoSansKR';
+            font:500 25px 'NotoSansKR';
         }
         .notoSansRegular{
-            font:25px 'NotoSansKRRegular';
+            font:400 25px 'NotoSansKR';
         }
         .notoSansLight{
-            font:25px 'NotoSansKRLight';
+            font:300 25px 'NotoSansKR';
         }
         .notoSansThin{
-            font:25px 'NotoSansKRThin';
+            font:100 25px 'NotoSansKR';
         }
 
         .adipro-black{
@@ -254,26 +259,37 @@ module.exports = `
 
     <div class="code-wrap">
         <div class="prefix" style="">구글 노토산스 폰트</div>
+        <div style="margin-bottom:10px;color:#bb0000;font-size:13px;font-weight:bold;">*** 2017-06-22 : 기존에 굵기 별로 각각 선언 되어있던 걸, 같은 font-family에 font-weight으로 구분을 하는 방법으로 수정</div>
         <div class="code-box">
             <pre class="brush: css">
                 Bold {
-                    font:25px 'NotoSansKRBold';
+                    font-family:'NotoSansKR';
+                    font-weight:700;
+                    font-size:25px;
                 }
 
                 Medium {
-                    font:25px 'NotoSansKR';
+                    font-family:'NotoSansKR';
+                    font-weight:500;
+                    font-size:25px;
                 }
 
                 Regular {
-                    font:25px 'NotoSansKRRegular';
+                    font-family:'NotoSansKR';
+                    font-weight:400;
+                    font-size:25px;
                 }
 
                 Light {
-                    font:25px 'NotoSansKRLight';
+                    font-family:'NotoSansKR';
+                    font-weight:300;
+                    font-size:25px;
                 }
 
                 Thin {
-                    font:25px 'NotoSansKRThin';
+                    font-family:'NotoSansKR';
+                    font-weight:100;
+                    font-size:25px;
                 }
             </pre>
         </div>
