@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>아디다스 매장리스트</title>
+
+    <link rel="stylesheet" href="http://image.adidas.co.kr/css/adidas/adidas_r.css">
+
+    <script type="text/javascript" src="http://image.reebok.co.kr/js/jquery/jquery-1.4.2.js"></script>
+
+    <style type="text/css">
+
+        #wrap{
+            width: 800px;
+            margin: 0 auto;
+            padding-bottom: 100px;
+        }
+
+        #wrap h1{
+            padding: 15px 0;
+            font:700 20px/20px 'asd','NotoSansKR';
+            color: #000;
+            letter-spacing: -1px;
+        }
+
+        .filter{
+            padding: 10px;
+            background: #ccc;
+        }
+
+        #wrap .filter .selecbox_custom{
+            position: relative;
+            width: 160px;
+            height: 30px;
+            background: #fff;
+        }
+
+        #wrap .filter .selecbox_custom select{
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            height: 30px;
+            opacity: 0;
+            font:500 13px 'NotoSansKR';
+            color: #000;
+        }
+
+        #wrap .filter .selecbox_custom a{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            font:500 13px 'NotoSansKR';
+            padding: 5px;
+            color: #000;
+        }
+
+        #wrap .filter .selecbox_custom a .spt_bg{
+            width: 14px;
+            height: 10px;
+            background-position:-240px -39px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+
+        #wrap .store_list{
+            border-top: 1px solid  #ccc;
+        }
+
+        #wrap .store_list li{
+            padding: 10px 0;
+            border-bottom: 1px solid  #ccc;
+        }
+
+        #wrap .store_list li>*{
+            margin-bottom: 5px;
+            color: #000;
+            font:500 13px/13px 'NotoSansKR';
+        }
+
+        #wrap .store_list li .name{
+            margin-bottom: 10px;
+            font:700 15px 'NotoSansKR';
+        }
+
+        #wrap .store_list li .phone{
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 760px){
+            #wrap{
+                width: 100%;
+                padding-bottom: 0;
+            }
+
+            #wrap h1{
+                padding:25px 10px 10px;
+            }
+
+            #wrap .store_list li{
+                padding: 10px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            #wrap .store_list li .name{
+                font-size: 13px;
+            }
+
+            #wrap .store_list li .address{
+                margin-bottom: 7px;
+                line-height: 17px;
+            }
+
+            #wrap .store_list li .phone{
+                color:blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+
+    </div>
+
+    <script type="text/javascript">
+        /* Global city data */
+        var paramName;
+        var cityObj;
+        var categoryList;
+        var currentCityName;
+        var title;
+
+        (function(){
+            paramName = window.location.href.split('?');
+            paramName = paramName[paramName.length-1];
+
+            loadPage();
+        })();
+
+        function loadPage(){
+
+            $.ajax({
+                url: '/jsonTest/'+paramName+'.json',
+                dataType : 'json',
+                beforeSend : function(){
+                    $('body').append('<div id="loading" style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:100;background:rgba(255,255,255,0.7)"><span style="position:absolute;top:50%;left:50%;width:100px;height:30px;font-size:12px;line-height:30px;margin:-15px 0 0 -50px;text-align:center;">Loading...</span></div>')
+                },
+                success:function(result){
+                    $('#loading').remove();
+                    cityObj = result.addressList;
+                    categoryList = result.categoryList;
+                    categoryList.unshift({
+                        en : 'all',
+                        kor : '전체'
+                    });
+
+                    currentCityName = '전체';
+                    title = result.title;
+                    initStoreList();
+                },
+                error:function(e){
+                    $('#loading').remove();
+                }
+            });
+        }
+
+
+        function renderStoreList(data){
+            var classNameArray = [
+                'name',
+                'address',
+                'phone'
+            ];
+
+            var htmlString = '<h1>'+title+'</h1>';
+            htmlString += '<div class="filter">';
+            htmlString += '    <div class="selecbox_custom">';
+            htmlString += '    <a href="javascript:void(0)">'+currentCityName+' <span class="spt_bg"></span></a>';
+            htmlString += '        <select name="selectCity" id="selectCity">';
+            for(var i = 0; i < categoryList.length; i++){
+                if(categoryList[i].kor == currentCityName){
+                    htmlString += '            <option selected value="'+categoryList[i].en+'">'+categoryList[i].kor+'</option>';
+                }else{
+                    htmlString += '            <option value="'+categoryList[i].en+'">'+categoryList[i].kor+'</option>';
+                }
+            }
+            htmlString += '        </select>';
+            htmlString += '    </div>';
+            htmlString += '</div>'
+            htmlString += '<ul class="store_list">';
+            for(var i = 0; i < data.length; i++){
+                htmlString += '<li>';
+                for(cityInfo in data[i]){
+                    htmlString += '<p class="'+cityInfo+'">'+data[i][cityInfo]+'</p>'
+                }
+                htmlString += '</li>';
+            }
+
+            htmlString += '</ul>';
+
+            $('#wrap').html(htmlString);
+
+            $('#selectCity').bind('change',function(){
+                currentCityName = $(this).find('option:selected').text();
+                initStoreListByCityName($(this).val())
+            });
+        }
+
+        function initStoreListByCityName(cityName){
+            if(cityName == 'all'){
+                initStoreList();
+                return;
+            }
+
+            var data = cityObj[cityName];
+            renderStoreList(data);
+        }
+
+        function initStoreList(){
+            var data = getAllAddress();
+
+            renderStoreList(data);
+        }
+
+        function getAllAddress(){
+            var newArray = [];
+
+            for(var city in cityObj){
+                for(var i = 0; i < cityObj[city].length; i++){
+                    newArray.push(cityObj[city][i]);
+                }
+            }
+
+            return newArray;
+        }
+    </script>
+</body>
+</html>

@@ -383,3 +383,144 @@ body{
     border: 1px solid  #ccc;
     padding: 1rem;
 }
+
+#wrap .form_wrapper{
+
+}
+
+#wrap .form_wrapper .box{
+	position: relative;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+
+#wrap .form_wrapper .box .warning{
+	padding-left: 130px;
+	color:#ff0000;
+	font:700 13px 'noto sans kr';
+	letter-spacing: 0;
+}
+
+#wrap .form_wrapper .box .warning#name_tip{
+	color: #000;
+}
+
+#wrap .form_wrapper .box label{
+	display: inline-block;
+	width: 120px;
+	margin-right: 10px;
+	color: #000;
+	font-size: 13px;
+	font-weight: bold;
+	vertical-align: top;
+	margin-top: 8px;
+	font:700 14px 'noto sans kr';
+}
+
+#wrap .form_wrapper .box input{
+	width: 600px;
+	height: 35px;
+	padding-left: 10px;
+	line-height: 35px;
+	vertical-align: middle;
+}
+
+#wrap .form_wrapper .box input[type="file"]{
+	padding-left: 0;
+	opacity: 0;
+	position: relative;
+	z-index: 10;
+	cursor: pointer;
+}
+
+#wrap .form_wrapper .file_wrapper{
+	display: inline-block;
+	width: 600px;
+	height: 35px;
+	position: relative;
+}
+
+#wrap .form_wrapper .file_text_area{
+	width: 590px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	font-size: 13px;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #b5b5b5;
+	cursor: pointer;
+}
+
+#wrap .form_wrapper .file_text_area.disable{
+	background: #eee;
+	color: #aaa;
+}
+
+#wrap .form_wrapper .file_text_area::after{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	content:'업로드';
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	background: #ddd;
+	text-align: center;
+	margin-left: 30px;
+}
+
+#wrap .form_wrapper .file_text_area.disable::after{
+	display: none;
+}
+
+#wrap .form_wrapper .btn-ctm{
+	width: 300px;
+	margin-top: 30px;
+}
+
+#wrap .form_wrapper .json_code_wrapper{
+	margin-top: 50px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+}
+
+#wrap .form_wrapper .json_code_wrapper.active{
+	opacity: 1;
+}
+
+#wrap .form_wrapper .json_code{
+	padding:10px;
+	background:#eee;
+	color:#000;
+	font-size:13px;
+	line-height: 18px;
+}
+
+#wrap .form_wrapper .json_code .key{
+	font-weight: bold;
+}
+
+#wrap .form_wrapper .json_code p{
+
+}
+
+#wrap .form_wrapper .json_code p.t1{
+	padding-left: 5px;
+}
+
+#wrap .form_wrapper .json_code p.t2{
+	padding-left: 10px;
+}
+
+#wrap .form_wrapper .json_code p.t3{
+	padding-left: 15px;
+}
+
+#wrap .form_wrapper .json_code p.t4{
+	padding-left: 20px;
+}

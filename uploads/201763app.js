@@ -5,86 +5,12 @@ var app = express();
 var menuData = require('./data/menu');
 var formidable = require('formidable');
 var bodyParser = require('body-parser');
-var http = require('http');
 var parseXlsx  = require('excel');
 
 var resultHtml;
 var PORT = process.env.PORT || 20000;
-var storeJsonFile;
-
-
-Object.size = function(obj) {
-	var size = 0, key;
-	for (key in obj) {
-		if (obj.hasOwnProperty(key)) size++;
-	}
-	return size;
-};
-
 
 var cityCategoryArray = [];
-
-var objToString = function(data){
-	var count = 0;
-	var countCtgr = 0;
-	var addrList = data.data.contentObj;
-	var str = '{\n';
-	str += '    "title" : "'+data.title+'" ,\n'
-	str += '    "categoryList" : [\n';
-	/* START For loop */
-	for(var i = 0; i < data.ctgrList.length; i++ ){
-	str += '        {\n';
-	str += '            "en" : "'+data.ctgrList[i].en+'",\n';
-	str += '            "kor" : "'+data.ctgrList[i].kor+'"\n';
-	if(i == data.ctgrList.length-1){
-	str += '        }\n';
-	}else{
-	str += '        },\n';
-	}
-	}
-	/* END For loop */
-	str += '    ],\n'
-	str += '    "addressList" : {\n';
-	/* START For loop */
-	for(var cityName in addrList){
-	str += '        "'+cityName+'" : [\n';
-	/* START Loop in city */
-	for(var i = 0; i < addrList[cityName].length; i++ ){
-	str += '            {\n';
-	/* START Loop in city of category  */
-	for(var ctgrName in addrList[cityName][i]){
-	if(countCtgr == Object.size(addrList[cityName][i])-1){
-		str += '                "'+ctgrName+'" : "'+addrList[cityName][i][ctgrName]+'"\n';
-		countCtgr = 0;
-	}else{
-		str += '                "'+ctgrName+'" : "'+addrList[cityName][i][ctgrName]+'",\n';
-		countCtgr += 1;
-	}
-
-	}
-	/* END Loop in city of category  */
-	if(i == addrList[cityName].length - 1){
-	str += '            }\n';
-	}else{
-	str += '            } ,\n';
-	}
-
-	}
-	/* END Loop in city */
-	if(count == Object.size(addrList) - 1){
-	str += '        ]\n';
-	}else{
-	str += '        ],\n';
-	}
-	count++;
-	}
-	/* END For loop */
-	str += '    }\n'
-	str += '}\n';
-
-	return str;
-}
-
 var getCityName = function(engName){
 	var nameArray = [
 		{
@@ -167,16 +93,6 @@ var getCityName = function(engName){
 	};
 };
 
-var download = function(url, dest, cb) {
-	var file = fs.createWriteStream(dest);
-	var request = http.get(url, function(response) {
-		response.pipe(file);
-		file.on('finish', function() {
-			file.close(cb);
-		});
-	});
-}
-
 var handleAddress = function(data){
 	var newJsonData = {
 		title : [],
@@ -258,35 +174,15 @@ app.get('/',function(req,res){
 
 
 app.post('/handleExcel',function(req,res){
-
-	parseXlsx(path.join(__dirname,'/uploads/'+req.body.fileName), function(err, data) {
+	parseXlsx(req.file_ipt, function(err, data) {
 		if(err) throw err;
-
-		storeJsonFile = path.join(__dirname,'/uploads/'+req.body.paramName+'.json');
-
-		fs.writeFile(path.join(__dirname,'/uploads/'+req.body.paramName+'.json'), objToString({title : req.body.title,data : handleAddress(data) , ctgrList : cityCategoryArray}) , 'UTF-8' , function(err) {
-		    if(err) {
-		        return console.log(err);
-		    }
-
-		    console.log("The file was saved!");
-		});
-
 		res.send({
 			result : true,
 			msg : req.body.file,
-			title : req.body.title,
 			data : handleAddress(data),
-			ctgrList : cityCategoryArray,
-			// fileLink : path.join(__dirname,'/uploads/'+req.body.paramName+'.json')
-			fileLink : '/uploads/'+req.body.paramName+'.json'
+			ctgrList : cityCategoryArray
 		});
-
 	});
-});
-
-app.get('/download',function(req,res){
-	res.download(path.join(__dirname,req.query.json));
 });
 
 app.post('/upload',function(req,res){
@@ -296,7 +192,7 @@ app.post('/upload',function(req,res){
 	form.uploadDir = path.join(__dirname , '/uploads');
 
 	form.on('file', function(field, file) {
-		fs.rename(file.path, path.join(form.uploadDir, file.name));
+		fs.rename(file.path, path.join(form.uploadDir, (new Date().getFullYear()+''+new Date().getMonth()+''+new Date().getDate())+file.name));
 		fileInfo = file;
 	});
 
@@ -305,6 +201,7 @@ app.post('/upload',function(req,res){
 	});
 
 	form.on('end', function() {
+		console.log(fileInfo);
 		res.send({
 			filePath : fileInfo.path,
 			fileName : fileInfo.name

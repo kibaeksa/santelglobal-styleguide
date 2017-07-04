@@ -62,6 +62,16 @@ var menu = {
                     }
                 }
             },
+            utils : {
+                name : '유틸',
+                path : '/adidasWeb/utils',
+                menu : {
+                    storeList : {
+                        name : '매장리스트',
+                        path : '/adidasWeb/utils/storeList'
+                    }
+                }
+            },
             fonts : {
                 name : 'fonts',
                 path : '/adidasWeb/fonts',
