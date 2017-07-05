@@ -28,6 +28,8 @@ module.exports = `
                     파일을 업로드 해주세요.
                 </div>
                 <input type="file" id="sl_file" name="uploads[]" multiple="multiple">
+
+                <a class="download_excel" href="/download?json=/resource/sample.xlsx">샘플 엑셀파일 다운로드</a>
             </div>
         </div>
         <a href="javascript:void(0)" class="btn-ctm" onclick="goSubmit()" style="margin-left:132px;">

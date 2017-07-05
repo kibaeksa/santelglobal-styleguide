@@ -578,6 +578,17 @@ body{
 	padding-left: 20px;
 }
 
+#wrap .form_wrapper .download_excel{
+	margin-top: 5px;
+	display: inline-block;
+	color: blue;
+	font:13px 'noto sans kr';
+
+}
+
+#wrap .form_wrapper .download_excel:hover{
+	text-decoration: underline;
+}
 
 #guide_layer{
 	width: 100%;
