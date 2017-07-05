@@ -25,8 +25,9 @@ time, mark, audio, video {
     vertical-align:baseline;
     background:transparent;
     -webkit-text-size-adjust: 100%;
-    font-family:'NotoSansKRRegular';
-    letter-spacing:-1px;
+    font-family:'noto sans kr';
+    font-weight: 400;
+    letter-spacing:-0.5px;
 }
 
 body {
