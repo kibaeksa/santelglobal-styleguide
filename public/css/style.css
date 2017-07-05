@@ -41,6 +41,34 @@
  * limitations under the License.
  */
 
+ @font-face {
+    font-family: 'adiPictoRegular';
+    src:url('//imagem.adidas.co.kr/fonts/adipictos/adipictos-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.glyph-info span{
+    font-family: "adiPictoRegular";
+    font-feature-settings: "liga", "dlig";
+    font-variant: normal;
+    font-weight: normal;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    vertical-align: middle;
+}
+.glyph:after{
+    content: attr(data-icon);
+    font-family: "adiPictoRegular";
+    font-feature-settings: "liga", "dlig";
+    font-variant: normal;
+    font-weight: normal;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+
  #wrap #contents .code-wrap .syntaxhighlighter *{
      font-size: 1.1rem !important;
      font-family:"Consolas", 'noto sans kr',"Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
@@ -385,7 +413,30 @@ body{
 }
 
 #wrap .form_wrapper{
+	position: relative;
+}
 
+#wrap .form_wrapper .tips{
+	position: absolute;
+	top: -37px;
+	display: inline-block;
+	left: 100px;
+}
+
+#wrap .form_wrapper .tips a{
+	color: #000;
+	font:700 13px 'noto sans kr';
+}
+
+#wrap .form_wrapper .tips a .icons{
+	margin-right:2px;
+}
+
+#wrap .form_wrapper .tips a .icons::before{
+	content:'\E601';
+	font-size:14px;
+	font-family: 'adiPictoRegular';
+	vertical-align: middle;
 }
 
 #wrap .form_wrapper .box{
@@ -494,7 +545,9 @@ body{
 }
 
 #wrap .form_wrapper .json_code{
+	max-height: 300px;
 	padding:10px;
+	overflow: auto;
 	background:#eee;
 	color:#000;
 	font-size:13px;
@@ -523,4 +576,73 @@ body{
 
 #wrap .form_wrapper .json_code p.t4{
 	padding-left: 20px;
+}
+
+
+#guide_layer{
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 500;
+	overflow: auto;
+}
+
+#guide_layer .overlay{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: #000;
+	opacity: 0.6;
+}
+
+#guide_layer .contents{
+	width: 900px;
+	margin:50px auto;
+	padding: 50px 30px 30px;
+	position: relative;
+	z-index: 101;
+	background: #fff;
+}
+
+#guide_layer .contents dt{
+	margin-bottom: 10px;
+	font:700 20px 'noto sans kr';
+	color: #000;
+	letter-spacing: -1px;
+}
+
+#guide_layer .contents dd{
+	margin-bottom: 30px;
+	padding-left: 10px;
+}
+
+#guide_layer .contents dd .desc{
+	margin-bottom: 10px;
+	font:400 13px 'noto sans kr';
+}
+
+#guide_layer .contents .close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #000;
+	font-family:'adiPictoRegular';
+	text-align: center;
+	line-height: 60px;
+}
+
+#guide_layer .contents .close::before{
+	margin-top: 3px;
+	display: inline-block;
+	font-size: 28px;
+	content:'\E62F';
+	color: #fff;
 }

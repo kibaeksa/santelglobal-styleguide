@@ -85,19 +85,19 @@ var objToString = function(data){
 	return str;
 }
 
-var getCityName = function(engName){
+var getCityName = function(korName){
 	var nameArray = [
 		{
 			en : 'seoul',
-			kor : '서울',
+			kor : ['서울' , '서울시' , '서울특별시'],
 		},
 		{
 			en : 'kyungki',
-			kor : '경기',
+			kor : ['경기','경기도'],
 		},
 		{
 			en : 'incheon',
-			kor : '인천',
+			kor : ['인천','인천시','인천광역시'],
 		},
 		{
 			en : 'sejong',
@@ -105,66 +105,72 @@ var getCityName = function(engName){
 		},
 		{
 			en : 'busan',
-			kor : '부산',
+			kor : ['부산','부산시','부산광역시'],
 		},
 		{
 			en : 'ulsan',
-			kor : '울산',
+			kor : ['울산','울산시','울산광역시'],
 		},
 		{
 			en : 'daegu',
-			kor : '대구',
+			kor : ['대구','대구시','대구광역시'],
 		},
 		{
 			en : 'kyungnam',
-			kor : '경남',
+			kor : ['경남','경상남도'],
 		},
 		{
 			en : 'kyungbuk',
-			kor : '경북',
+			kor : ['경북','경상북도'],
 		},
 		{
 			en : 'gwangju',
-			kor : '광주',
+			kor : ['광주','광주시','광주광역시'],
 		},
 		{
 			en : 'jeonnam',
-			kor : '전남',
+			kor : ['전남','전라남도'],
 		},
 		{
 			en : 'jeonbuk',
-			kor : '전북',
+			kor : ['전북','전라북도'],
 		},
 		{
 			en : 'chungnam',
-			kor : '충남',
+			kor : ['충남','충청남도'],
 		},
 		{
 			en : 'chungbuk',
-			kor : '충북',
+			kor : ['충북','충청북도'],
 		},
 		{
 			en : 'daejun',
-			kor : '대전',
+			kor : ['대전','대전시','대전광역시'],
 		},
 		{
 			en : 'kangwon',
-			kor : '강원',
+			kor : ['강원','강원도'],
 		},
 		{
 			en : 'jeju',
-			kor : '제주',
+			kor : ['제주','제주시','제주도'],
 		}
 	];
 
-	var nameObj = nameArray.filter(function(obj){
-		return obj.en == engName;
+	// var nameObj = nameArray.filter(function(obj){
+	// 	return obj.en == engName;
+	// });
+	var returnObj = {};
+	var nameObj = nameArray.map(function(obj , index){
+		for(var i = 0; i < obj.kor.length; i++){
+			if(obj.kor[i] == korName){
+				returnObj.en = obj.en;
+				returnObj.kor = obj.kor[0];
+			}
+		}
 	});
 
-	return {
-		en : nameObj[0].en,
-		kor : nameObj[0].kor
-	};
+	return returnObj;
 };
 
 var download = function(url, dest, cb) {
@@ -204,19 +210,26 @@ var handleAddress = function(data){
 			}else{
 				/* If more than first sheet */
 				/* Set category */
+				var cityNm = getCityName(data[rowsCount][0]).en;
 				if(colsCount == 0){
-					if(newJsonData.contentObj[data[rowsCount][0]] == undefined){
-						newJsonData.contentObj[data[rowsCount][0]] = [];
+
+					console.log('?? : ',cityNm);
+
+					if(newJsonData.contentObj[cityNm] == undefined){
 						cityCategoryArray[count] = getCityName(data[rowsCount][0]);
+						newJsonData.contentObj[cityNm] = [];
 						count++;
 					}
 				}else{
 					/* Input data to category which it has own */
 					if(colsCount == 1){
-						newJsonData.contentObj[data[rowsCount][0]].push({});
+						// console.log(newJsonData.contentObj[cityCategoryArray[count-1].en]);
+						newJsonData.contentObj[cityCategoryArray[count-1].en].push({});
 					}
 
-					newJsonData.contentObj[data[rowsCount][0]][newJsonData.contentObj[data[rowsCount][0]].length-1][objNameArray[colsCount-1]] = data[rowsCount][colsCount];
+					// console.log(cityCategoryArray[count-1].en);
+
+					newJsonData.contentObj[cityCategoryArray[count-1].en][newJsonData.contentObj[cityCategoryArray[count-1].en].length-1][objNameArray[colsCount-1]] = data[rowsCount][colsCount];
 				}
 
 			}
@@ -225,9 +238,7 @@ var handleAddress = function(data){
 	}
 
 	return newJsonData;
-
 };
-
 
 var checkCategory = function(prefix , obj){
 	var key;

@@ -1,5 +1,12 @@
 module.exports = `
+
     <div class="form_wrapper">
+        <div class="tips">
+            <a href="javascript:void(0)" onclick="openGuide();">
+                <span class="icons"></span>
+                매장리스트 적용 방법
+            </a>
+        </div>
         <div class="box">
             <label for="sl_link">파일명</label>
             <div style="margin-bottom:10px;position:relative;display:inline-block;">
@@ -121,11 +128,14 @@ module.exports = `
                     $('body').append('<div id="loading" style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:100;background:rgba(255,255,255,0.7)"><span style="position:absolute;top:50%;left:50%;width:100px;height:30px;font-size:12px;line-height:30px;margin:-15px 0 0 -50px;text-align:center;">Loading...</span></div>')
                 },
                 success:function(result){
-                    console.log(11);
                     $('#loading').remove();
-                    objToString(result);
 
-                    $('.json_code_wrapper').prepend('<div style="margin-bottom:10px;"><a class="btn-ctm btn-blue download" href="/download?json='+result.fileLink+'" target="_blank" style="width: 100px;height: 35px;"><span style="line-height: 35px;">다운로드</span></a></div>')
+                    $('#sl_link').attr('readonly','readonly');
+                    $('#sl_title').attr('readonly','readonly');
+                    $('#sl_file').attr('readonly','readonly');
+
+                    objToString(result);
+                    $('.json_code_wrapper').prepend('<div style="font:400 14px \\'noto sans kr\\';"> 링크 : <span style="margin-left:10px;font:500 14px \\'noto sans kr\\';"">http://shop.adidas.co.kr/upload/storelist/index.html?'+$('#sl_link').val()+'</span></div><div style="margin-bottom:10px;"><a class="btn-ctm btn-blue download" href="/download?json='+result.fileLink+'" target="_blank" style="width: 100px;height: 35px;"><span style="line-height: 35px;">다운로드</span></a></div>')
 
                 },
                 error:function(e){
@@ -189,6 +199,48 @@ module.exports = `
             str += '}\\n';
             $('.json_code_wrapper').addClass('active');
             $('.json_code>pre').html(str);
+        }
+
+
+        function openGuide(){
+            var htmlString = '<div id="guide_layer">';
+            htmlString += '      <div class="overlay" onclick="closeGuide()"></div>';
+            htmlString += '      <div class="contents">';
+            htmlString += '         <a class="close" href="javascript:void()" onclick="closeGuide()"></a>';
+            htmlString += '         <dl>';
+            htmlString += '             <dt>1. 엑셀 업로드</dt>';
+            htmlString += '             <dd>';
+            htmlString += '                 <p class="desc" style="margin-bottom:1px;">아래 이미지와 같이 폼을 입력, 엑셀파일 업로드 후 확인 버튼을 눌러주세요</p>';
+            htmlString += '                 <p class="desc" style="font-weight:700;">* 업로드 한 json 파일명이 곧 링크가 됩니다.</p>';
+            htmlString += '                 <div class="img"><img src="/images/store_step1.png" alt=""/></div>';
+            htmlString += '                 <p class="desc" style="font-weight:700;color:red;">(예제 엑셀파일 )</p>';
+            htmlString += '                 <div class="img"><img src="/images/excel.png" alt=""/></div>';
+            htmlString += '             </dd>';
+            htmlString += '             <dt>2. json 파일 다운로드</dt>';
+            htmlString += '             <dd>';
+            htmlString += '                 <p class="desc">완료 되면 다운로드 버튼을 클릭하여 파일을 받아주세요.</p>';
+            htmlString += '                 <div class="img" style="margin-bottom:10px;"><img src="/images/store_step2.png" alt=""/></div>';
+            htmlString += '                 <div class="img"><img src="/images/store_step2_download.png" alt=""/></div>';
+            htmlString += '             </dd>';
+            htmlString += '             <dt>3. json FTP 업로드</dt>';
+            htmlString += '             <dd>';
+            htmlString += '                 <p class="desc">다운받은 json 파일을 아래 FTP 경로에 업로드 해주세요.</p>';
+            htmlString += '                 <p class="desc" style="font-weight:700;font-size:14px;">/data/adidas/upload/storelist/json</p>';
+            htmlString += '                 <div class="img"><img src="/images/store_step3.png" alt=""/></div>';
+            htmlString += '             </dd>';
+            htmlString += '             <dt>4. 링크확인</dt>';
+            htmlString += '             <dd>';
+            htmlString += '                 <p class="desc">* 업로드 한 json 파일명이 곧 링크가 됩니다.</p>';
+            htmlString += '                 <p class="desc" style="margin-bottom:1px;font-weight:700;font-size:16px;">http://shop.adidas.co.kr/upload/storelist/index.html?json파일명</p>';
+            htmlString += '             </dd>';
+            htmlString += '         </dl>';
+            htmlString += '     </div>';
+            htmlString += '</div>';
+            $('body').append(htmlString);
+        }
+
+        function closeGuide(){
+            $('#guide_layer').remove();
         }
 
     </script>
