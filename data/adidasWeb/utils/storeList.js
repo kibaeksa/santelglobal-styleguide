@@ -212,7 +212,7 @@ module.exports = `
             htmlString += '             <dd>';
             htmlString += '                 <p class="desc" style="margin-bottom:1px;">아래 이미지와 같이 폼을 입력, 엑셀파일 업로드 후 확인 버튼을 눌러주세요</p>';
             htmlString += '                 <p class="desc" style="font-weight:700;">* 업로드 한 json 파일명이 곧 링크가 됩니다.</p>';
-            htmlString += '                 <div class="img"><img src="/images/store_step1.png" alt=""/></div>';
+            htmlString += '                 <div class="img"><img src="/images/store_step1_form.png" alt=""/></div>';
             htmlString += '                 <p class="desc" style="font-weight:700;color:red;">(예제 엑셀파일 )</p>';
             htmlString += '                 <div class="img"><img src="/images/excel.png" alt=""/></div>';
             htmlString += '             </dd>';
