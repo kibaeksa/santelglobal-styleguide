@@ -1,0 +1,71 @@
+{
+    "title" : "test" ,
+    "categoryList" : [
+        {
+            "en" : "kyungki",
+            "kor" : "경기"
+        },
+        {
+            "en" : "null",
+            "kor" : "null"
+        },
+        {
+            "en" : "seoul",
+            "kor" : "서울"
+        },
+        {
+            "en" : "kyungnam",
+            "kor" : "경남"
+        }
+    ],
+    "addressList" : {
+        "kyungki" : [
+            {
+                "name" : "BCS 광명",
+                "address" : "경기도 광명시 오리로 944",
+                "phone" : "02-2066-7615"
+            }
+        ],
+        "null" : [
+            {
+                "name" : "BCS 분당",
+                "address" : "경기도 성남시 분당구 분당로 53번길 22",
+                "phone" : "031-707-6430"
+            } ,
+            {
+                "name" : "BCS 분당",
+                "address" : "경기도 성남시 분당구 분당로 53번길 22",
+                "phone" : "031-707-6430"
+            } ,
+            {
+                "name" : "BCS 분당",
+                "address" : "경기도 성남시 분당구 분당로 53번길 22",
+                "phone" : "031-707-6430"
+            } ,
+            {
+                "name" : "BCS 분당",
+                "address" : "경기도 성남시 분당구 분당로 53번길 22",
+                "phone" : "031-707-6430"
+            } ,
+            {
+                "name" : "BCS 분당",
+                "address" : "경기도 성남시 분당구 분당로 53번길 22",
+                "phone" : "031-707-6430"
+            }
+        ],
+        "seoul" : [
+            {
+                "name" : "서울임요",
+                "address" : "서울시 중랑구 중당동",
+                "phone" : "031-707-6430"
+            }
+        ],
+        "kyungnam" : [
+            {
+                "name" : "경남",
+                "address" : "경남시 창원구 창원동",
+                "phone" : "042-12-12342"
+            }
+        ]
+    }
+}

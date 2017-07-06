@@ -34,6 +34,7 @@ var objToString = function(data){
 	/* START For loop */
 	for(var i = 0; i < data.ctgrList.length; i++ ){
 	str += '        {\n';
+	console.log(data.ctgrList[i]);
 	str += '            "en" : "'+data.ctgrList[i].en+'",\n';
 	str += '            "kor" : "'+data.ctgrList[i].kor+'"\n';
 	if(i == data.ctgrList.length-1){
@@ -160,10 +161,13 @@ var getCityName = function(korName){
 	// var nameObj = nameArray.filter(function(obj){
 	// 	return obj.en == engName;
 	// });
-	var returnObj = {};
+	var returnObj;
 	var nameObj = nameArray.map(function(obj , index){
 		for(var i = 0; i < obj.kor.length; i++){
 			if(obj.kor[i] == korName){
+				if(returnObj == undefined){
+					returnObj = {};
+				}
 				returnObj.en = obj.en;
 				returnObj.kor = obj.kor[0];
 			}
@@ -210,32 +214,51 @@ var handleAddress = function(data){
 			}else{
 				/* If more than first sheet */
 				/* Set category */
-				var cityNm = getCityName(data[rowsCount][0]).en;
+				var cityNm = getCityName(data[rowsCount][0]);
+				if(cityNm == undefined){
+					// console.log('그룹명 없음');
+					cityNm = 'null'
+				}else{
+					cityNm = cityNm.en;
+				}
+
 				if(colsCount == 0){
 
-					console.log('?? : ',cityNm);
+					// console.log('?? : ',cityNm);
 
 					if(newJsonData.contentObj[cityNm] == undefined){
-						cityCategoryArray[count] = getCityName(data[rowsCount][0]);
+						if(cityNm === 'null'){
+							cityCategoryArray[count] = {
+								en : 'null',
+								kor : 'null'
+							};
+						}else{
+							cityCategoryArray[count] = getCityName(data[rowsCount][0]);
+						}
+
 						newJsonData.contentObj[cityNm] = [];
 						count++;
+
 					}
 				}else{
+					var targetObj = newJsonData.contentObj[cityNm];
 					/* Input data to category which it has own */
 					if(colsCount == 1){
 						// console.log(newJsonData.contentObj[cityCategoryArray[count-1].en]);
-						newJsonData.contentObj[cityCategoryArray[count-1].en].push({});
+						targetObj.push({});
 					}
 
 					// console.log(cityCategoryArray[count-1].en);
 
-					newJsonData.contentObj[cityCategoryArray[count-1].en][newJsonData.contentObj[cityCategoryArray[count-1].en].length-1][objNameArray[colsCount-1]] = data[rowsCount][colsCount];
+					targetObj[targetObj.length-1][objNameArray[colsCount-1]] = data[rowsCount][colsCount];
 				}
 
 			}
 		}
 		colsCount = 0;
 	}
+
+	console.log(cityCategoryArray);
 
 	return newJsonData;
 };
@@ -274,6 +297,27 @@ app.post('/handleExcel',function(req,res){
 		if(err) throw err;
 
 		storeJsonFile = path.join(__dirname,'/uploads/'+req.body.paramName+'.json');
+
+		data = (function(){
+			var newData = [];
+
+			data.map(function(array , index){
+				// var count = 0;
+				var i = 0;
+
+				for(; i < array.length; i++){
+					if(array[i] != ''){
+						newData.push(array);
+						break;
+						// count += 1;
+					}
+				}
+			});
+
+			return newData;
+		})();
+
+		console.log(data);
 
 		fs.writeFile(path.join(__dirname,'/uploads/'+req.body.paramName+'.json'), objToString({title : req.body.title,data : handleAddress(data) , ctgrList : cityCategoryArray}) , 'UTF-8' , function(err) {
 		    if(err) {
