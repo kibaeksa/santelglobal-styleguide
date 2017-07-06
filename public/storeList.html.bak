@@ -74,10 +74,6 @@
             color: #000;
         }
 
-        #wrap .filter .selecbox_custom a strong{
-            font-weight: normal;
-        }
-
         #wrap .filter .selecbox_custom a .spt_bg{
             width: 14px;
             height: 10px;
@@ -180,7 +176,6 @@
         var cityObj;
         var categoryList;
         var currentCityName;
-        var currentCityKey;
         var title;
         var searchModule;
 
@@ -209,14 +204,9 @@
                     });
 
                     currentCityName = '전체';
-                    currentCityKey = 'all';
                     title = result.title;
                     initStoreList();
-                    // searchModule();
-                    $('#search_box').bind('keyup',function(event){
-                        searchModule.bindEvent(event);
-                    });
-
+                    searchModule();
                 },
                 error:function(e){
                     $('#loading').remove();
@@ -231,7 +221,7 @@
             htmlString += '<div class="filter">';
             if(categoryList.length > 2){
                 htmlString += '    <div class="selecbox_custom">';
-                htmlString += '    <a href="javascript:void(0)"><strong>'+currentCityName+'</strong><span class="spt_bg"></span></a>';
+                htmlString += '    <a href="javascript:void(0)">'+currentCityName+' <span class="spt_bg"></span></a>';
                 htmlString += '        <select name="selectCity" id="selectCity">';
                 for(var i = 0; i < categoryList.length; i++){
                     if(categoryList[i].kor == currentCityName){
@@ -252,10 +242,7 @@
 
             $('#selectCity').bind('change',function(){
                 currentCityName = $(this).find('option:selected').text();
-                currentCityKey = $(this).find('option:selected').val();
-                $(this).siblings('a').find('strong').text(currentCityName);
-                initStoreListByCityName($(this).val());
-                $('#search_box').val('');
+                initStoreListByCityName($(this).val())
             });
         }
 
@@ -266,7 +253,7 @@
                 for(cityInfo in data[i]){
                     if(cityInfo == 'map'){
                         if(data[i][cityInfo].toLowerCase() == 'o'){
-                            htmlString += '<p class="'+cityInfo+'"><a href="http://map.naver.com/?query='+(data[i]['address'].replace(/\<span\sclass="keyword">|<\/span>/g,''))+'" target="_blank">지도보기</a></p>';
+                            htmlString += '<p class="'+cityInfo+'"><a href="http://map.naver.com/?query='+data[i]['address']+'" target="_blank">지도보기</a></p>';
                         }
 
                     }else{
@@ -282,13 +269,12 @@
 
         function initStoreListByCityName(cityName){
             if(cityName == 'all'){
-                var data = getAllAddress();
-            }else{
-                var data = cityObj[cityName];
+                initStoreList();
+                return;
             }
 
-
-            renderStore(data);
+            var data = cityObj[cityName];
+            render(data);
         }
 
         function initStoreList(){
@@ -310,102 +296,77 @@
 
 
         (function(){
-            searchModule = {
-                init : function(keyword){
-                    var allData = getAllAddress();
-                    var resultArray = [];
+            searchModule = function(){
+                var keyword = '서울';
+                var allData = getAllAddress();
+                var resultArray = [];
 
-                    function searchInit(keyword){
-                        var findCtgrLength = 2;
-                        var newArray = [];
-                        var i = 0;
-                        var count = 0;
+                function searchInit(){
+                    var findCtgrLength = 2;
+                    var newArray = [];
+                    var i = 0;
+                    var count = 0;
 
-                        if(keyword == ''){
-                            if(currentCityKey == 'all'){
-                                newArray = allData;
-                            }else{
-                                newArray = cityObj[currentCityKey];
+                    for(; i < allData.length; i++){
+                        var nameKeyword = searchKeyword(allData[i].name,keyword);
+                        var addrKeyword = searchKeyword(allData[i].address,keyword);
+
+                        if(nameKeyword || addrKeyword){
+                            nameKeyword = !nameKeyword ? allData[i].name : nameKeyword;
+                            addrKeyword = !addrKeyword ? allData[i].address : addrKeyword;
+
+                            newArray.push({
+                                name :nameKeyword,
+                                address : addrKeyword,
+                                map : allData[i].map,
+                                phone : allData[i].phone
+                            });
+                        }
+                    }
+
+                    return newArray;
+                }
+
+                function searchKeyword(targetStr , keywordStr){
+                    var keywordArray = keywordStr.split('');
+                    var targetArray = targetStr.split('');
+                    var index = 0;
+                    var length = keywordArray.length;
+                    var counter = 0;
+                    var resultIndexArray = [];
+
+                    for(; index < targetArray.length; index++){
+                        if(targetArray[index] == keywordArray[counter]){
+                            counter += 1;
+                            resultIndexArray.push(index);
+
+                            if(counter == length){
+                                if(keywordStr.length > 1){
+                                    targetArray[resultIndexArray[0]] = '<span class="keyword">'+targetArray[resultIndexArray[0]];
+                                    targetArray[resultIndexArray[resultIndexArray.length-1]] = targetArray[resultIndexArray[resultIndexArray.length-1]]+'</span>';
+                                }else{
+                                    targetArray[resultIndexArray[0]] = '<span class="keyword">'+targetArray[resultIndexArray[0]]+'</span>';
+                                }
+
+                                return targetArray.join('');
                             }
-
                         }else{
-                            for(; i < allData.length; i++){
-                                var nameKeyword = searchKeyword(allData[i].name,keyword);
-                                var addrKeyword = searchKeyword(allData[i].address,keyword);
-
-                                if(nameKeyword || addrKeyword){
-                                    nameKeyword = !nameKeyword ? allData[i].name : nameKeyword;
-                                    addrKeyword = !addrKeyword ? allData[i].address : addrKeyword;
-
-                                    newArray.push({
-                                        name :nameKeyword,
-                                        address : addrKeyword,
-                                        map : allData[i].map,
-                                        phone : allData[i].phone
-                                    });
-                                }
-                            }
+                            counter = 0;
+                            resultIndexArray = [];
                         }
-
-
-                        console.log(newArray);
-                        return newArray;
                     }
-                    /* searchInit function END */
 
-                    function searchKeyword(targetStr , keywordStr){
-                        var keywordArray = keywordStr.split('');
-                        var targetArray = targetStr.split('');
-                        var index = 0;
-                        var length = keywordArray.length;
-                        var counter = 0;
-                        var resultIndexArray = [];
+                    return false;
+                }
 
-                        for(; index < targetArray.length; index++){
-                            if(targetArray[index] == keywordArray[counter]){
-                                counter += 1;
-                                resultIndexArray.push(index);
+                var newArr = searchInit();
 
-                                if(counter == length){
-                                    if(keywordStr.length > 1){
-                                        targetArray[resultIndexArray[0]] = '<span class="keyword">'+targetArray[resultIndexArray[0]];
-                                        targetArray[resultIndexArray[resultIndexArray.length-1]] = targetArray[resultIndexArray[resultIndexArray.length-1]]+'</span>';
-                                    }else{
-                                        targetArray[resultIndexArray[0]] = '<span class="keyword">'+targetArray[resultIndexArray[0]]+'</span>';
-                                    }
-
-                                    return targetArray.join('');
-                                }
-                            }else{
-                                counter = 0;
-                                resultIndexArray = [];
-                            }
-                        }
-
-                        return false;
-                    }
-                    /* searchKeyword function END */
-
-                    var newArr = searchInit(keyword);
-
-                    if(newArr.length > 0){
+                if(newArr.length > 0){
+                    setTimeout(function(){
                         renderStore(newArr);
-                    }else{
-                        $('#storeList').html('<div class="nodata">검색 결과가 없습니다.</div>');
-                    }
-                },
-                timer : '',
-                bindEvent : function(event){
-                    var init = this.init;
-                    var keyword = $(event.currentTarget).val();
-                    this.keyword = $(event.currentTarget).val();
-                    clearTimeout(this.timer);
-                    this.timer = setTimeout(function(){
-                        init(keyword);
-                    },200);
+                    },2000);
                 }
             }
-
 
 
 

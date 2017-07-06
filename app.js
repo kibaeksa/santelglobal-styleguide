@@ -196,7 +196,8 @@ var handleAddress = function(data){
 	var objNameArray = [
 		'name',
 		'address',
-		'phone'
+		'phone',
+		'map'
 	];
 
 	var count = 0;
@@ -220,6 +221,7 @@ var handleAddress = function(data){
 					cityNm = 'null'
 				}else{
 					cityNm = cityNm.en;
+					// console.log('?? : ',cityNm);
 				}
 
 				if(colsCount == 0){
@@ -228,10 +230,19 @@ var handleAddress = function(data){
 
 					if(newJsonData.contentObj[cityNm] == undefined){
 						if(cityNm === 'null'){
-							cityCategoryArray[count] = {
-								en : 'null',
-								kor : 'null'
-							};
+							var hasNullCtgr = cityCategoryArray.map(function(obj , index){
+								if(obj.en == 'null'){
+									return obj;
+								}
+							});
+
+							if(hasNullCtgr.length == 0){
+								cityCategoryArray[count] = {
+									en : 'null',
+									kor : 'null'
+								};
+							}
+
 						}else{
 							cityCategoryArray[count] = getCityName(data[rowsCount][0]);
 						}
@@ -258,7 +269,7 @@ var handleAddress = function(data){
 		colsCount = 0;
 	}
 
-	console.log(cityCategoryArray);
+	// console.log(cityCategoryArray);
 
 	return newJsonData;
 };
@@ -313,11 +324,9 @@ app.post('/handleExcel',function(req,res){
 					}
 				}
 			});
-
+			// console.log(newData);
 			return newData;
 		})();
-
-		console.log(data);
 
 		fs.writeFile(path.join(__dirname,'/uploads/'+req.body.paramName+'.json'), objToString({title : req.body.title,data : handleAddress(data) , ctgrList : cityCategoryArray}) , 'UTF-8' , function(err) {
 		    if(err) {
