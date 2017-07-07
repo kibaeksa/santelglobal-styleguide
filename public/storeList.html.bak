@@ -74,6 +74,10 @@
             color: #000;
         }
 
+        #wrap .filter .selecbox_custom a strong{
+            font-weight: normal;
+        }
+
         #wrap .filter .selecbox_custom a .spt_bg{
             width: 14px;
             height: 10px;
@@ -161,6 +165,47 @@
             #wrap .store_list li .phone{
                 color:blue;
             }
+
+            #wrap .filter{
+                height: auto;
+            }
+
+            #wrap .filter .selecbox_custom{
+                width: 100%;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            #wrap .filter .selecbox_custom a{
+                width: 100%;
+                height: 40px;
+                padding-top: 10px;
+                padding-left: 10px;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+
+            #wrap .filter .selecbox_custom select{
+                height: 100%;
+            }
+
+            #wrap .filter .search{
+                width: 100%;
+                position: relative;
+                top: 0;
+                left: 0;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+
+            #wrap .filter .search input{
+                width: 100%;
+                height: 40px;
+                list-style: 40px;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                border-width: 0;
+            }
         }
 
     </style>
@@ -176,6 +221,7 @@
         var cityObj;
         var categoryList;
         var currentCityName;
+        var currentCityKey;
         var title;
         var searchModule;
 
@@ -204,9 +250,14 @@
                     });
 
                     currentCityName = '전체';
+                    currentCityKey = 'all';
                     title = result.title;
                     initStoreList();
-                    searchModule();
+                    // searchModule();
+                    $('#search_box').bind('keyup',function(event){
+                        searchModule.bindEvent(event);
+                    });
+
                 },
                 error:function(e){
                     $('#loading').remove();
@@ -219,9 +270,9 @@
 
             var htmlString = '<h1>'+title+'</h1>';
             htmlString += '<div class="filter">';
-            if(categoryList.length > 2){
+            if(categoryList.length >= 2){
                 htmlString += '    <div class="selecbox_custom">';
-                htmlString += '    <a href="javascript:void(0)">'+currentCityName+' <span class="spt_bg"></span></a>';
+                htmlString += '    <a href="javascript:void(0)"><strong>'+currentCityName+'</strong><span class="spt_bg"></span></a>';
                 htmlString += '        <select name="selectCity" id="selectCity">';
                 for(var i = 0; i < categoryList.length; i++){
                     if(categoryList[i].kor == currentCityName){
@@ -233,7 +284,7 @@
                 htmlString += '        </select>';
                 htmlString += '    </div>';
             }
-            htmlString += '    <div class="search"><input type="text" id="search_box"/></div>';
+            htmlString += '    <div class="search"><input type="text" id="search_box" placeholder="주소 검색"/></div>';
             htmlString += '</div>'
             htmlString += '<div id="storeList"></div>';
 
@@ -242,7 +293,10 @@
 
             $('#selectCity').bind('change',function(){
                 currentCityName = $(this).find('option:selected').text();
-                initStoreListByCityName($(this).val())
+                currentCityKey = $(this).find('option:selected').val();
+                $(this).siblings('a').find('strong').text(currentCityName);
+                initStoreListByCityName($(this).val());
+                $('#search_box').val('');
             });
         }
 
@@ -252,8 +306,9 @@
                 htmlString += '<li>';
                 for(cityInfo in data[i]){
                     if(cityInfo == 'map'){
+                        console.log(data[i][cityInfo]);
                         if(data[i][cityInfo].toLowerCase() == 'o'){
-                            htmlString += '<p class="'+cityInfo+'"><a href="http://map.naver.com/?query='+data[i]['address']+'" target="_blank">지도보기</a></p>';
+                            htmlString += '<p class="'+cityInfo+'"><a href="http://map.naver.com/?query='+(data[i]['address'].replace(/\<span\sclass="keyword">|<\/span>/g,''))+'" target="_blank">지도보기</a></p>';
                         }
 
                     }else{
@@ -268,13 +323,8 @@
         }
 
         function initStoreListByCityName(cityName){
-            if(cityName == 'all'){
-                initStoreList();
-                return;
-            }
-
             var data = cityObj[cityName];
-            render(data);
+            renderStore(data);
         }
 
         function initStoreList(){
@@ -296,77 +346,105 @@
 
 
         (function(){
-            searchModule = function(){
-                var keyword = '서울';
-                var allData = getAllAddress();
-                var resultArray = [];
+            searchModule = {
+                init : function(keyword){
+                    var allData = cityObj['all'];
+                    var resultArray = [];
 
-                function searchInit(){
-                    var findCtgrLength = 2;
-                    var newArray = [];
-                    var i = 0;
-                    var count = 0;
+                    function searchInit(keyword){
+                        var findCtgrLength = 2;
+                        var newArray = [];
+                        var i = 0;
+                        var count = 0;
 
-                    for(; i < allData.length; i++){
-                        var nameKeyword = searchKeyword(allData[i].name,keyword);
-                        var addrKeyword = searchKeyword(allData[i].address,keyword);
-
-                        if(nameKeyword || addrKeyword){
-                            nameKeyword = !nameKeyword ? allData[i].name : nameKeyword;
-                            addrKeyword = !addrKeyword ? allData[i].address : addrKeyword;
-
-                            newArray.push({
-                                name :nameKeyword,
-                                address : addrKeyword,
-                                map : allData[i].map,
-                                phone : allData[i].phone
-                            });
-                        }
-                    }
-
-                    return newArray;
-                }
-
-                function searchKeyword(targetStr , keywordStr){
-                    var keywordArray = keywordStr.split('');
-                    var targetArray = targetStr.split('');
-                    var index = 0;
-                    var length = keywordArray.length;
-                    var counter = 0;
-                    var resultIndexArray = [];
-
-                    for(; index < targetArray.length; index++){
-                        if(targetArray[index] == keywordArray[counter]){
-                            counter += 1;
-                            resultIndexArray.push(index);
-
-                            if(counter == length){
-                                if(keywordStr.length > 1){
-                                    targetArray[resultIndexArray[0]] = '<span class="keyword">'+targetArray[resultIndexArray[0]];
-                                    targetArray[resultIndexArray[resultIndexArray.length-1]] = targetArray[resultIndexArray[resultIndexArray.length-1]]+'</span>';
-                                }else{
-                                    targetArray[resultIndexArray[0]] = '<span class="keyword">'+targetArray[resultIndexArray[0]]+'</span>';
-                                }
-
-                                return targetArray.join('');
+                        if(keyword == ''){
+                            if(currentCityKey == 'all'){
+                                newArray = allData;
+                            }else{
+                                newArray = cityObj[currentCityKey];
                             }
+
                         }else{
-                            counter = 0;
-                            resultIndexArray = [];
+                            for(; i < allData.length; i++){
+                                var nameKeyword = searchKeyword(allData[i].name,keyword);
+                                var addrKeyword = searchKeyword(allData[i].address,keyword);
+
+                                if(nameKeyword || addrKeyword){
+                                    nameKeyword = !nameKeyword ? allData[i].name : nameKeyword;
+                                    addrKeyword = !addrKeyword ? allData[i].address : addrKeyword;
+
+                                    newArray.push({
+                                        name :nameKeyword,
+                                        address : addrKeyword,
+                                        phone : allData[i].phone
+                                    });
+
+                                    if(allData[i].map){
+                                        newArray[newArray.length-1].map = allData[i].map;
+                                    }
+                                }
+                            }
                         }
+
+
+                        console.log(newArray);
+                        return newArray;
                     }
+                    /* searchInit function END */
 
-                    return false;
-                }
+                    function searchKeyword(targetStr , keywordStr){
+                        var keywordArray = keywordStr.split('');
+                        var targetArray = targetStr.split('');
+                        var index = 0;
+                        var length = keywordArray.length;
+                        var counter = 0;
+                        var resultIndexArray = [];
 
-                var newArr = searchInit();
+                        for(; index < targetArray.length; index++){
+                            if(targetArray[index] == keywordArray[counter]){
+                                counter += 1;
+                                resultIndexArray.push(index);
 
-                if(newArr.length > 0){
-                    setTimeout(function(){
+                                if(counter == length){
+                                    if(keywordStr.length > 1){
+                                        targetArray[resultIndexArray[0]] = '<span class="keyword">'+targetArray[resultIndexArray[0]];
+                                        targetArray[resultIndexArray[resultIndexArray.length-1]] = targetArray[resultIndexArray[resultIndexArray.length-1]]+'</span>';
+                                    }else{
+                                        targetArray[resultIndexArray[0]] = '<span class="keyword">'+targetArray[resultIndexArray[0]]+'</span>';
+                                    }
+
+                                    return targetArray.join('');
+                                }
+                            }else{
+                                counter = 0;
+                                resultIndexArray = [];
+                            }
+                        }
+
+                        return false;
+                    }
+                    /* searchKeyword function END */
+
+                    var newArr = searchInit(keyword);
+
+                    if(newArr.length > 0){
                         renderStore(newArr);
-                    },2000);
+                    }else{
+                        $('#storeList').html('<div class="nodata">검색 결과가 없습니다.</div>');
+                    }
+                },
+                timer : '',
+                bindEvent : function(event){
+                    var init = this.init;
+                    var keyword = $(event.currentTarget).val();
+                    this.keyword = $(event.currentTarget).val();
+                    clearTimeout(this.timer);
+                    this.timer = setTimeout(function(){
+                        init(keyword);
+                    },200);
                 }
             }
+
 
 
 

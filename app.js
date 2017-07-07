@@ -190,7 +190,9 @@ var download = function(url, dest, cb) {
 var handleAddress = function(data){
 	var newJsonData = {
 		title : [],
-		contentObj : {}
+		contentObj : {
+			all : []
+		}
 	};
 
 	var objNameArray = [
@@ -264,13 +266,20 @@ var handleAddress = function(data){
 					targetObj[targetObj.length-1][objNameArray[colsCount-1]] = data[rowsCount][colsCount];
 				}
 
+				if(data[rowsCount].length-1 == colsCount){
+					newJsonData.contentObj['all'].push(newJsonData.contentObj[cityNm][newJsonData.contentObj[cityNm].length-1]);
+				}
+
 			}
+
+
+
 		}
 		colsCount = 0;
 	}
 
 	// console.log(cityCategoryArray);
-
+	console.log(newJsonData);
 	return newJsonData;
 };
 
