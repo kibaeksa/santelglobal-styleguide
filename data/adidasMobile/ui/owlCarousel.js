@@ -120,8 +120,6 @@ module.exports = `
     </div>
 
 
-
-    <script src="//imagem.adidas.co.kr/js/jquery/easing/jquery.easing.1.3.js"></script>
     <script src="//imagem.adidas.co.kr/js/owl.carousel.js"></script>
     <script type="text/javascript">
 

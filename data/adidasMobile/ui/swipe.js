@@ -131,8 +131,8 @@ module.exports = `
 
 
 
-    <script src="http://imagem.adidas.co.kr/MO/js/jquery/jquery-1.4.2.js"></script>
-    <script src="http://imagem.adidas.co.kr/js/swipe.js"></script>
+    <script src="//imagem.adidas.co.kr/MO/js/jquery/jquery-1.4.2.js"></script>
+    <script src="//imagem.adidas.co.kr/js/swipe.js"></script>
 
 
     <script type="text/javascript">
