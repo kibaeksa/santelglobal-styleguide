@@ -2,10 +2,60 @@ module.exports = `
 
     <style>
         @font-face {
+            font-family: 'adiPictoRegularKo';
+            src:url('//imagem.adidas.co.kr/fonts/adipictos/adipictos-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
             font-family: 'adinenuPro-light';
             src: url('//image.adidas.co.kr/fonts/adineuePro/eot/adineuePRO-Light.eot');
             src: url('//image.adidas.co.kr/fonts/adineuePro/woff/adineuePRO-Light.woff') format('woff');
         }
+
+        /*.icons:before , .icons:after{	*/
+        .icons:before{
+        	font-family: 'adiPictoRegularKo','adiPictoRegular';
+            content: attr(data-icon);
+            speak: none;
+            -webkit-font-feature-settings: 'liga', 'dlig';
+            -moz-font-feature-settings: 'liga=1, dlig=1';
+            -moz-font-feature-settings: 'liga', 'dlig';
+            -ms-font-feature-settings: 'liga', 'dlig';
+            -o-font-feature-settings: 'liga', 'dlig';
+            font-feature-settings: 'liga', 'dlig';
+            text-rendering: geometricPrecision;
+            -webkit-font-smoothing: antialiased;
+            vertical-align: middle;
+            font-smooth: always;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+        }
+        /* check box */
+
+        .icons.aft:before{
+        	display: none;
+        }
+        .icons.aft:after{
+        	font-family: 'adiPictoRegularKo','adiPictoRegular';
+            content: attr(data-icon);
+            speak: none;
+            -webkit-font-feature-settings: 'liga', 'dlig';
+            -moz-font-feature-settings: 'liga=1, dlig=1';
+            -moz-font-feature-settings: 'liga', 'dlig';
+            -ms-font-feature-settings: 'liga', 'dlig';
+            -o-font-feature-settings: 'liga', 'dlig';
+            font-feature-settings: 'liga', 'dlig';
+            text-rendering: geometricPrecision;
+            -webkit-font-smoothing: antialiased;
+            vertical-align: middle;
+            font-smooth: always;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+        }
+
         /* paging */
         .paging{
             position: relative;
@@ -86,7 +136,7 @@ module.exports = `
 
         <div class="result_box">
 
-            <div class="paging">
+            <div class="paging" style="width:320px;margin:0 auto;">
                 <div>
                     <a href="#" class="prev icons disable" data-icon=""></a>
                     <a href="#" class="on">1</a>

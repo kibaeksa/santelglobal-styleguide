@@ -6,6 +6,15 @@ module.exports = `
         </ul>
     </div>
     <div class="code-wrap">
+        <div class="prefix">스크립트에서 팝업열기</div>
+        <div class="code-box">
+            <pre class="brush: js">
+                ModalPopup.openPopup('popupName');
+            </pre>
+        </div>
+    </div>
+
+    <div class="code-wrap">
         <div class="prefix">기본 팝업</div>
         <div class="code-box">
             <pre class="brush: html">

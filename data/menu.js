@@ -59,6 +59,10 @@ var menu = {
                     productsListSlider : {
                         name : '제품리스트 슬라이드',
                         path : '/adidasWeb/ui/productsListSlider'
+                    },
+                    videoOpen : {
+                        name : '유투브 영상 오픈팝업',
+                        path : '/adidasWeb/ui/videoOpen'
                     }
                 }
             },
@@ -133,6 +137,10 @@ var menu = {
                     swipe  : {
                         name : 'swipe',
                         path : '/adidasMobile/ui/swipe'
+                    },
+                    videoOpen : {
+                        name : '유투브 영상 오픈팝업',
+                        path : '/adidasMobile/ui/videoOpen'
                     }
                 }
             },

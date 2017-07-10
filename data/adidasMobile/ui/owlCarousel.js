@@ -53,7 +53,8 @@ module.exports = `
 
     </style>
     <div class="code-wrap">
-        <div class="prefix">Owl 슬라이드 <small>(화살표, 네비게이션 유무는 디자인에 따라 커스터마이징)</small></div>
+        <div class="prefix">Owl 슬라이드 <small>(화살표, 네비게이션 유무는 디자인에 따라 커스터마이징)</small></div><br/>
+        <div class="prefix">공식 홈페이지 <small><a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">https://owlcarousel2.github.io/OwlCarousel2/</a></small></div>
         <div class="desc">HTML</div>
         <div class="code-box">
 
@@ -72,7 +73,26 @@ module.exports = `
 
         <div class="code-box">
             <pre class="brush: js">
-                $('#slider_owl').owlCarousel({
+                var owlSlider = $('#slider_owl');
+
+                owlSlider.on('initialized.owl.carousel', function(event) {
+                    /*
+                        최초 로딩 시 한번만 호출하는 함수
+                    */
+                });
+
+                owlSlider.on('changed.owl.carousel', function(event) {
+                    /*
+            		    Callback 이벤트 (슬라이드가 실행 될 떄마다 실행되는 함수)
+                        * index 사용하기
+                        event.item.index
+
+                        * length 사용하기
+                        event.item.count
+                    */
+            	});
+
+                owlSlider.owlCarousel({
                     stagePadding: 60,
                     margin:15,
                     items : 1,
@@ -105,7 +125,18 @@ module.exports = `
     <script src="//imagem.adidas.co.kr/js/owl.carousel.js"></script>
     <script type="text/javascript">
 
-        $('.banner_slider1').owlCarousel({
+        var owlSlider = $('.banner_slider1');
+
+        owlSlider.on('initialized.owl.carousel', function(event) {
+            console.log('initialized')
+        });
+
+        owlSlider.on('changed.owl.carousel', function(event) {
+            console.log('index : ',event.item.index);
+            console.log('Length : ',event.item.count);
+        });
+
+        owlSlider.owlCarousel({
             stagePadding: 60,
             margin:15,
             items : 1,

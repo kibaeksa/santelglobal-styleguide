@@ -3,6 +3,14 @@ module.exports = `
         <li style="margin-bottom:3px;font-size:13px;">* 팝업은 <strong style="font:700 italic 14px 'noto sans kr';">modal-popup-wrapper</strong> 클래스를 넣어주어야 합니다.</li>
         <li style="font-size:13px;">* 클릭부분은 <strong style="font:700 italic 14px 'noto sans kr';">modal-popup-click</strong> 클래스를 넣어주어야 합니다.</li>
     </ul>
+    <div class="code-wrap">
+        <div class="prefix">스크립트에서 팝업열기</div>
+        <div class="code-box">
+            <pre class="brush: js">
+                ModalPopup.openPopup('popupName');
+            </pre>
+        </div>
+    </div>
     <div class="adi_mo">
         <div class="code-wrap">
             <div class="prefix">기본 팝업</div>
