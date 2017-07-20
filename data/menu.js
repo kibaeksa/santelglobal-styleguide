@@ -158,13 +158,38 @@ var menu = {
                     }
                 }
             }
-
         }
-    }/*,
-    adidasMobile : {
-        name : 'adidas mobile',
-        path : '/adidasMobile'
-    }*/
+    },
+    reebokWeb : {
+        name : '리복 웹',
+        path : '/reebokWeb',
+        menu : {
+            fonts : {
+                name : 'fonts',
+                path : '/reebokWeb/fonts',
+                menu : {
+                    fonts : {
+                        name : 'fonts',
+                        path : '/reebokWeb/fonts/fonts'
+                    }
+                }
+            },
+            campaign : {
+                name : 'campaign',
+                path : '/reebokWeb/campaign',
+                menu : {
+                    campaign_button : {
+                        name : '캠페인 버튼',
+                        path : '/reebokWeb/campaign/campaign_button'
+                    },
+                    campaign_video : {
+                        name : '캠페인 비디오',
+                        path : '/reebokWeb/campaign/campaign_video'
+                    }
+                }
+            },
+        }
+    }
 }
 
 module.exports = menu;
