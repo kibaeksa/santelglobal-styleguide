@@ -299,37 +299,40 @@ module.exports = `
         <div class="code-box">
             <pre class="brush: html">
                 <!-- 필수 클래스명 -->
-                &lt;div class="products-list-wrapper" id="productlist-slider"&gt;
-                   <!-- 필수 클래스명 -->
-                   &lt;div class="products-slide-wrapper"&gt;
+                &lt;div class="products-list-tpl"&gt;
+                    <!-- 필수 클래스명 -->
+                    &lt;div class="products-list-wrapper" id="productlist-slider"&gt;
                        <!-- 필수 클래스명 -->
-                       &lt;ul class="products-list"&gt;
-                           &lt;li&gt;
-                               &lt;div class="img"&gt;
-                                   &lt;a href="#"&gt;
-                                       &lt;img src="http://image.adidas.co.kr/upload/prod/basic/320/S81858-1_320X320.jpg" alt="" /&gt;
-                                   &lt;/a&gt;
-                               &lt;/div&gt;
-                               &lt;div class="rating-star"&gt;
-                                   &lt;div class="star-container"&gt;
-                                       &lt;div class="star-point" style="width:50%;"&gt;&lt;img src="/images/adidas/common/ico_rating.png" alt=""&gt;&lt;/div&gt;
-                                       &lt;div class="star-bg"&gt;&lt;img src="/images/adidas/common/ico_rating_empty.png" alt=""&gt;&lt;/div&gt;
+                       &lt;div class="products-slide-wrapper"&gt;
+                           <!-- 필수 클래스명 -->
+                           &lt;ul class="products-list"&gt;
+                               &lt;li&gt;
+                                   &lt;div class="img"&gt;
+                                       &lt;a href="#"&gt;
+                                           &lt;img src="http://image.adidas.co.kr/upload/prod/basic/320/S81858-1_320X320.jpg" alt="" /&gt;
+                                       &lt;/a&gt;
                                    &lt;/div&gt;
-                                   &lt;div class="star-count"&gt;102&lt;/div&gt;
-                               &lt;/div&gt;
+                                   &lt;div class="rating-star"&gt;
+                                       &lt;div class="star-container"&gt;
+                                           &lt;div class="star-point" style="width:50%;"&gt;&lt;img src="/images/adidas/common/ico_rating.png" alt=""&gt;&lt;/div&gt;
+                                           &lt;div class="star-bg"&gt;&lt;img src="/images/adidas/common/ico_rating_empty.png" alt=""&gt;&lt;/div&gt;
+                                       &lt;/div&gt;
+                                       &lt;div class="star-count"&gt;102&lt;/div&gt;
+                                   &lt;/div&gt;
 
-                               &lt;div class="tit"&gt;&lt;a href="#"&gt;슈퍼스타 파운데이션 슈퍼스타 파운데이션 슈퍼스타 파운데이션 파운데이션 슈퍼스타 파운데이션파운데이션 슈퍼스타 파운데이션&lt;/a&gt;&lt;/div&gt;
-                               &lt;div class="price"&gt;
-                                   &lt;div class="price-container"&gt;
-                                       &lt;span class="prc line"&gt;249,000&lt;span class="won"&gt;원&lt;/span&gt;&lt;/span&gt;
-                                       &lt;span class="prc sale"&gt;249,000&lt;span class="won"&gt;원&lt;/span&gt;&lt;/span&gt;
+                                   &lt;div class="tit"&gt;&lt;a href="#"&gt;슈퍼스타 파운데이션 슈퍼스타 파운데이션 슈퍼스타 파운데이션 파운데이션 슈퍼스타 파운데이션파운데이션 슈퍼스타 파운데이션&lt;/a&gt;&lt;/div&gt;
+                                   &lt;div class="price"&gt;
+                                       &lt;div class="price-container"&gt;
+                                           &lt;span class="prc line"&gt;249,000&lt;span class="won"&gt;원&lt;/span&gt;&lt;/span&gt;
+                                           &lt;span class="prc sale"&gt;249,000&lt;span class="won"&gt;원&lt;/span&gt;&lt;/span&gt;
+                                       &lt;/div&gt;
                                    &lt;/div&gt;
-                               &lt;/div&gt;
-                           &lt;/li&gt;
-                           ...
-                           <!-- Item 이 10개가 있다고 쳤을 때 -->
-                       &lt;/ul&gt;
-                   &lt;/div&gt;
+                               &lt;/li&gt;
+                               ...
+                               <!-- Item 이 10개가 있다고 쳤을 때 -->
+                           &lt;/ul&gt;
+                       &lt;/div&gt;
+                    &lt;/div&gt;
                 &lt;/div&gt;
             </pre>
         </div>
