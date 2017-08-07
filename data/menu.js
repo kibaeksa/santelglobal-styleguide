@@ -189,7 +189,24 @@ var menu = {
                 }
             },
         }
+    },
+    reebokMobile : {
+        name : '리복 모바일',
+        path : '/reebokMobile',
+        menu : {
+            fonts : {
+                name : 'fonts',
+                path : '/reebokMobile/fonts',
+                menu : {
+                    fonts : {
+                        name : 'fonts',
+                        path : '/reebokMobile/fonts/fonts'
+                    }
+                }
+            }
+        }
     }
+
 }
 
 module.exports = menu;

@@ -3,14 +3,14 @@ module.exports = `
         <div class="prefix">기본버튼 (검은색)</div>
         <div class="code-box">
             <pre class="brush: html">
-                <a href="#" class="btn-ctm">
-                    <span>버튼<span class="spt_bg"></span></span>
+                <a href="#" class="btn-area">
+                    <span>캠페인 버튼</span>
                 </a>
             </pre>
         </div>
         <div class="result_box" style="width:400px;">
-            <a href="#" class="btn-ctm">
-                <span>버튼<span class="spt_bg"></span></span>
+            <a href="#" class="btn-area">
+                <span>캠페인 버튼</span>
             </a>
         </div>
     </div>
@@ -27,70 +27,6 @@ module.exports = `
         <div class="result_box" style="width:400px;">
             <a href="#" class="btn-ctm btn-blue">
                 <span>파란색<span class="spt_bg"></span></span>
-            </a>
-        </div>
-    </div>
-
-    <div class="code-wrap">
-        <div class="prefix">회색 버튼</div>
-        <div class="code-box">
-            <pre class="brush: html">
-                <a href="#" class="btn-ctm btn-gray">
-                    <span>회색<span class="spt_bg"></span></span>
-                </a>
-            </pre>
-        </div>
-        <div class="result_box" style="width:400px;">
-            <a href="#" class="btn-ctm btn-gray">
-                <span>회색<span class="spt_bg"></span></span>
-            </a>
-        </div>
-    </div>
-
-    <div class="code-wrap">
-        <div class="prefix">연한회색 버튼</div>
-        <div class="code-box">
-            <pre class="brush: html">
-                <a href="#" class="btn-ctm btn-lgray">
-                    <span>연한 회색<span class="spt_bg"></span></span>
-                </a>
-            </pre>
-        </div>
-        <div class="result_box" style="width:400px;">
-            <a href="#" class="btn-ctm btn-lgray">
-                <span>연한 회색<span class="spt_bg"></span></span>
-            </a>
-        </div>
-    </div>
-
-    <div class="code-wrap">
-        <div class="prefix">적색 버튼</div>
-        <div class="code-box">
-            <pre class="brush: html">
-                <a href="#" class="btn-ctm btn-red">
-                    <span>적색<span class="spt_bg"></span></span>
-                </a>
-            </pre>
-        </div>
-        <div class="result_box" style="width:400px;">
-            <a href="#" class="btn-ctm btn-red">
-                <span>적색<span class="spt_bg"></span></span>
-            </a>
-        </div>
-    </div>
-
-    <div class="code-wrap">
-        <div class="prefix">연한 검은색 버튼</div>
-        <div class="code-box">
-            <pre class="brush: html">
-                <a href="#" class="btn-ctm btn-ldark">
-                    <span>연한 검은색<span class="spt_bg"></span></span>
-                </a>
-            </pre>
-        </div>
-        <div class="result_box" style="width:400px;">
-            <a href="#" class="btn-ctm btn-ldark">
-                <span>연한 검은색<span class="spt_bg"></span></span>
             </a>
         </div>
     </div>
