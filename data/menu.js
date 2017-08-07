@@ -40,6 +40,10 @@ var menu = {
                         name : '버튼',
                         path : '/adidasWeb/ui/button'
                     },
+                    listTemplate : {
+                        name : '리스트 코딩',
+                        path : '/adidasWeb/ui/listTemplate'
+                    },
                     customSelect : {
                         name : '커스텀 셀렉트박스',
                         path : '/adidasWeb/ui/customSelect'
@@ -113,6 +117,10 @@ var menu = {
                     button : {
                         name : '버튼',
                         path : '/adidasMobile/ui/button'
+                    },
+                    listTemplate : {
+                        name : '리스트 코딩',
+                        path : '/adidasMobile/ui/listTemplate'
                     },
                     customSelect : {
                         name : '커스텀 셀렉트박스',
