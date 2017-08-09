@@ -25,7 +25,7 @@
 }
 
 /* 모달팝업 */
-#wrap #contents .modal-popup-wrapper{
+.modal-popup-wrapper{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -36,11 +36,11 @@
 	display: none;
 }
 
-#wrap #contents .modal-popup-wrapper.open{
+.modal-popup-wrapper.open{
 	display: block;
 }
 
-#wrap #contents .modal-popup-wrapper>.overlay{
+.modal-popup-wrapper>.overlay{
 	width: 100%;
 	height: 100%;
 	z-index:700;
@@ -53,7 +53,7 @@
 	left:0;
 }
 
-#wrap #contents .modal-popup-wrapper>.popup{
+.modal-popup-wrapper>.popup{
 	position:absolute;
 	top: 50px;
 	left: 50%;
@@ -61,13 +61,13 @@
 	z-index: 701;
 }
 
-#wrap #contents .modal-popup-wrapper>.popup .popup-header{
+.modal-popup-wrapper>.popup .popup-header{
 	padding: 27px 30px;
 	background: #fff;
 	border: 1px solid  #ebebeb;
 }
 
-#wrap #contents .modal-popup-wrapper>.popup .popup-header h2{
+.modal-popup-wrapper>.popup .popup-header h2{
 	font:500 27px/27px 'noto sans kr';
 	letter-spacing: -0.5px;
 	color: #000;
@@ -82,7 +82,7 @@
 	font-weight: bold;
 }
 
-#wrap #contents .modal-popup-wrapper>.popup .popup-header>.close{
+.modal-popup-wrapper>.popup .popup-header>.close{
 	width: 50px;
 	height: 50px;
 	position: absolute;
@@ -90,14 +90,14 @@
 	right:15px;
 }
 
-#wrap #contents .modal-popup-wrapper>.popup .popup-header>.close span{
+.modal-popup-wrapper>.popup .popup-header>.close span{
 	width: 18px;
 	height: 18px;
 	margin: 16px;
 	background-position: -100px -685px;
 }
 
-#wrap #contents .modal-popup-wrapper>.popup .popup-contents{
+.modal-popup-wrapper>.popup .popup-contents{
 	padding: 30px 30px 40px;
 	background: #fff;
 }
