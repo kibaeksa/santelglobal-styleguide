@@ -29,7 +29,7 @@
 
 
 (function($){
-
+    var commonEvents = {};
     var modalPopupContainer = modalPopupContainer || {};
 
     /* Util funtions */
@@ -131,6 +131,10 @@
                         modalpopObj.onload.call(window , modalpopObj);
                     }
 
+                    if(!!commonEvents.onload){
+                        commonEvents.onload.call(window , modalpopObj);
+                    }
+
 
                 }
             }
@@ -146,6 +150,10 @@
                 if(!!modalPopupContainer[setPopupName(popupKey)].onclose){
                     modalPopupContainer[setPopupName(popupKey)].onclose.call(window , modalPopupContainer[setPopupName(popupKey)]);
                 }
+
+                if(!!commonEvents.onclose){
+                    commonEvents.onclose.call(window , modalPopupContainer[setPopupName(popupKey)]);
+                }
             });
 
             $(modalPopupContainer[setPopupName(popupKey)].element).find('.overlay').bind('click',function(){
@@ -153,6 +161,10 @@
 
                 if(!!modalPopupContainer[setPopupName(popupKey)].onclose){
                     modalPopupContainer[setPopupName(popupKey)].onclose.call(window , modalPopupContainer[setPopupName(popupKey)]);
+                }
+
+                if(!!commonEvents.onclose){
+                    commonEvents.onclose.call(window , modalPopupContainer[setPopupName(popupKey)]);
                 }
             });
         }
@@ -251,13 +263,16 @@
                     modalPopupContainer[setPopupName(key)].onopen.call(window , modalPopupContainer[setPopupName(key)]);
                 }
 
+                if(!!commonEvents.onopen){
+                    commonEvents.onopen.call(window , modalPopupContainer[setPopupName(key)]);
+                }
+
             }
         }
     }
 
     function openPopup(key){
         /* 수직 중앙정렬 재설정 */
-
         if(modalPopupContainer[setPopupName(key)].height == 'auto' && modalPopupContainer[setPopupName(key)].valign == 'center'){
             var testElem = $(modalPopupContainer[setPopupName(key)].element).clone();
             testElem.css({
@@ -328,6 +343,10 @@
 
                             if(!!modalPopupContainer[setPopupName(popName)].onopen){
                                 modalPopupContainer[setPopupName(popName)].onopen.call(window , modalPopupContainer[setPopupName(popName)]);
+                            }
+
+                            if(!!commonEvents.onopen){
+                                commonEvents.onopen.call(window , modalPopupContainer[setPopupName(popName)]);
                             }
                         });
                     }
@@ -494,19 +513,36 @@
         },
         closePopup : function(popName){
             closePopup(popName);
+
+            if(!!modalPopupContainer[setPopupName(popName)].onclose){
+                modalPopupContainer[setPopupName(popName)].onclose.call(window , modalPopupContainer[setPopupName(popName)]);
+            }
+
+            if(!!commonEvents.onclose){
+                commonEvents.onclose.call(window , modalPopupContainer[setPopupName(popName)]);
+            }
+
         },
         rerender : function(){
             rerender();
         },
         bind : function(key , eventObj){
-            if(!modalPopupContainer[setPopupName(key)]){
-                modalPopupContainer[setPopupName(key)] = {};
+            var eventName;
+
+            if(typeof key === 'string'){
+                if(!modalPopupContainer[setPopupName(key)]){
+                    modalPopupContainer[setPopupName(key)] = {};
+                }
+                for(eventName in eventObj){
+                    modalPopupContainer[setPopupName(key)][eventName] = eventObj[eventName];
+                }
+            }else{
+                var eventObj_ = key;
+                for(eventName in eventObj_){
+                    commonEvents[eventName] = eventObj_[eventName];
+                }
             }
 
-            var eventName;
-            for(eventName in eventObj){
-                modalPopupContainer[setPopupName(key)][eventName] = eventObj[eventName];
-            }
         }
     };
 

@@ -110,6 +110,50 @@ module.exports = `
     </div>
 
     <div class="code-wrap">
+        <div class="prefix">전체팝업 이벤트 바인딩</div>
+        <div class="code-box">
+            <pre class="brush: js">
+                ModalPopup.bind({
+                    onload : function(obj){
+                        console.log(obj.name);
+                        console.log('전체팝업 onload 이벤트 바인딩');
+                        console.log('-----------------');
+                    },
+                    onopen : function(obj){
+                        console.log(obj.name);
+                        console.log('전체팝업 onopen 이벤트 바인딩');
+                        console.log('-----------------');
+                    },
+                    onclose : function(obj){
+                        console.log(obj.name);
+                        console.log('전체팝업 onclose 이벤트 바인딩');
+                        console.log('-----------------');
+                    }
+                });
+            </pre>
+        </div>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix">특정 팝업 이벤트 바인딩</div>
+        <div class="code-box">
+            <pre class="brush: js">
+                ModalPopup.bind('default-popup',{
+                    onload : function(obj){
+                        console.log('기본팝업 LOADED');
+                    },
+                    onopen : function(obj){
+                        alert('기본팝업 OPEN');
+                    },
+                    onclose : function(obj){
+                        alert('기본팝업 CLOSE');
+                    }
+                });
+            </pre>
+        </div>
+    </div>
+
+    <div class="code-wrap">
         <div class="prefix">스크립트에서 팝업열기</div>
         <div class="code-box">
             <pre class="brush: js">
@@ -164,7 +208,7 @@ module.exports = `
                     },
                     onclose : function(obj){
                         alert('기본팝업 CLOSE');
-                    },
+                    }
                 });
             </pre>
         </div>
@@ -365,7 +409,25 @@ module.exports = `
             },
             onclose : function(obj){
                 alert('기본팝업 CLOSE');
+            }
+        });
+
+        ModalPopup.bind({
+            onload : function(obj){
+                console.log(obj.name);
+                console.log('전체팝업 onload 이벤트 바인딩');
+                console.log('-----------------');
             },
+            onopen : function(obj){
+                console.log(obj.name);
+                console.log('전체팝업 onopen 이벤트 바인딩');
+                console.log('-----------------');
+            },
+            onclose : function(obj){
+                console.log(obj.name);
+                console.log('전체팝업 onclose 이벤트 바인딩');
+                console.log('-----------------');
+            }
         });
 
 
