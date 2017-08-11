@@ -172,11 +172,12 @@ module.exports = `
 
     </style>
     <div class="code-wrap">
+        <div class="prefix">유의사항 : 태그의 순서가 select 다음에 a태그 순 이어야 합니다.</div>
+        <br/><br/><br/>
         <div class="prefix">기본 셀렉트박스</div>
         <div class="code-box">
             <pre class="brush: html">
                 <div class="sel_boxtype sel_design">
-                    <a href="#" class="toggle_arw"><span>베스트순</span></a>
                     <select name="order_by" id="order_by">
                         <option value="1" selected="">베스트순</option>
                         <option value="2">신상품순</option>
@@ -184,6 +185,7 @@ module.exports = `
                         <option value="3">높은가격순</option>
                         <option value="4">낮은가격순</option>
                     </select>
+                    <a href="#" class="toggle_arw"><span>베스트순</span></a>
                 </div>
             </pre>
         </div>
@@ -191,7 +193,6 @@ module.exports = `
         <div class="result_box" style="width:400px;">
 
             <div class="sel_boxtype sel_design">
-                <a href="#" class="toggle_arw"><span>베스트순</span></a>
                 <select name="order_by" id="order_by">
                     <option value="1" selected="">베스트순</option>
                     <option value="2">신상품순</option>
@@ -199,6 +200,41 @@ module.exports = `
                     <option value="3">높은가격순</option>
                     <option value="4">낮은가격순</option>
                 </select>
+                <a href="#" class="toggle_arw"><span>베스트순</span></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix">셀렉트박스 비활성화</div>
+        <div style="padding: 0 0 0 10px;margin-bottom: 10px;font: 13px 'Noto Sans KR';"> select 태그에 <strong style="font-weight:700;">disabled</strong> 속성을 추가합니다.</div>
+        <div class="code-box">
+            <pre class="brush: html">
+                <div class="sel_boxtype sel_design">
+                    <select name="order_by" id="order_by" disabled>
+                        <option value="1" selected="">베스트순</option>
+                        <option value="2">신상품순</option>
+                        <option value="5">상품평순</option>
+                        <option value="3">높은가격순</option>
+                        <option value="4">낮은가격순</option>
+                    </select>
+                    <a href="#" class="toggle_arw"><span>베스트순</span></a>
+                </div>
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+
+            <div class="sel_boxtype sel_design">
+                <select name="order_by" id="order_by" disabled>
+                    <option value="1" selected="">베스트순</option>
+                    <option value="2">신상품순</option>
+                    <option value="5">상품평순</option>
+                    <option value="3">높은가격순</option>
+                    <option value="4">낮은가격순</option>
+                </select>
+                <a href="#" class="toggle_arw"><span>베스트순</span></a>
             </div>
 
         </div>
@@ -211,5 +247,11 @@ module.exports = `
         $('#nav_menu_overlay').remove();
         $('.navmenu_close ').remove();
     </script>
+
+    <style>
+        #container{
+            padding-top:0 !important;
+        }
+    </style>
 
 `;
