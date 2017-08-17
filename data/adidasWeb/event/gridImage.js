@@ -14,6 +14,29 @@ module.exports = `
         </dl>
     </div>
 
+    <div style="margin-bottom:30px;max-width:1200px;min-width:1000px;width:100%;">
+        <img src="/images/image-grid-sample.jpg" alt="" style="width:100%;"/>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix">JAVASCRIPT 프로퍼티 설명</div>
+        <div class="code-box">
+            <pre class="brush: javascript">
+                {
+                    thumb               // 섬네일 이미지
+                    image               // 팝업 눌렀을 때 나오는 큰 이미지
+                    popupContents       // 팝업안에 HTML 있을 경우 HTML 소스
+                }
+
+                /* img1_2 부분에만 있는 프로퍼티 */
+                {
+                    html                // 박스안에 들어갈 HTML 소스
+                }
+
+            </pre>
+        </div>
+    </div>
+
     <div class="code-wrap">
         <div class="prefix">JAVASCRIPT</div>
         <div class="code-box">
