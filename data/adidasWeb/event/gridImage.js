@@ -1,4 +1,5 @@
 module.exports = `
+    <link rel="stylesheet" type="text/css" href="/css/conv/campaign.css">
     <div class="notice">
         <dl>
             <dt>주의사항</dt>
@@ -6,9 +7,7 @@ module.exports = `
                 <ul>
                     <li><span class="code">&lt;link type="text/css" rel="stylesheet" href="/css/adidas/event/campaign.css"/&gt;</span></li>
                     <li><span class="code">&lt;script type="text/javascript" src="/js/adidas/event/commonCampaign.js"&gt;&lt;/script&gt;<br/>
-                            &lt;script type="text/javascript"&gt;<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;initCampaign();<br/>
-                            &lt;/script&gt;</span></li>
+
                     <li>id="container_r" 에 class="campaign-content" 추가</li>
                 </ul>
             </dd>
@@ -16,61 +15,80 @@ module.exports = `
     </div>
 
     <div class="code-wrap">
+        <div class="prefix">JAVASCRIPT</div>
+        <div class="code-box">
+            <pre class="brush: javascript">
+
+                Campaign().ImageGrid('#image-grid',{
+                    img_fixed : {
+                        thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_1_Soccer_480x960_June22_tcm65-161365.jpg?locale=en_GB&device=desktop&version=2',
+                        image : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGridExpanded_1_Soccer_1920x1000_June22_tcm65-161353.jpg?locale=en_GB&device=desktop&version=2',
+                        popupContents : '&lt;button&gt;안녕&lt;/button&gt;'
+                    },
+                    img1_1 : {
+                        thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_2_Training_640x640_June22_tcm65-161389.jpg?locale=en_GB&device=desktop&version=2',
+                        image : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGridExpanded_2_Training_1920x1000_June22_tcm65-161377.jpg?locale=en_GB&device=desktop&version=2'
+                    },
+                    img1_2 : {
+                        thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_4_Training_960x640_June22_tcm65-161391.jpg?locale=en_GB&device=desktop&version=2',
+                        html : '&lt;h4 style="color:#fff;font-size:26px;text-align:center;"&gt;TEST&lt;/h4&gt;'
+                    },
+                    img2_1 : {
+                        thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_3_Training_640x640_June22_tcm65-161390.jpg?locale=en_GB&device=desktop&version=2'
+                    },
+                    img2_2 : {
+                        thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_5_Training_640x640_June22_tcm65-161393.jpg?locale=en_GB&device=desktop&version=2'
+                    },
+                    img2_3 : {
+                        thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_6_Training_640x640_June22_tcm65-161394.jpg?locale=en_GB&device=desktop&version=2'
+                    }
+                });
+
+            </pre>
+        </div>
+
         <div class="prefix">HTML</div>
         <div class="code-box">
             <pre class="brush: html">
-
-                <div class="image-grids init-parallax">
-                    <div class="col fix igrid1"><img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_vert_tcm49-116520.jpg" alt=""></div>
-                    <div class="image-grid">
-                        <div class="col clfix igrid2">
-                            <div class="img1-3">
-                                <img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_square-1_tcm49-116512.jpg" alt="">
-                            </div>
-                            <div class="img2-3  igrid3"></div>
-                        </div>
-                        <div class="col clfix">
-                            <div class="img1-3 igrid4">
-                                <img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_square-2_tcm49-116513.jpg" alt="">
-                            </div>
-                            <div class="img1-3 igrid5">
-                                <img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_square-3_tcm49-116514.jpg" alt="">
-                            </div>
-                            <div class="img1-3 igrid6">
-                                <img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_square-4_tcm49-116515.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                &lt;div id="image-grid"&gt;&lt;/div&gt;
             </pre>
         </div>
 
         <div class="result_box">
             <div class="campaign-content">
-                <div class="image-grids init-parallax">
-                    <div class="col fix igrid1"><img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_vert_tcm49-116520.jpg" alt=""></div>
-                    <div class="image-grid">
-                        <div class="col clfix igrid2">
-                            <div class="img1-3">
-                                <img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_square-1_tcm49-116512.jpg" alt="">
-                            </div>
-                            <div class="img2-3  igrid3"></div>
-                        </div>
-                        <div class="col clfix">
-                            <div class="img1-3 igrid4">
-                                <img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_square-2_tcm49-116513.jpg" alt="">
-                            </div>
-                            <div class="img1-3 igrid5">
-                                <img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_square-3_tcm49-116514.jpg" alt="">
-                            </div>
-                            <div class="img1-3 igrid6">
-                                <img src="http://image.adidas.co.kr/images/adidas/event/xbyo/img-grid_square-4_tcm49-116515.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="image-grid"></div>
             </div>
 
         </div>
     </div>
+
+    <script type="text/javascript" src="/js/conv/commonCampaign.js"></script>
+
+
+    <script>
+        Campaign().ImageGrid('#image-grid',{
+            img_fixed : {
+                thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_1_Soccer_480x960_June22_tcm65-161365.jpg?locale=en_GB&device=desktop&version=2',
+                image : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGridExpanded_1_Soccer_1920x1000_June22_tcm65-161353.jpg?locale=en_GB&device=desktop&version=2',
+                popupContents : '<button>안녕</button>'
+            },
+            img1_1 : {
+                thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_2_Training_640x640_June22_tcm65-161389.jpg?locale=en_GB&device=desktop&version=2',
+                image : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGridExpanded_2_Training_1920x1000_June22_tcm65-161377.jpg?locale=en_GB&device=desktop&version=2'
+            },
+            img1_2 : {
+                thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_4_Training_960x640_June22_tcm65-161391.jpg?locale=en_GB&device=desktop&version=2',
+                html : '<h4 style="color:#fff;font-size:26px;text-align:center;">TEST</h4>'
+            },
+            img2_1 : {
+                thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_3_Training_640x640_June22_tcm65-161390.jpg?locale=en_GB&device=desktop&version=2'
+            },
+            img2_2 : {
+                thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_5_Training_640x640_June22_tcm65-161393.jpg?locale=en_GB&device=desktop&version=2'
+            },
+            img2_3 : {
+                thumb : '//brand.campaign.adidas.com/Images/Sport17_July_Desktop_CLP_ImageGrid_6_Training_640x640_June22_tcm65-161394.jpg?locale=en_GB&device=desktop&version=2'
+            }
+        });
+    </script>
 `;

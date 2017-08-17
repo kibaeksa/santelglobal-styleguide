@@ -29,6 +29,10 @@ var menu = {
                     gridImage : {
                         name : '이미지 그리드',
                         path : '/adidasWeb/event/gridImage'
+                    },
+                    sliders : {
+                        name : '슬라이드',
+                        path : '/adidasWeb/event/sliders'
                     }
                 }
             },
