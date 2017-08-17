@@ -77,17 +77,14 @@ module.exports = `
         /* 이지부스트 폰트 */
         @font-face {
         	font-family: 'YEEZY TSTAR-Bold';
-        	src: url('//image.adidas.co.kr/fonts/yeezy/eot/yeezy_tstar-bold-webfont.eot');
         	src: url('//image.adidas.co.kr/fonts/yeezy/woff/YEEZY TSTAR-Bold.woff') format('woff');
         }
         @font-face {
         	font-family: 'YEEZY TSTAR-Heavy';
-        	src: url('//image.adidas.co.kr/fonts/yeezy/eot/yeezy_tstar-heavy-webfont.eot');
         	src: url('//image.adidas.co.kr/fonts/yeezy/woff/YEEZY TSTAR-Heavy.woff') format('woff');
         }
         @font-face {
         	font-family: 'YEEZY TSTAR-Light';
-        	src: url('//image.adidas.co.kr/fonts/yeezy/eot/yeezy_tstar-light-webfont.eot');
         	src: url('//image.adidas.co.kr/fonts/yeezy/woff/YEEZY TSTAR-Light.woff') format('woff');
         }
 
@@ -386,8 +383,16 @@ module.exports = `
 
     <div class="code-wrap">
         <div class="prefix" style="font:20px 'Decima Mono';">Decima Mono</div>
+        <div style="font-size: 14px;line-height:20px;color: #ff0000;font-weight: 700;padding-left: 10px;margin-bottom: 15px;">* 모바일 로딩 속도 관련 문제로 fonts.css에서 범용적으로 사용하지 않는 폰트는 삭제 하였습니다.<br/>&nbsp;&nbsp;&nbsp;사용 시, 사용하는 페이지 상단에 font-face 따로 선언 해야 함</div>
         <div class="code-box">
             <pre class="brush: css">
+                @font-face{
+                    font-family:'Decima Mono';
+                    src:url('//imagem.adidas.co.kr/fonts/decimamono/woff/32923C_0_0.woff2') format('woff2'),
+                        url('//imagem.adidas.co.kr/fonts/decimamono/woff/32923C_0_0.woff') format('woff'),
+                        url('//imagem.adidas.co.kr/fonts/decimamono/ttf/32923C_0_0.ttf') format('truetype');
+                }
+
                 Regular {
                     font:25px 'Decima Mono';
                 }
@@ -401,8 +406,23 @@ module.exports = `
 
     <div class="code-wrap">
         <div class="prefix" style="font:20px 'adihausDIN-Cond-bold';">YEEZY TSTAR</div>
+        <div style="font-size: 14px;line-height:20px;color: #ff0000;font-weight: 700;padding-left: 10px;margin-bottom: 15px;">* 모바일 로딩 속도 관련 문제로 fonts.css에서 범용적으로 사용하지 않는 폰트는 삭제 하였습니다.<br/>&nbsp;&nbsp;&nbsp;사용 시, 사용하는 페이지 상단에 font-face 따로 선언 해야 함</div>
         <div class="code-box">
             <pre class="brush: css">
+
+                @font-face {
+                    font-family: 'YEEZY TSTAR-Bold';
+                    src: url('//imagem.adidas.co.kr/fonts/yeezy/woff/YEEZY TSTAR-Bold.woff') format('woff');
+                }
+                @font-face {
+                    font-family: 'YEEZY TSTAR-Heavy';
+                    src: url('//imagem.adidas.co.kr/fonts/yeezy/woff/YEEZY TSTAR-Heavy.woff') format('woff');
+                }
+                @font-face {
+                    font-family: 'YEEZY TSTAR-Light';
+                    src: url('//imagem.adidas.co.kr/fonts/yeezy/woff/YEEZY TSTAR-Light.woff') format('woff');
+                }
+
                 Heavy {
                     font:25px 'YEEZY TSTAR-Heavy';
                 }
