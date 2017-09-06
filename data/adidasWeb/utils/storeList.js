@@ -227,8 +227,7 @@ module.exports = `
             htmlString += '             <dt>3. json FTP 업로드</dt>';
             htmlString += '             <dd>';
             htmlString += '                 <p class="desc">다운받은 json 파일을 아래 FTP 경로에 업로드 해주세요.</p>';
-            htmlString += '                 <p class="desc" style="font-weight:700;font-size:14px;">/data/adidas/upload/storelist/json</p>';
-            htmlString += '                 <div class="img"><img src="/images/store_step3.png" alt=""/></div>';
+            htmlString += '                 <p class="desc" style="font-weight:700;font-size:14px;">/upload/storelist/json</p>';
             htmlString += '             </dd>';
             htmlString += '             <dt>4. 링크확인</dt>';
             htmlString += '             <dd>';
@@ -246,6 +245,5 @@ module.exports = `
         }
 
     </script>
-
-
 `;
+/*            htmlString += '                 <div class="img"><img src="/images/store_step3.png" alt=""/></div>';*/
