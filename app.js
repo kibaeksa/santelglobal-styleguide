@@ -102,7 +102,7 @@ var getCityName = function(korName){
 		},
 		{
 			en : 'sejong',
-			kor : '세종시',
+			kor : ['세종','세종시'],
 		},
 		{
 			en : 'busan',
