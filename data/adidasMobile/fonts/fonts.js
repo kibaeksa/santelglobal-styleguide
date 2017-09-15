@@ -234,24 +234,21 @@ module.exports = `
         <div class="code-box">
             <pre class="brush: css">
                 Bold {
-                    font:25px 'NotoSansKRBold';
+                    font:700 25px 'NotoSansKR';
                 }
 
                 Medium {
-                    font:25px 'NotoSansKR';
+                    font:500 25px 'NotoSansKR';
                 }
 
                 Regular {
-                    font:25px 'NotoSansKRRegular';
+                    font:400 25px 'NotoSansKR';
                 }
 
                 Light {
-                    font:25px 'NotoSansKRLight';
+                    font:300 25px 'NotoSansKR';
                 }
 
-                Thin {
-                    font:25px 'NotoSansKRThin';
-                }
             </pre>
         </div>
 
