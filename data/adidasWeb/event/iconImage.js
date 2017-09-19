@@ -24,6 +24,20 @@ module.exports = `
             height: 15px;
             background-position: -685px -478px;
         }
+        .btn_1616_black{
+            display:inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('http://image.adidas.co.kr/images/adidas/event/iniki/icon.png') no-repeat;
+            background-position: 0 0;
+        }
+        .btn_1616_white{
+            display:inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('http://image.adidas.co.kr/images/adidas/event/iniki/icon.png') no-repeat;
+            background-position: 100% 0;
+        }
         .box{width:50%;float:left;height:350px;}
         .prefix{margin:10px 0;}
         .resultbox{padding-top:20px;height:50px;background:#ddd;text-align:center;border:1px solid #ccc;}
@@ -91,6 +105,42 @@ module.exports = `
                         width: 14px;
                         height: 14px;
                         background: url('http://image.adidas.co.kr/images/adidas/common/arrow-right.png');
+                    }
+                </pre>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="prefix">버튼 아이콘 검정색 16x16 안쪽 투명</div>
+            <div class="resultbox">
+                <span class="btn_1616_black"></span>
+            </div>
+            <div class="code-box">
+                <pre class="brush: css">
+                    .css{
+                        display:inline-block;
+                        width: 16px;
+                        height: 16px;
+                        background: url('http://image.adidas.co.kr/images/adidas/event/iniki/icon.png') no-repeat;
+                        background-position: 0 0;
+                    }
+                </pre>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="prefix">버튼 아이콘 흰색 16x16 안쪽 투명</div>
+            <div class="resultbox">
+                <span class="btn_1616_white"></span>
+            </div>
+            <div class="code-box">
+                <pre class="brush: css">
+                    .css{
+                        display:inline-block;
+                        width: 16px;
+                        height: 16px;
+                        background: url('http://image.adidas.co.kr/images/adidas/event/iniki/icon.png') no-repeat;
+                        background-position: 100% 0;
                     }
                 </pre>
             </div>
