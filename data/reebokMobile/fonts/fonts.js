@@ -181,28 +181,23 @@ module.exports = `
             <pre class="brush: css">
 
                 Bold {
-                    font-family:'NotoSansKRBold';
-                    font-size:1.5rem;
+                    font:700 25px 'NotoSansKR';
                 }
 
                 Medium {
-                    font-size:1.5rem;
-                    font-family:'NotoSansKR';
+                    font:500 25px 'NotoSansKR';
                 }
 
                 Regular {
-                    font-size:1.5rem;
-                    font-family:'NotoSansKRRegular';
+                    font:400 25px 'NotoSansKR';
                 }
 
                 Light {
-                    font-size:1.5rem;
-                    font-family:'NotoSansKRLight';
+                    font:300 25px 'NotoSansKR';
                 }
 
                 Thin {
-                    font-size:1.5rem;
-                    font-family:'NotoSansKRThin';
+                    font:100 25px 'NotoSansKR';
                 }
 
             </pre>
