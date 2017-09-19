@@ -33,6 +33,10 @@ var menu = {
                     sliders : {
                         name : '슬라이드',
                         path : '/adidasWeb/event/sliders'
+                    },
+                    iconImage : {
+                        name : '아이콘',
+                        path : '/adidasWeb/event/iconImage'
                     }
                 }
             },
