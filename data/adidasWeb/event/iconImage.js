@@ -104,7 +104,7 @@ module.exports = `
                         display:inline-block;
                         width: 14px;
                         height: 14px;
-                        background: url('http://image.adidas.co.kr/images/adidas/common/arrow-right.png');
+                        background: url('http://image.adidas.co.kr/images/adidas/common/icon_btn_black_14x14.png');
                     }
                 </pre>
             </div>
