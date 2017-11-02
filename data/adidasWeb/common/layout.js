@@ -1,6 +1,6 @@
 module.exports = `
     <div class="code-wrap">
-        <div class="prefix">기본 레이아웃</div>
+        <div class="prefix">기본 레이아웃 수정버전</div>
         <div class="code-box">
             <pre class="brush: html">
                 <div id="wrap">
