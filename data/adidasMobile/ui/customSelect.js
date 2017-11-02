@@ -242,7 +242,7 @@ module.exports = `
 
 
 
-    <script type="text/javascript" src="http://imagem.adidas.co.kr/js/adidas/common.js"></script>
+    <script type="text/javascript" src="//imagem.adidas.co.kr/js/adidas/common.js"></script>
     <script type="text/javascript">
         $('#nav_menu_overlay').remove();
         $('.navmenu_close ').remove();
