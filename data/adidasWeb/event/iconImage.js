@@ -38,6 +38,20 @@ module.exports = `
             background: url('http://image.adidas.co.kr/images/adidas/event/iniki/icon.png') no-repeat;
             background-position: 100% 0;
         }
+        .arrow_1010_white{
+            display:inline-block;
+            width: 10px;
+            height: 10px;
+            background: url('http://image.adidas.co.kr/images/adidas/common/arrow10x10_right.png') no-repeat;
+            background-position: 100% 0;
+        }
+        .arrow_1010_white_left{
+            display:inline-block;
+            width: 10px;
+            height: 10px;
+            background: url('http://image.adidas.co.kr/images/adidas/common/arrow10x10_left.png') no-repeat;
+            background-position: 100% 0;
+        }
         .box{width:50%;float:left;height:350px;}
         .prefix{margin:10px 0;}
         .resultbox{padding-top:20px;height:50px;background:#ddd;text-align:center;border:1px solid #ccc;}
@@ -190,6 +204,42 @@ module.exports = `
                         width: 15px;
                         height: 15px;
                         background-position: -685px -478px;
+                    }
+                </pre>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="prefix">흰색 10x10 화살표 ></div>
+            <div class="resultbox">
+                <span class="arrow_1010_white"></span>
+            </div>
+            <div class="code-box">
+                <pre class="brush: css">
+                    .css{
+                        display:inline-block;
+                        width: 10px;
+                        height: 10px;
+                        background: url('http://image.adidas.co.kr/images/adidas/common/arrow10x10_right.png') no-repeat;
+                        background-position: 100% 0;
+                    }
+                </pre>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="prefix">흰색 10x10 화살표 <</div>
+            <div class="resultbox">
+                <span class="arrow_1010_white_left"></span>
+            </div>
+            <div class="code-box">
+                <pre class="brush: css">
+                    .css{
+                        display:inline-block;
+                        width: 10px;
+                        height: 10px;
+                        background: url('http://image.adidas.co.kr/images/adidas/common/arrow10x10_left.png') no-repeat;
+                        background-position: 100% 0;
                     }
                 </pre>
             </div>

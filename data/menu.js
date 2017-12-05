@@ -115,6 +115,10 @@ var menu = {
                     className : {
                         name : '공통클래스 사용',
                         path : '/adidasMobile/common/className'
+                    },
+                    iconImage : {
+                        name : '아이콘',
+                        path : '/adidasMobile/common/iconImage'
                     }
                 }
             },
