@@ -184,6 +184,16 @@ var menu = {
         name : '리복 웹',
         path : '/reebokWeb',
         menu : {
+            event : {
+                name : '이벤트',
+                path : '/reebokWeb/event',
+                menu : {
+                    iconImage : {
+                        name : '아이콘',
+                        path : '/reebokWeb/event/iconImage'
+                    }
+                }
+            },
             fonts : {
                 name : 'fonts',
                 path : '/reebokWeb/fonts',
