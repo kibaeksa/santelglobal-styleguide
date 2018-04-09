@@ -25,7 +25,7 @@ module.exports = `
         	src: url('//image.adidas.co.kr/fonts/NotoSansKr/woff/NotoSansKr-medium.woff') format('woff');
         }
 
-        /* 아디하우스 폰트 - 사용 안 하는 폰트 */
+        /* 아디하우스 폰트 - 운영에 선언이 안 된 폰트 */
         @font-face {
         	font-family: 'adihaus-it-bold';
             src: url('//image.adidas.co.kr/fonts/adihaus/bold/ADIHBDIT.eot');
@@ -357,9 +357,9 @@ module.exports = `
                 	font-style:'italic';
                 }
 
-                Italic {
+                Medium{
                     font:25px 'AdihausDIN-Cond';
-                    font-style:'italic';
+                    font-style: Medium';
                 }
 
                 Regular {

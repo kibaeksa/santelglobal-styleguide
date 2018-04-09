@@ -1,0 +1,25 @@
+{
+    "title" : "sdfs" ,
+    "categoryList" : [
+        {
+            "en" : "null",
+            "kor" : "null"
+        }
+    ],
+    "addressList" : {
+        "all" : [
+            {
+                "name" : "sdf",
+                "address" : "sdf",
+                "phone" : "0"
+            }
+        ],
+        "null" : [
+            {
+                "name" : "sdf",
+                "address" : "sdf",
+                "phone" : "0"
+            }
+        ]
+    }
+}
