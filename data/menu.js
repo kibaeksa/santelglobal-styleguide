@@ -85,6 +85,10 @@ var menu = {
                     storeList : {
                         name : '매장리스트',
                         path : '/adidasWeb/utils/storeList'
+                    },
+                    prdList : {
+                        name : '상품리스트',
+                        path : '/adidasWeb/utils/prdList'
                     }
                 }
             },

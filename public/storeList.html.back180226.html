@@ -10,7 +10,205 @@
 
     <script type="text/javascript" src="http://image.reebok.co.kr/js/jquery/jquery-1.4.2.js"></script>
 
+    <style type="text/css">
 
+        #wrap{
+            width: 800px;
+            margin: 0 auto;
+            padding-bottom: 100px;
+        }
+
+        #wrap h1{
+            padding: 15px 0;
+            font:700 20px/20px 'asd','NotoSansKR','Nanum Gothic';
+            color: #000;
+            letter-spacing: -1px;
+        }
+
+        #wrap .filter{
+            position: relative;
+            height: 30px;
+            padding: 10px;
+            background: #ccc;
+        }
+
+        #wrap .filter .search{
+            position: absolute;
+            top: 6px;
+            right: 10px;
+        }
+
+        #wrap .filter .search input{
+            width: 180px;
+            height: 35px;
+            padding-left: 10px;
+            font:500 13px/35px 'NotoSansKR';
+            color: #000;
+        }
+
+        #wrap .filter .selecbox_custom{
+            position: relative;
+            width: 160px;
+            height: 30px;
+            background: #fff;
+        }
+
+        #wrap .filter .selecbox_custom select{
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            height: 30px;
+            opacity: 0;
+            font:500 13px 'NotoSansKR','Nanum Gothic';
+            color: #000;
+        }
+
+        #wrap .filter .selecbox_custom a{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            font:500 13px 'NotoSansKR','Nanum Gothic';
+            padding: 5px;
+            color: #000;
+        }
+
+        #wrap .filter .selecbox_custom a strong{
+            font-weight: normal;
+        }
+
+        #wrap .filter .selecbox_custom a .spt_bg{
+            width: 14px;
+            height: 10px;
+            background-position:-240px -39px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+
+        #wrap .store_list{
+            border-top: 1px solid  #ccc;
+        }
+
+        #wrap .store_list li{
+            position: relative;
+            padding: 10px 0;
+            border-bottom: 1px solid  #ccc;
+        }
+
+        #wrap .store_list li>*{
+            margin-bottom: 5px;
+            color: #000;
+            font:500 13px/13px 'NotoSansKR','Nanum Gothic';
+        }
+
+        #wrap .store_list li .name{
+            margin-bottom: 10px;
+            font:700 15px 'NotoSansKR','Nanum Gothic';
+        }
+
+        #wrap .store_list li .name .keyword,
+        #wrap .store_list li .address .keyword{
+            background:yellow;
+            color: #000;
+            font-weight: 900;
+        }
+
+        #wrap .store_list li .phone{
+            margin-bottom: 0;
+        }
+
+        #wrap .nodata{
+           padding:60px 0;
+           font:300 22px 'NotoSansKR';
+           text-align:center;
+           color:#000;
+       }
+
+        #wrap .store_list li .map{
+            position: absolute;
+            top: 30px;
+            right: 10px;
+        }
+
+        #wrap .store_list li .map a{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 760px){
+            #wrap{
+                width: 100%;
+                padding-bottom: 0;
+            }
+
+            #wrap h1{
+                padding:25px 10px 10px;
+            }
+
+            #wrap .store_list li{
+                padding: 10px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            #wrap .store_list li .name{
+                font-size: 13px;
+            }
+
+            #wrap .store_list li .address{
+                margin-bottom: 7px;
+                line-height: 17px;
+            }
+
+            #wrap .store_list li .phone{
+                color:blue;
+            }
+
+            #wrap .filter{
+                height: auto;
+            }
+
+            #wrap .filter .selecbox_custom{
+                width: 100%;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            #wrap .filter .selecbox_custom a{
+                width: 100%;
+                height: 40px;
+                padding-top: 10px;
+                padding-left: 10px;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+
+            #wrap .filter .selecbox_custom select{
+                height: 100%;
+            }
+
+            #wrap .filter .search{
+                width: 100%;
+                position: relative;
+                top: 0;
+                left: 0;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+
+            #wrap .filter .search input{
+                width: 100%;
+                height: 40px;
+                list-style: 40px;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                border-width: 0;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -30,7 +228,7 @@
         (function(){
             paramName = window.location.href.split('?');
             if(paramName.length <= 1){
-                loadPage('매장 데이터가 없습니다...!');
+                loadPage('매장 데이터가 없습니다.');
             }else{
             paramName = paramName[paramName.length-1];
                 loadPage();
@@ -56,10 +254,10 @@
                     categoryList = result.categoryList;
                     categoryList.unshift({
                         en : 'all',
-                        kor : '전체1'
+                        kor : '전체'
                     });
 
-                    currentCityName = '전체1';
+                    currentCityName = '전체';
                     currentCityKey = 'all';
                     title = result.title;
                     initStoreList();
@@ -70,7 +268,7 @@
 
                 },
                 error:function(e){
-                    $('#wrap').html('<div class="nodata">데이터를 로드 할 수 없습니다...</div>');
+                    $('#wrap').html('<div class="nodata">데이터를 로드 할 수 없습니다.</div>');
                     $('#loading').remove();
                 }
             });
@@ -80,7 +278,23 @@
         function render(data){
 
             var htmlString = '<h1>'+title+'</h1>';
-
+            htmlString += '<div class="filter">';
+            if(categoryList.length >= 2){
+                htmlString += '    <div class="selecbox_custom">';
+                htmlString += '    <a href="javascript:void(0)"><strong>'+currentCityName+'</strong><span class="spt_bg"></span></a>';
+                htmlString += '        <select name="selectCity" id="selectCity">';
+                for(var i = 0; i < categoryList.length; i++){
+                    if(categoryList[i].kor == currentCityName){
+                        htmlString += '            <option selected value="'+categoryList[i].en+'">'+categoryList[i].kor+'</option>';
+                    }else{
+                        htmlString += '            <option value="'+categoryList[i].en+'">'+categoryList[i].kor+'</option>';
+                    }
+                }
+                htmlString += '        </select>';
+                htmlString += '    </div>';
+            }
+            htmlString += '    <div class="search"><input type="text" id="search_box" placeholder="주소 검색"/></div>';
+            htmlString += '</div>'
             htmlString += '<div id="storeList"></div>';
 
             $('#wrap').html(htmlString);

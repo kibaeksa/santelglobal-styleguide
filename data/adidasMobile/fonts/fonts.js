@@ -25,7 +25,7 @@ module.exports = `
         	src: url('//image.adidas.co.kr/fonts/NotoSansKr/woff/NotoSansKr-medium.woff') format('woff');
         }
 
-        /* 아디하우스 폰트 */
+        /* 아디하우스 폰트 - 사용 안 하는 폰트 */
         @font-face {
         	font-family: 'adihaus-it-bold';
             src: url('//image.adidas.co.kr/fonts/adihaus/bold/ADIHBDIT.eot');
@@ -291,6 +291,7 @@ module.exports = `
         </div>
     </div>
 
+<!--
     <div class="code-wrap">
         <div class="prefix" style="font:20px 'adihaus-bold';letter-spacing:1px;">Adihaus</div>
         <div class="code-box">
@@ -320,7 +321,7 @@ module.exports = `
             <div class="adihaus-regular-it">Adihaus italic regular</div>
         </div>
     </div>
-
+-->
     <div class="code-wrap">
         <div class="prefix" style="font:20px 'adihaus-bold';letter-spacing:1px;">Adihaus Din</div>
         <div class="code-box">
@@ -342,7 +343,7 @@ module.exports = `
     </div>
 
     <div class="code-wrap">
-        <div class="prefix" style="font:20px 'adihausDIN-Cond-bold';">Adihaus DIN Cond</div>
+        <div class="prefix" style="font:20px 'adihaus-din-cond-Medium';">Adihaus DIN Cond</div>
         <div class="code-box">
             <pre class="brush: css">
                 Bold {
