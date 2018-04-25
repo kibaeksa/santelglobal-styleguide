@@ -239,7 +239,72 @@ var menu = {
                 }
             }
         }
-    }
+    },
+    adidasMobile_ver1 : {
+        name : '아디다스 모바일 ver 1.0',
+        path : '/adidasMobile_ver1',
+        menu : {
+            common : {
+                name : '기본',
+                path : '/adidasMobile_ver1/common',
+                menu : {
+                    layout : {
+                        name : '레이아웃',
+                        path : '/adidasMobile_ver1/common/layout'
+                    },
+                    className : {
+                        name : '공통클래스 사용',
+                        path : '/adidasMobile_ver1/common/className'
+                    },
+                    iconImage : {
+                        name : '아이콘',
+                        path : '/adidasMobile_ver1/common/iconImage'
+                    }
+                }
+            },
+            ui:{
+                name : 'ui',
+                path : '/adidasMobile/ui',
+                menu : {
+                    button : {
+                        name : '버튼',
+                        path : '/adidasMobile_ver1/ui/button'
+                    },
+                    listTemplate : {
+                        name : '리스트 코딩',
+                        path : '/adidasMobile_ver1/ui/listTemplate'
+                    },
+                    customSelect : {
+                        name : '커스텀 셀렉트박스',
+                        path : '/adidasMobile_ver1/ui/customSelect'
+                    },
+                    customForm : {
+                        name : '커스텀 폼',
+                        path : '/adidasMobile_ver1/ui/customForm'
+                    },
+                    paging : {
+                        name : '페이징',
+                        path : '/adidasMobile_ver1/ui/paging'
+                    },
+                }
+            },
+            fonts: {
+                name : 'fonts',
+                path : '/adidasMobile_ver1/fonts',
+                menu : {
+                    fonts : {
+                        name : 'fonts',
+                        path : '/adidasMobile_ver1/fonts/fonts'
+                    },
+                    glyphicons: {
+                        name : 'Glyphicons',
+                        path : '/adidasMobile_ver1/fonts/glyphicons',
+                    }
+                }
+            }
+        }
+    },
+
 
 }
 
