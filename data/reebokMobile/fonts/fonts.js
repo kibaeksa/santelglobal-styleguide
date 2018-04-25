@@ -122,6 +122,32 @@ module.exports = `
           font-style: normal;
         }
 
+        @font-face{
+            font-family: 'FrankRuhlLibre';
+            font-weight: 700;
+            src: url('//imagem.reebok.co.kr/fonts/FrankRuhlLibre/FrankRuhlLibre-Black.ttf');
+        }
+        @font-face{
+            font-family: 'FrankRuhlLibre';
+            font-weight: 500;
+            src: url('//imagem.reebok.co.kr/fonts/FrankRuhlLibre/FrankRuhlLibre-Bold.ttf');
+        }
+        @font-face{
+            font-family: 'FrankRuhlLibre';
+            font-weight: 400;
+            src: url('//imagem.reebok.co.kr/fonts/FrankRuhlLibre/FrankRuhlLibre-Medium.ttf');
+        }
+        @font-face{
+            font-family: 'FrankRuhlLibre';
+            font-weight: 300;
+            src: url('//imagem.reebok.co.kr/fonts/FrankRuhlLibre/FrankRuhlLibre-Regular.ttf');
+        }
+        @font-face{
+            font-family: 'FrankRuhlLibre';
+            font-weight: 100;
+            src: url('//imagem.reebok.co.kr/fonts/FrankRuhlLibre/FrankRuhlLibre-Light.ttf');
+        }
+
         .notoSansBold{
             font: 1.5rem 'NotoSansKRBold';
         }
@@ -147,12 +173,9 @@ module.exports = `
         .reefontLight{
             font: 1.5rem 'reefont-light';
         }
-
         .reefontCond{
             font: 1.5rem 'reefont-condensed';
         }
-
-
         .dinpro-CondLight{
             font:100 1.5rem 'dinpro cond';
         }
@@ -165,18 +188,31 @@ module.exports = `
         .dinpro-CondBold{
             font:700 1.5rem 'dinpro cond';
         }
-
         .QStencil{
             font: 1.5rem 'QStencil';
         }
-
-
+        .frankRLBlack{
+            font:700 25px 'FrankRuhlLibre';
+        }
+        .frankRLBold{
+            font:500 25px 'FrankRuhlLibre';
+        }
+        .frankRLMedium{
+            font:400 25px 'FrankRuhlLibre';
+        }
+        .frankRLRegular{
+            font:300 25px 'FrankRuhlLibre';
+        }
+        .frankRLLight{
+            font:100 25px 'FrankRuhlLibre';
+        }
 
     </style>
 
 
     <div class="code-wrap">
         <div class="prefix" style="">구글 노토산스 폰트</div>
+        <div style="margin-bottom:10px;color:#bb0000;font-size:13px;font-weight:bold;">***font-family에 font-weight으로 구분을 하는 방법</div>
         <div class="code-box">
             <pre class="brush: css">
 
@@ -299,6 +335,48 @@ module.exports = `
 
         <div class="result_box" style="width:400px;">
             <div class="QStencil">QStencil</div>
+        </div>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix" style="font-family:FrankRuhlLibre">FrankRuhlLibre</div>
+        <div style="margin-bottom:10px;color:#bb0000;font-size:13px;font-weight:bold;">***font-family에 font-weight으로 구분을 하는 방법</div>
+        <div class="code-box">
+            <pre class="brush: css">
+                Black {
+                    font-family:'FrankRuhlLibre';
+                    font-weight: 700;
+                    font-size:25px;
+                }
+                Bold {
+                    font-family:'FrankRuhlLibre';
+                    font-weight: 500;
+                    font-size:25px;
+                }
+                Medium {
+                    font-family:'FrankRuhlLibre';
+                    font-weight: 400;
+                    font-size:25px;
+                }
+                Regular {
+                    font-family:'FrankRuhlLibre';
+                    font-weight: 300;
+                    font-size:25px;
+                }
+                Light {
+                    font-family:'FrankRuhlLibre';
+                    font-weight: 100;
+                    font-size:25px;
+                }
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+            <div class="frankRLBlack">FrankRLBlack</div>
+            <div class="frankRLBold">FrankRLBold</div>
+            <div class="frankRLMedium">FrankRLMedium</div>
+            <div class="frankRLRegular">FrankRLRegular</div>
+            <div class="frankRLLight">FrankRLLight</div>
         </div>
     </div>
 
