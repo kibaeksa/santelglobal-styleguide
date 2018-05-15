@@ -38,6 +38,10 @@ module.exports = `
     	color: #000;
     	background: #dedede;
     }
+    .button_area>*.mild_gray>a{
+        color: #fff;
+        background: #ccc;
+    }
     .button_area.col2>*{
     	width: 50%;
     	float: left;
@@ -170,6 +174,22 @@ module.exports = `
         <div class="result_box" style="width:400px;">
             <div class="button_area">
                 <div class="l_gray"><a href="#">확인</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix">연한회색 버튼(#ccc)</div>
+        <div class="code-box">
+            <pre class="brush: html">
+                <div class="button_area">
+                    <div class="mild_gray"><a href="#">확인</a></div>
+                </div>
+            </pre>
+        </div>
+        <div class="result_box" style="width:400px;">
+            <div class="button_area">
+                <div class="mild_gray"><a href="#">확인</a></div>
             </div>
         </div>
     </div>
