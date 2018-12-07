@@ -78,6 +78,12 @@ module.exports = `
         }
 
         @font-face {
+          font-family: 'DINWebPro-CondBlack';
+          src: url('//image.reebok.co.kr/fonts/dinWebpro/eot/DINWebPro-CondBlack.eot'),
+          	   url('//image.reebok.co.kr/fonts/dinWebpro/otf/DINWebPro-CondBlack.otf') format('truetype');
+        }
+
+        @font-face {
         	font-family: 'dinpro';
             src: url('//image.reebok.co.kr/fonts/dinpro/DINPro-Regular.eot');
             src: url('//image.reebok.co.kr/fonts/dinpro/DINPro-Regular.eot?#iefix') format('embedded-opentype'),
@@ -93,6 +99,12 @@ module.exports = `
         		 url('//image.reebok.co.kr/fonts/dinpro/DINPro-Bold.woff2') format('woff2'),
         		 url('//image.reebok.co.kr/fonts/dinpro/DINPro-Bold.woff') format('woff'),
         		 url('//image.reebok.co.kr/fonts/dinpro/DINPro-Bold.ttf') format('truetype');
+        }
+
+        @font-face {
+          font-family: 'dinpro black';
+          src: url('//image.reebok.co.kr/fonts/dinpro/DINPro-Black.eot'),
+               url('//image.reebok.co.kr/fonts/dinpro/DINPro-Black.ttf') format('truetype');
         }
 
         @font-face {
@@ -163,11 +175,17 @@ module.exports = `
         .dinpro-CondBold{
             font:25px 'DINWebPro-CondBold';
         }
+        .dinpro-CondBlack{
+            font:25px 'DINWebPro-CondBlack';
+        }
         .dinpro{
             font: 25px 'dinpro';
         }
         .dinproBold{
             font: 25px 'dinpro bold';
+        }
+        .dinproBlack{
+            font: 25px 'dinpro black';
         }
         .QStencil{
             font:25px 'QStencil';
@@ -278,6 +296,11 @@ module.exports = `
         <div class="prefix" style="font: 25px 'DINWebPro-Cond';">DINWebPro-Cond</div>
         <div class="code-box">
             <pre class="brush: css">
+                Black {
+                    font-family:'DINWebPro-CondBlack';
+                    font-size:25px;
+                }
+
                 Bold {
                     font-family:'DINWebPro-CondBold';
                     font-size:25px;
@@ -301,6 +324,7 @@ module.exports = `
         </div>
 
         <div class="result_box" style="width:400px;">
+            <div class="dinpro-CondBlack">DINWebPro-CondBlack</div>
             <div class="dinpro-CondBold">DINWebPro-CondBold</div>
             <div class="dinpro-CondMedium">DINWebPro-CondMedium</div>
             <div class="dinpro-Cond">DINWebPro-Cond</div>
@@ -312,6 +336,11 @@ module.exports = `
         <div class="prefix" style="font-family:dinpro">DINPRO</div>
         <div class="code-box">
             <pre class="brush: css">
+                Black {
+                    font-family:'dinpro black';
+                    font-size:25px;
+                }
+
                 Bold {
                     font-family:'dinpro bold';
                     font-size:25px;
@@ -325,6 +354,7 @@ module.exports = `
         </div>
 
         <div class="result_box" style="width:400px;">
+            <div class="dinproBlack">DINPRO Black</div>
             <div class="dinproBold">DINPRO Bold</div>
             <div class="dinpro">DINPRO</div>
         </div>

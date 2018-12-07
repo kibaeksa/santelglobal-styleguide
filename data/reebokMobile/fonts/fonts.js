@@ -65,6 +65,13 @@ module.exports = `
         }
 
         @font-face {
+        	font-family:'dinpro cond';
+        	src: url('//imagem.reebok.co.kr/fonts/dinWebpro/woff/DINWebPro-CondBlack.woff') format('woff');
+        	font-weight:900;
+        	font-style:normal;
+        }
+
+        @font-face {
           font-family:'dinpro cond';
           font-weight : 700;
           font-style: normal;
@@ -108,6 +115,14 @@ module.exports = `
           src: url('//imagem.reebok.co.kr/fonts/dinpro/DINPro-Regular.woff2') format('woff2'),
                url('//imagem.reebok.co.kr/fonts/dinpro/DINPro-Regular.woff') format('woff'),
                url('//imagem.reebok.co.kr/fonts/dinpro/DINPro-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+        	font-family: 'dinpro';
+        	src: url('//imagem.reebok.co.kr/fonts/dinpro/DINPro-Black.woff') format('woff'),
+            url('//imagem.reebok.co.kr/fonts/dinpro/DINPro-Black.ttf') format('truetype');
+        	font-weight: 700;
+        	font-style: normal;
         }
 
         @font-face {
@@ -187,6 +202,9 @@ module.exports = `
         }
         .dinpro-CondBold{
             font:700 1.5rem 'dinpro cond';
+        }
+        .dinpro-CondBlack{
+            font:900 1.5rem 'dinpro cond';
         }
         .QStencil{
             font: 1.5rem 'QStencil';
@@ -290,6 +308,11 @@ module.exports = `
         <div class="prefix" style="font-family:dinpro cond; font-size:1.5rem;">dinpro cond</div>
         <div class="code-box">
             <pre class="brush: css">
+                Black {
+                    font-family:'dinpro cond';
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                }
                 Bold {
                     font-family:'dinpro cond';
                     font-size: 1.5rem;
@@ -314,6 +337,7 @@ module.exports = `
         </div>
 
         <div class="result_box" style="width:400px;">
+            <div class="dinpro-CondBlack">dinpro-CondBlack</div>
             <div class="dinpro-CondBold">dinpro-CondBold</div>
             <div class="dinpro-CondMedium">dinpro-CondMedium</div>
             <div class="dinpro-Cond">dinpro-Cond</div>
