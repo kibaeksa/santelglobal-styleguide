@@ -1,5 +1,71 @@
 module.exports = `
     <div class="code-wrap">
+        <div class="prefix">그림자 기본버튼 (검은색)</div>
+        <div class="code-box">
+            <pre class="brush: html">
+                <div class="button_area_v2" style="">
+    				<div class="">
+    					<div class="bg"></div>
+    					<a href="#">
+    						아디다스 메인 가기
+    						<span class="arrow">
+    							<em class="top"></em>
+    							<em class="bottom"></em>
+    						</span>
+    					</a>
+    				</div>
+    			</div>
+            </pre>
+        </div>
+        <div class="result_box" style="width:400px;">
+            <div class="button_area_v2" style="">
+                <div class="">
+                    <div class="bg"></div>
+                    <a href="#">
+                        아디다스 메인 가기
+                        <span class="arrow">
+                            <em class="top"></em>
+                            <em class="bottom"></em>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="code-wrap">
+        <div class="prefix">그림자 흰색 버튼 </div>
+        <div class="code-box">
+            <pre class="brush: html">
+                <div class="button_area_v2" >
+    				<div class="white">
+    					<div class="bg"></div>
+    					<a href="#">
+    						아디다스 메인 가기
+    						<span class="arrow">
+    							<em class="top"></em>
+    							<em class="bottom"></em>
+    						</span>
+    					</a>
+    				</div>
+    			</div>
+            </pre>
+        </div>
+        <div class="result_box" style="width:400px;background:#555;padding:20px;">
+            <div class="button_area_v2" >
+                <div class="white">
+                    <div class="bg"></div>
+                    <a href="#">
+                        아디다스 메인 가기
+                        <span class="arrow">
+                            <em class="top"></em>
+                            <em class="bottom"></em>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="code-wrap">
         <div class="prefix">기본버튼 (검은색)</div>
         <div class="code-box">
             <pre class="brush: html">
