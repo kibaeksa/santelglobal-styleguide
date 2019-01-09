@@ -112,8 +112,133 @@ module.exports = `
         transform: translate3d(-10px,0,0);
         -webkit-transform: translate3d(-10px,0%,0);
     }
+    .button_area_v2>div{position: relative;}
+    .button_area_v2 a span.arrow{
+        position: relative;
+        top: -1px;
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+    .button_area_v2 a span.arrow::after{
+        position: absolute;
+        top: -3px;
+        right: -2px;
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 3px;
+        background: #fff;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+    .button_area_v2 a span.arrow::before{
+        position: absolute;
+        bottom: -3px;
+        right: -2px;
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 3px;
+        background: #fff;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .button_area_v2 a{
+        display: block;
+        text-align: center;
+        height: 50px;
+        font:500 15px/49px 'NotoSansKR';
+        color: #fff;
+        background: #000;
+    }
+    .button_area_v2 a::after{
+        display: block;
+        content: '';
+        position:absolute;
+        top:0;
+        left: 0;
+        width:100%;
+        height: 100%;
+        transform: translate(3px,3px);
+        -webkit-transform: translate(3px,3px);
+    }
+    .button_area_v2 a::after{
+        display: block;
+        content: '';
+        position:absolute;
+        top:0;
+        left: 0;
+        width:100%;
+        height: 100%;
+        transform: translate(3px,3px);
+        -webkit-transform: translate(3px,3px);
+        box-shadow: inset 0 0 0 1px #000;
+        -webkit-box-shadow: inset 0 0 0 1px #000;
+    }
+    .button_area_v2>div.white a{background: #fff;color: #000;}
+    .button_area_v2>div.white a::after{box-shadow: inset 0 0 0 1px #fff;-webkit-box-shadow: inset 0 0 0 1px #fff;}
+    .button_area_v2>div.white a span.arrow::after,.button_area_v2>div.white a span.arrow::before{background: #000;}
+    .button_area_v2>div.white a span{background: #000;}
 
     </style>
+
+    <div class="code-wrap">
+        <div class="prefix">기본 그림자 버튼 (검은색)</div>
+        <p style="color:red;padding:0 0 10px 0;font-size:13px;">* 개별 수정시 유동값은 with, line-height, height</p>
+        <div class="code-box">
+            <pre class="brush: html">
+                <div class="button_area_v2">
+    				<div class="">
+    					<a href="#">
+    						아디다스 메인 가기
+    						<span class="arrow"></span>
+    					</a>
+    				</div>
+    			</div>
+            </pre>
+        </div>
+        <div class="result_box" style="width:400px;">
+            <div class="button_area_v2">
+                <div class="">
+                    <a href="#">
+                        아디다스 메인 가기
+                        <span class="arrow"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix">그림자 하얀색 버튼</div>
+        <div class="code-box">
+            <pre class="brush: html">
+                <div class="button_area_v2">
+                    <div class="white">
+                        <a href="#">
+                            아디다스 메인 가기
+                            <span class="arrow"></span>
+                        </a>
+                    </div>
+                </div>
+            </pre>
+        </div>
+        <div class="result_box" style="width:400px;background:#ddd;padding:15px;">
+            <div class="button_area_v2">
+                <div class="white">
+                    <a href="#">
+                        아디다스 메인 가기
+                        <span class="arrow"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="code-wrap">
         <div class="prefix">기본버튼 (검은색)</div>
         <div class="code-box">
