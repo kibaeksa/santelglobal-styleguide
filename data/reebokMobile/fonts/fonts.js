@@ -233,7 +233,7 @@ module.exports = `
             font:100 25px 'FrankRuhlLibre';
         }
         .PFDinMonoPro-Bold{
-            font:700 25px 'PFDinMonoPro-Bold';
+            font:700 1.5rem 'PFDinMonoPro-Bold';
         }
     </style>
 
