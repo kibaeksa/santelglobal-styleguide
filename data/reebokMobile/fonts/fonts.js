@@ -165,11 +165,11 @@ module.exports = `
         @font-face{
             font-family: 'PFDinMonoPro-Bold';
             font-weight: 700;
-            src:url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.eot') format('embedded-opentype'),
-            url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.otf') format('opentype'),
-            url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.ttf') format('truetype'),
-            url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff') format('woff'),
-            url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff2') format('woff2');
+            src:url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.eot') format('embedded-opentype'),
+            url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.otf') format('opentype'),
+            url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.ttf') format('truetype'),
+            url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff') format('woff'),
+            url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff2') format('woff2');
         }
         .notoSansBold{
             font: 1.5rem 'NotoSansKRBold';

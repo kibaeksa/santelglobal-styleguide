@@ -141,11 +141,11 @@ module.exports = `
         @font-face{
             font-family: 'PFDinMonoPro-Bold';
             font-weight: 700;
-            src:url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.eot') format('embedded-opentype'),
-            url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.otf') format('opentype'),
-            url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.ttf') format('truetype'),
-            url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff') format('woff'),
-            url('/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff2') format('woff2');
+            src:url('//image.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.eot') format('embedded-opentype'),
+            url('//image.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.otf') format('opentype'),
+            url('//image.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.ttf') format('truetype'),
+            url('//image.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff') format('woff'),
+            url('//image.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff2') format('woff2');
         }
 
 
