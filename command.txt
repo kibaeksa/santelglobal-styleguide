@@ -1,0 +1,21 @@
+git init
+
+git clone 저장소주소 폴더명
+
+git fetch
+
+git status
+
+git --version
+
+add
+git add .
+
+commit
+git commit -m "내용"
+
+push (Heroku 실제반영)
+git push heroku master
+
+pull
+git pull heroku master 
