@@ -320,7 +320,7 @@ module.exports = `
             <pre class="brush: css">
                 Bold {
                     font-family:'PFDinMonoPro-Bold';
-                    font-size:25px;
+                    font-size:1.5rem;
                 }
             </pre>
         </div>
