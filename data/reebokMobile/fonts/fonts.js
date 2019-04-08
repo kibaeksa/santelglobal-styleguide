@@ -162,7 +162,15 @@ module.exports = `
             font-weight: 100;
             src: url('//imagem.reebok.co.kr/fonts/FrankRuhlLibre/FrankRuhlLibre-Light.ttf');
         }
-
+        @font-face{
+            font-family: 'PFDinMonoPro-Bold';
+            font-weight: 700;
+            src:url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.eot') format('embedded-opentype'),
+            url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.otf') format('opentype'),
+            url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.ttf') format('truetype'),
+            url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff') format('woff'),
+            url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff2') format('woff2');
+        }
         .notoSansBold{
             font: 1.5rem 'NotoSansKRBold';
         }
@@ -224,7 +232,9 @@ module.exports = `
         .frankRLLight{
             font:100 25px 'FrankRuhlLibre';
         }
-
+        .PFDinMonoPro-Bold{
+            font:700 25px 'PFDinMonoPro-Bold';
+        }
     </style>
 
 
@@ -301,6 +311,22 @@ module.exports = `
 
         <div class="result_box" style="width:400px;">
             <div class="reefontCond">reefontCond</div>
+        </div>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix" style="font-family:PFDinMonoPro-Bold">PFDinMonoPro-Bold</div>
+        <div class="code-box">
+            <pre class="brush: css">
+                Bold {
+                    font-family:'PFDinMonoPro-Bold';
+                    font-size:25px;
+                }
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+            <div class="PFDinMonoPro-Bold">PFDinMonoPro-Bold</div>
         </div>
     </div>
 
