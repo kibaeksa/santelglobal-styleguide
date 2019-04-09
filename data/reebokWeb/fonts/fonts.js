@@ -147,52 +147,76 @@ module.exports = `
             url('//image.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff2') format('woff2');
         }
         @font-face{
-            font-family:'MixolydianTT Black';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Black.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 900;
+            font-style:normal;
+            src:url('/fonts/MixolydianTT/MixolydianTT-Black.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT Black IT';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Black-IT.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 900;
+            font-style: italic;
+            src:url('/fonts/MixolydianTT/MixolydianTT-Black-IT.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT Bold';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Bold.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 700;
+            font-style:normal;
+            src:url('/fonts/MixolydianTT/MixolydianTT-Bold.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT Bold IT';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Bold-IT.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 700;
+            font-style:italic;
+            src:url('/fonts/MixolydianTT/MixolydianTT-Bold-IT.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT Regular';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Regular.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 400;
+            font-style:normal;
+            src:url('/fonts/MixolydianTT/MixolydianTT-Regular.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT Regular IT';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Regular-IT.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 400;
+            font-style:italic;
+            src:url('/fonts/MixolydianTT/MixolydianTT-Regular-IT.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT Light';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Light.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 300;
+            font-style:normal;
+            src:url('/fonts/MixolydianTT/MixolydianTT-Light.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT Light IT';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Light-IT.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 300;
+            font-style:italic;
+            src:url('/fonts/MixolydianTT/MixolydianTT-Light-IT.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT EL';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-EL.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 200;
+            font-style:normal;
+            src:url('/fonts/MixolydianTT/MixolydianTT-EL.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT EL IT';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-EL-IT.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 200;
+            font-style:italic;
+            src:url('/fonts/MixolydianTT/MixolydianTT-EL-IT.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT UL';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-UL.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 100;
+            font-style:normal;
+            src:url('/fonts/MixolydianTT/MixolydianTT-UL.ttf') format('truetype');
         }
         @font-face{
-            font-family:'MixolydianTT UL IT';
-            src:url('//image.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-UL-IT.ttf') format('truetype');
+            font-family:'MixolydianTT';
+            font-weight: 100;
+            font-style:italic;
+            src:url('/fonts/MixolydianTT/MixolydianTT-UL-IT.ttf') format('truetype');
         }
 
         .notoSansBold{
@@ -265,40 +289,40 @@ module.exports = `
             font:25px 'PFDinMonoPro-Bold';
         }
         .MixolydianTT-Black{
-            font:25px 'MixolydianTT Black';
+            font: 900 25px 'MixolydianTT';
         }
         .MixolydianTT-Black-IT{
-            font:25px 'MixolydianTT Black IT';
+            font: italic 900 25px 'MixolydianTT';
         }
         .MixolydianTT-Bold{
-            font:25px 'MixolydianTT Bold';
+            font: 700 25px 'MixolydianTT';
         }
         .MixolydianTT-Bold-IT{
-            font:25px 'MixolydianTT Bold IT';
+            font: italic 700 25px 'MixolydianTT';
         }
         .MixolydianTT-Regular{
-            font:25px 'MixolydianTT Regular';
+            font:400 25px 'MixolydianTT';
         }
         .MixolydianTT-Regular-IT{
-            font:25px 'MixolydianTT Regular IT';
+            font: italic 400 25px 'MixolydianTT';
         }
         .MixolydianTT-Light{
-            font:25px 'MixolydianTT Light';
+            font: 300 25px 'MixolydianTT';
         }
         .MixolydianTT-Light-IT{
-            font:25px 'MixolydianTT Light IT';
+            font: italic 300 25px 'MixolydianTT';
         }
         .MixolydianTT-EL{
-            font:25px 'MixolydianTT EL';
+            font: 200 25px 'MixolydianTT';
         }
         .MixolydianTT-EL-IT{
-            font:25px 'MixolydianTT EL IT';
+            font: italic 200 25px 'MixolydianTT';
         }
         .MixolydianTT-UL{
-            font:25px 'MixolydianTT UL';
+            font: 100 25px 'MixolydianTT';
         }
         .MixolydianTT-UL-IT{
-            font:25px 'MixolydianTT UL IT';
+            font: italic 100 25px 'MixolydianTT';
         }
     </style>
 
@@ -533,57 +557,81 @@ module.exports = `
         <div class="code-box">
             <pre class="brush: css">
                 Black {
-                    font-family:'MixolydianTT Black';
+                    font-family:'MixolydianTT';
+                    font-weight:900;
+                    font-style:normal;
                     font-size:25px;
                 }
                 Black Italic{
-                    font-family:'MixolydianTT Black IT';
+                    font-family:'MixolydianTT';
+                    font-weight:900;
+                    font-style:italic;
                     font-size:25px;
                 }
 
                 Bold {
-                    font-family:'MixolydianTT Bold';
+                    font-family:'MixolydianTT';
+                    font-weight:700;
+                    font-style:normal;
                     font-size:25px;
                 }
                 Bold Italic{
-                    font-family:'MixolydianTT Bold IT';
+                    font-family:'MixolydianTT';
+                    font-weight:700;
+                    font-style:italic;
                     font-size:25px;
                 }
 
                 Regular {
-                    font-family:'MixolydianTT Regular';
+                    font-family:'MixolydianTT';
+                    font-weight:400;
+                    font-style:normal;
                     font-size:25px;
                 }
                 
                 Regular Italic{
-                    font-family:'MixolydianTT Regular IT';
+                    font-family:'MixolydianTT';
+                    font-weight:400;
+                    font-style:italic;
                     font-size:25px;
                 }
 
                 Light {
-                    font-family:'MixolydianTT Light';
+                    font-family:'MixolydianTT';
+                    font-weight:300;
+                    font-style:normal;
                     font-size:25px;
                 }
                 Light Italic{
-                    font-family:'MixolydianTT Light IT';
+                    font-family:'MixolydianTT';
+                    font-weight:300;
+                    font-style:italic;
                     font-size:25px;
                 }
 
                 Extended-Light {
-                    font-family:'MixolydianTT EL';
+                    font-family:'MixolydianTT';
+                    font-weight:200;
+                    font-style:normal;
                     font-size:25px;
                 }
                 Extended-Light Italic{
-                    font-family:'MixolydianTT EL IT';
+                    font-family:'MixolydianTT';
+                    font-weight:200;
+                    font-style:italic;
                     font-size:25px;
                 }
 
                 Ultra-Light {
-                    font-family:'MixolydianTT UL';
+                    font-family:'MixolydianTT';
+                    font-weight:100;
+                    font-style:normal;
                     font-size:25px;
                 }
                 Ultra-Light Italic{
-                    font-family:'MixolydianTT UL IT';
+                    font-family:'MixolydianTT';
+                    font-weight:100;
+                    font-style:italic;
                     font-size:25px;
                 }
 
