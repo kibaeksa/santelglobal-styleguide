@@ -171,6 +171,55 @@ module.exports = `
             url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/PFDINMonopro/PFDINMonoPro-Bold.woff2') format('woff2');
         }
+        @font-face{
+            font-family:'MixolydianTT Black';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Black.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT Black IT';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Black-IT.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT Bold';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Bold.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT Bold IT';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Bold-IT.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT Regular';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Regular.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT Regular IT';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Regular-IT.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT Light';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Light.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT Light IT';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-Light-IT.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT EL';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-EL.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT EL IT';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-EL-IT.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT UL';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-UL.ttf') format('truetype');
+        }
+        @font-face{
+            font-family:'MixolydianTT UL IT';
+            src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-UL-IT.ttf') format('truetype');
+        }
+
         .notoSansBold{
             font: 1.5rem 'NotoSansKRBold';
         }
@@ -234,6 +283,42 @@ module.exports = `
         }
         .PFDinMonoPro-Bold{
             font:700 1.5rem 'PFDinMonoPro-Bold';
+        }
+        .MixolydianTT-Black{
+            font:25px 'MixolydianTT Black';
+        }
+        .MixolydianTT-Black-IT{
+            font:25px 'MixolydianTT Black IT';
+        }
+        .MixolydianTT-Bold{
+            font:25px 'MixolydianTT Bold';
+        }
+        .MixolydianTT-Bold-IT{
+            font:25px 'MixolydianTT Bold IT';
+        }
+        .MixolydianTT-Regular{
+            font:25px 'MixolydianTT Regular';
+        }
+        .MixolydianTT-Regular-IT{
+            font:25px 'MixolydianTT Regular IT';
+        }
+        .MixolydianTT-Light{
+            font:25px 'MixolydianTT Light';
+        }
+        .MixolydianTT-Light-IT{
+            font:25px 'MixolydianTT Light IT';
+        }
+        .MixolydianTT-EL{
+            font:25px 'MixolydianTT EL';
+        }
+        .MixolydianTT-EL-IT{
+            font:25px 'MixolydianTT EL IT';
+        }
+        .MixolydianTT-UL{
+            font:25px 'MixolydianTT UL';
+        }
+        .MixolydianTT-UL-IT{
+            font:25px 'MixolydianTT UL IT';
         }
     </style>
 
@@ -430,7 +515,83 @@ module.exports = `
         </div>
     </div>
 
+    <div class="code-wrap">
+        <div class="prefix" style="font-family:MixolydianTT">MixolydianTT</div>
+        <div class="code-box">
+            <pre class="brush: css">
+                Black {
+                    font-family:'MixolydianTT Black';
+                    font-size:25px;
+                }
+                Black Italic{
+                    font-family:'MixolydianTT Black IT';
+                    font-size:25px;
+                }
 
+                Bold {
+                    font-family:'MixolydianTT Bold';
+                    font-size:25px;
+                }
+                Bold Italic{
+                    font-family:'MixolydianTT Bold IT';
+                    font-size:25px;
+                }
+
+                Regular {
+                    font-family:'MixolydianTT Regular';
+                    font-size:25px;
+                }
+                
+                Regular Italic{
+                    font-family:'MixolydianTT Regular IT';
+                    font-size:25px;
+                }
+
+                Light {
+                    font-family:'MixolydianTT Light';
+                    font-size:25px;
+                }
+                Light Italic{
+                    font-family:'MixolydianTT Light IT';
+                    font-size:25px;
+                }
+
+                Extended-Light {
+                    font-family:'MixolydianTT EL';
+                    font-size:25px;
+                }
+                Extended-Light Italic{
+                    font-family:'MixolydianTT EL IT';
+                    font-size:25px;
+                }
+
+                Ultra-Light {
+                    font-family:'MixolydianTT UL';
+                    font-size:25px;
+                }
+                Ultra-Light Italic{
+                    font-family:'MixolydianTT UL IT';
+                    font-size:25px;
+                }
+
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+            <div class="MixolydianTT-Black">MixolydianTT-Black</div>
+            <div class="MixolydianTT-Black-IT">MixolydianTT-Black-IT</div>
+            <div class="MixolydianTT-Bold">MixolydianTT-Bold</div>
+            <div class="MixolydianTT-Bold-IT">MixolydianTT-Bold-IT</div>
+            <div class="MixolydianTT-Regular">MixolydianTT-Regular</div>
+            <div class="MixolydianTT-Regular-IT">MixolydianTT-Regular-IT</div>
+            <div class="MixolydianTT-Light">MixolydianTT-Light</div>
+            <div class="MixolydianTT-Light-IT">MixolydianTT-Light-IT</div>
+            <div class="MixolydianTT-EL">MixolydianTT-EL</div>
+            <div class="MixolydianTT-EL-IT">MixolydianTT-EL-IT</div>
+            <div class="MixolydianTT-UL">MixolydianTT-UL</div>
+            <div class="MixolydianTT-UL-IT">MixolydianTT-UL-IT</div>
+        </div>
+    </div>
 
 
 
