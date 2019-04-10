@@ -150,73 +150,73 @@ module.exports = `
             font-family:'MixolydianTT';
             font-weight: 900;
             font-style:normal;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-Black.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-Black.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 900;
             font-style: italic;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-Black-IT.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-Black-IT.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 700;
             font-style:normal;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-Bold.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-Bold.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 700;
             font-style:italic;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-Bold-IT.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-Bold-IT.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 400;
             font-style:normal;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-Regular.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-Regular.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 400;
             font-style:italic;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-Regular-IT.ttf') format('truetype');
+            src:url('fonts/fonts/MixolydianTT/MixolydianTT-Regular-IT.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 300;
             font-style:normal;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-Light.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-Light.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 300;
             font-style:italic;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-Light-IT.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-Light-IT.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 200;
             font-style:normal;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-EL.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-EL.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 200;
             font-style:italic;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-EL-IT.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-EL-IT.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 100;
             font-style:normal;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-UL.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-UL.ttf') format('truetype');
         }
         @font-face{
             font-family:'MixolydianTT';
             font-weight: 100;
             font-style:italic;
-            src:url('//image.reebok.co.kr/fonts/fonts/MixolydianTT/MixolydianTT-UL-IT.ttf') format('truetype');
+            src:url('/fonts/fonts/MixolydianTT/MixolydianTT-UL-IT.ttf') format('truetype');
         }
 
         .notoSansBold{
