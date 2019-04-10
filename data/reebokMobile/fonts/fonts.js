@@ -243,51 +243,57 @@ module.exports = `
             font-style:italic;
             src:url('//imagem.reebok.co.kr/fonts/MixolydianTT/MixolydianTT-UL-IT.ttf') format('truetype');
         }
+
         .notoSansBold{
-            font: 1.5rem 'NotoSansKRBold';
+            font:700 25px 'NotoSansKR';
         }
         .notoSansMedium{
-            font: 1.5rem 'NotoSansKR';
+            font:500 25px 'NotoSansKR';
         }
         .notoSansRegular{
-            font: 1.5rem 'NotoSansKRRegular';
+            font:400 25px 'NotoSansKR';
         }
         .notoSansLight{
-            font: 1.5rem 'NotoSansKRLight';
+            font:300 25px 'NotoSansKR';
         }
         .notoSansThin{
-            font: 1.5rem 'NotoSansKRThin';
+            font:100 25px 'NotoSansKR';
         }
-
         .reefontBold{
-            font: 1.5rem 'reefont-bold';
+            font:25px 'reefont-bold';
         }
         .reefont{
-            font: 1.5rem 'reefont';
-        }
-        .reefontLight{
-            font: 1.5rem 'reefont-light';
+            font:25px 'reefont';
         }
         .reefontCond{
-            font: 1.5rem 'reefont-condensed';
+            font:25px 'ReefontCondensed';
         }
         .dinpro-CondLight{
-            font:100 1.5rem 'dinpro cond';
+            font:25px 'DINWebPro-CondLight';
         }
         .dinpro-Cond{
-            font:300 1.5rem 'dinpro cond';
+            font:25px 'DINWebPro-Cond';
         }
         .dinpro-CondMedium{
-            font:500 1.5rem 'dinpro cond';
+            font:25px 'DINWebPro-CondMedium';
         }
         .dinpro-CondBold{
-            font:700 1.5rem 'dinpro cond';
+            font:25px 'DINWebPro-CondBold';
         }
         .dinpro-CondBlack{
-            font:900 1.5rem 'dinpro cond';
+            font:25px 'DINWebPro-CondBlack';
+        }
+        .dinpro{
+            font: 25px 'dinpro';
+        }
+        .dinproBold{
+            font: 25px 'dinpro bold';
+        }
+        .dinproBlack{
+            font: 25px 'dinpro black';
         }
         .QStencil{
-            font: 1.5rem 'QStencil';
+            font:25px 'QStencil';
         }
         .frankRLBlack{
             font:700 25px 'FrankRuhlLibre';
@@ -305,7 +311,7 @@ module.exports = `
             font:100 25px 'FrankRuhlLibre';
         }
         .PFDinMonoPro-Bold{
-            font:700 1.5rem 'PFDinMonoPro-Bold';
+            font:25px 'PFDinMonoPro-Bold';
         }
         .MixolydianTT-Black{
             font: 900 25px 'MixolydianTT';
@@ -539,106 +545,106 @@ module.exports = `
     </div>
 
     <div class="code-wrap">
-    <div class="prefix" style="font-family:MixolydianTT">MixolydianTT</div>
-    <div class="code-box">
-        <pre class="brush: css">
-            Black {
-                font-family:'MixolydianTT';
-                font-weight:900;
-                font-style:normal;
-                font-size:25px;
-            }
-            Black Italic{
-                font-family:'MixolydianTT';
-                font-weight:900;
-                font-style:italic;
-                font-size:25px;
-            }
+        <div class="prefix" style="font-family:MixolydianTT">MixolydianTT</div>
+        <div class="code-box">
+            <pre class="brush: css">
+                Black {
+                    font-family:'MixolydianTT';
+                    font-weight:900;
+                    font-style:normal;
+                    font-size:25px;
+                }
+                Black Italic{
+                    font-family:'MixolydianTT';
+                    font-weight:900;
+                    font-style:italic;
+                    font-size:25px;
+                }
 
-            Bold {
-                font-family:'MixolydianTT';
-                font-weight:700;
-                font-style:normal;
-                font-size:25px;
-            }
-            Bold Italic{
-                font-family:'MixolydianTT';
-                font-weight:700;
-                font-style:italic;
-                font-size:25px;
-            }
+                Bold {
+                    font-family:'MixolydianTT';
+                    font-weight:700;
+                    font-style:normal;
+                    font-size:25px;
+                }
+                Bold Italic{
+                    font-family:'MixolydianTT';
+                    font-weight:700;
+                    font-style:italic;
+                    font-size:25px;
+                }
 
-            Regular {
-                font-family:'MixolydianTT';
-                font-weight:400;
-                font-style:normal;
-                font-size:25px;
-            }
-            
-            Regular Italic{
-                font-family:'MixolydianTT';
-                font-weight:400;
-                font-style:italic;
-                font-size:25px;
-            }
+                Regular {
+                    font-family:'MixolydianTT';
+                    font-weight:400;
+                    font-style:normal;
+                    font-size:25px;
+                }
+                
+                Regular Italic{
+                    font-family:'MixolydianTT';
+                    font-weight:400;
+                    font-style:italic;
+                    font-size:25px;
+                }
 
-            Light {
-                font-family:'MixolydianTT';
-                font-weight:300;
-                font-style:normal;
-                font-size:25px;
-            }
-            Light Italic{
-                font-family:'MixolydianTT';
-                font-weight:300;
-                font-style:italic;
-                font-size:25px;
-            }
+                Light {
+                    font-family:'MixolydianTT';
+                    font-weight:300;
+                    font-style:normal;
+                    font-size:25px;
+                }
+                Light Italic{
+                    font-family:'MixolydianTT';
+                    font-weight:300;
+                    font-style:italic;
+                    font-size:25px;
+                }
 
-            Extended-Light {
-                font-family:'MixolydianTT';
-                font-weight:200;
-                font-style:normal;
-                font-size:25px;
-            }
-            Extended-Light Italic{
-                font-family:'MixolydianTT';
-                font-weight:200;
-                font-style:italic;
-                font-size:25px;
-            }
+                Extended-Light {
+                    font-family:'MixolydianTT';
+                    font-weight:200;
+                    font-style:normal;
+                    font-size:25px;
+                }
+                Extended-Light Italic{
+                    font-family:'MixolydianTT';
+                    font-weight:200;
+                    font-style:italic;
+                    font-size:25px;
+                }
 
-            Ultra-Light {
-                font-family:'MixolydianTT';
-                font-weight:100;
-                font-style:normal;
-                font-size:25px;
-            }
-            Ultra-Light Italic{
-                font-family:'MixolydianTT';
-                font-weight:100;
-                font-style:italic;
-                font-size:25px;
-            }
+                Ultra-Light {
+                    font-family:'MixolydianTT';
+                    font-weight:100;
+                    font-style:normal;
+                    font-size:25px;
+                }
+                Ultra-Light Italic{
+                    font-family:'MixolydianTT';
+                    font-weight:100;
+                    font-style:italic;
+                    font-size:25px;
+                }
 
-        </pre>
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+            <div class="MixolydianTT-Black">MixolydianTT-Black</div>
+            <div class="MixolydianTT-Black-IT">MixolydianTT-Black-IT</div>
+            <div class="MixolydianTT-Bold">MixolydianTT-Bold</div>
+            <div class="MixolydianTT-Bold-IT">MixolydianTT-Bold-IT</div>
+            <div class="MixolydianTT-Regular">MixolydianTT-Regular</div>
+            <div class="MixolydianTT-Regular-IT">MixolydianTT-Regular-IT</div>
+            <div class="MixolydianTT-Light">MixolydianTT-Light</div>
+            <div class="MixolydianTT-Light-IT">MixolydianTT-Light-IT</div>
+            <div class="MixolydianTT-EL">MixolydianTT-EL</div>
+            <div class="MixolydianTT-EL-IT">MixolydianTT-EL-IT</div>
+            <div class="MixolydianTT-UL">MixolydianTT-UL</div>
+            <div class="MixolydianTT-UL-IT">MixolydianTT-UL-IT</div>
+        </div>
     </div>
-
-    <div class="result_box" style="width:400px;">
-        <div class="MixolydianTT-Black">MixolydianTT-Black</div>
-        <div class="MixolydianTT-Black-IT">MixolydianTT-Black-IT</div>
-        <div class="MixolydianTT-Bold">MixolydianTT-Bold</div>
-        <div class="MixolydianTT-Bold-IT">MixolydianTT-Bold-IT</div>
-        <div class="MixolydianTT-Regular">MixolydianTT-Regular</div>
-        <div class="MixolydianTT-Regular-IT">MixolydianTT-Regular-IT</div>
-        <div class="MixolydianTT-Light">MixolydianTT-Light</div>
-        <div class="MixolydianTT-Light-IT">MixolydianTT-Light-IT</div>
-        <div class="MixolydianTT-EL">MixolydianTT-EL</div>
-        <div class="MixolydianTT-EL-IT">MixolydianTT-EL-IT</div>
-        <div class="MixolydianTT-UL">MixolydianTT-UL</div>
-        <div class="MixolydianTT-UL-IT">MixolydianTT-UL-IT</div>
-    </div>
-</div>
 
 
 
