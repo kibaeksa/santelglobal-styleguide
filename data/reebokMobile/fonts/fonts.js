@@ -245,7 +245,7 @@ module.exports = `
         }
         @font-face{
             font-family: 'neueplakWideXBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideXBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideXBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideXBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideXBlack.woff2') format('woff2');
         }
@@ -257,278 +257,278 @@ module.exports = `
         }
         @font-face{
             font-family: 'neueplakWideBold';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakWideSB';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideSemiBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideSemiBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideSemiBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideSemiBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakWide';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideRegular.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideRegular.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideRegular.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideRegular.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakWideLi';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideLight.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakWideThin';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideThin.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideThin.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideThin.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideThin.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakWideUL';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideUltraLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideUltraLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideUltraLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideUltraLight.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakExtXBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedXBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedXBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedXBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedXBlack.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakExtBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBlack.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakExtBold';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakExtSB';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedSemiBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedSemiBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedSemiBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedSemiBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakExt';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedRegular.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedRegular.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedRegular.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedRegular.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakExtLi';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedLight.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakExtThin';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedThin.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedThin.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedThin.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedThin.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakExtUL';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedUltraLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedUltraLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedUltraLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedUltraLight.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakXBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-XBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-XBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-XBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-XBlack.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Black.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Black.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Black.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Black.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakBold';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Bold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Bold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Bold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Bold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakSB';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-SemiBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-SemiBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-SemiBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-SemiBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplak';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Regular.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Regular.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Regular.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Regular.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakLi';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Light.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Light.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Light.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Light.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakThin';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Thin.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Thin.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Thin.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Thin.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakUL';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-UltraLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-UltraLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-UltraLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-UltraLight.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakNrXBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowXBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowXBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowXBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowXBlack.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakNrBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBlack.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakNrBold';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakNrSB';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowSemiBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowSemiBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowSemiBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowSemiBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakNr';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowRegular.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowRegular.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowRegular.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowRegular.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakNrLi';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowLight.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakNrThin';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowThin.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowThin.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowThin.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowThin.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakNrUL';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowUltraLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowUltraLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowUltraLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowUltraLight.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCondXBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedXBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedXBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedXBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedXBlack.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCondBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBlack.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCondBold';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCondSB';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedSemiBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedSemiBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedSemiBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedSemiBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCond';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedRegular.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedRegular.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedRegular.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedRegular.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCondLi';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedLight.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCondThin';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedThin.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedThin.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedThin.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedThin.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCondUL';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedUltraLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedUltraLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedUltraLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedUltraLight.woff2') format('woff2');
         }
         
         @font-face{
             font-family: 'neueplakCompXBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedXBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedXBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedXBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedXBlack.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCompBlk';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBlack.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBlack.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBlack.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBlack.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCompBold';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCompSB';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedSemiBold.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedSemiBold.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedSemiBold.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedSemiBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakComp';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedRegular.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedRegular.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedRegular.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedRegular.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCompLi';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedLight.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCompThin';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedThin.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedThin.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedThin.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedThin.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplakCompUL';
-            url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedUltraLight.ttf') format('truetype'),
+            src:url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedUltraLight.ttf') format('truetype'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedUltraLight.woff') format('woff'),
             url('//imagem.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedUltraLight.woff2') format('woff2');
         }
