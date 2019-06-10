@@ -1003,7 +1003,6 @@ module.exports = `
                     font-style:italic;
                     font-size:25px;
                 }
-
                 Bold {
                     font-family:'MixolydianTT';
                     font-weight:700;
@@ -1016,7 +1015,6 @@ module.exports = `
                     font-style:italic;
                     font-size:25px;
                 }
-
                 Regular {
                     font-family:'MixolydianTT';
                     font-weight:400;
@@ -1030,7 +1028,6 @@ module.exports = `
                     font-style:italic;
                     font-size:25px;
                 }
-
                 Light {
                     font-family:'MixolydianTT';
                     font-weight:300;
@@ -1043,7 +1040,6 @@ module.exports = `
                     font-style:italic;
                     font-size:25px;
                 }
-
                 Extended-Light {
                     font-family:'MixolydianTT';
                     font-weight:200;
@@ -1056,7 +1052,6 @@ module.exports = `
                     font-style:italic;
                     font-size:25px;
                 }
-
                 Ultra-Light {
                     font-family:'MixolydianTT';
                     font-weight:100;
@@ -1069,7 +1064,6 @@ module.exports = `
                     font-style:italic;
                     font-size:25px;
                 }
-
             </pre>
         </div>
 
