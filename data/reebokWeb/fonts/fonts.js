@@ -220,438 +220,486 @@ module.exports = `
         }
 
         @font-face{
-            font-family: 'neueplakWideXBlk';
+            font-family: 'neueplak-wide';
+            font-weight: 900;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideXBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideXBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideXBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakWideBlk';
+            font-family: 'neueplak-wide';
+            font-weight: 800;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakWideBold';
+            font-family: 'neueplak-wide';
+            font-weight: 700;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakWideSB';
+            font-family: 'neueplak-wide';
+            font-weight: 600;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideSemiBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideSemiBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideSemiBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakWide';
+            font-family: 'neueplak-wide';
+            font-weight: 400;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideRegular.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideRegular.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideRegular.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakWideLi';
+            font-family: 'neueplak-wide';
+            font-weight: 300;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideLight.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakWideThin';
+            font-family: 'neueplak-wide';
+            font-weight: 200;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideThin.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideThin.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideThin.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakWideUL';
+            font-family: 'neueplak-wide';
+            font-weight: 100;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideUltraLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideUltraLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-WideUltraLight.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakExtXBlk';
+            font-family: 'neueplak-ext';
+            font-weight: 900;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedXBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedXBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedXBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakExtBlk';
+            font-family: 'neueplak-ext';
+            font-weight: 800;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakExtBold';
+            font-family: 'neueplak-ext';
+            font-weight: 700;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakExtSB';
+            font-family: 'neueplak-ext';
+            font-weight: 600;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedSemiBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedSemiBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedSemiBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakExt';
+            font-family: 'neueplak-ext';
+            font-weight: 400;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedRegular.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedRegular.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedRegular.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakExtLi';
+            font-family: 'neueplak-ext';
+            font-weight: 300;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedLight.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakExtThin';
+            font-family: 'neueplak-ext';
+            font-weight: 200;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedThin.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedThin.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedThin.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakExtUL';
+            font-family: 'neueplak-ext';
+            font-weight: 100;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedUltraLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedUltraLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-ExtendedUltraLight.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakXBlk';
+            font-family: 'neueplak';
+            font-weight: 900;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-XBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-XBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-XBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakBlk';
+            font-family: 'neueplak';
+            font-weight: 800;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Black.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Black.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Black.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakBold';
+            font-family: 'neueplak';
+            font-weight: 700;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Bold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Bold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Bold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakSB';
+            font-family: 'neueplak';
+            font-weight: 600;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-SemiBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-SemiBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-SemiBold.woff2') format('woff2');
         }
         @font-face{
             font-family: 'neueplak';
+            font-weight: 400;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Regular.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Regular.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Regular.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakLi';
+            font-family: 'neueplak';
+            font-weight: 300;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Light.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Light.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Light.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakThin';
+            font-family: 'neueplak';
+            font-weight: 200;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Thin.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Thin.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-Thin.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakUL';
+            font-family: 'neueplak';
+            font-weight: 100;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-UltraLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-UltraLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-UltraLight.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakNrXBlk';
+            font-family: 'neueplak-nrrw';
+            font-weight: 900;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowXBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowXBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowXBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakNrBlk';
+            font-family: 'neueplak-nrrw';
+            font-weight: 800;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakNrBold';
+            font-family: 'neueplak-nrrw';
+            font-weight: 700;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakNrSB';
+            font-family: 'neueplak-nrrw';
+            font-weight: 600;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowSemiBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowSemiBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowSemiBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakNr';
+            font-family: 'neueplak-nrrw';
+            font-weight: 400;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowRegular.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowRegular.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowRegular.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakNrLi';
+            font-family: 'neueplak-nrrw';
+            font-weight: 300;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowLight.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakNrThin';
+            font-family: 'neueplak-nrrw';
+            font-weight: 200;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowThin.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowThin.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowThin.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakNrUL';
+            font-family: 'neueplak-nrrw';
+            font-weight: 100;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowUltraLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowUltraLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-NarrowUltraLight.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCondXBlk';
+            font-family: 'neueplak-cond';
+            font-weight: 900;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedXBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedXBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedXBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCondBlk';
+            font-family: 'neueplak-cond';
+            font-weight: 800;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCondBold';
+            font-family: 'neueplak-cond';
+            font-weight: 700;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCondSB';
+            font-family: 'neueplak-cond';
+            font-weight: 600;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedSemiBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedSemiBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedSemiBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCond';
+            font-family: 'neueplak-cond';
+            font-weight: 400;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedRegular.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedRegular.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedRegular.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCondLi';
+            font-family: 'neueplak-cond';
+            font-weight: 300;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedLight.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCondThin';
+            font-family: 'neueplak-cond';
+            font-weight: 200;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedThin.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedThin.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedThin.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCondUL';
+            font-family: 'neueplak-cond';
+            font-weight: 100;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedUltraLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedUltraLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CondensedUltraLight.woff2') format('woff2');
         }
         
         @font-face{
-            font-family: 'neueplakCompXBlk';
+            font-family: 'neueplak-comp';
+            font-weight: 900;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedXBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedXBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedXBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCompBlk';
+            font-family: 'neueplak-comp';
+            font-weight: 800;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBlack.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBlack.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBlack.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCompBold';
+            font-family: 'neueplak-comp';
+            font-weight: 700;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCompSB';
+            font-family: 'neueplak-comp';
+            font-weight: 600;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedSemiBold.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedSemiBold.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedSemiBold.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakComp';
+            font-family: 'neueplak-comp';
+            font-weight: 400;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedRegular.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedRegular.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedRegular.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCompLi';
+            font-family: 'neueplak-comp';
+            font-weight: 300;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedLight.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCompThin';
+            font-family: 'neueplak-comp';
+            font-weight: 200;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedThin.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedThin.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedThin.woff2') format('woff2');
         }
         @font-face{
-            font-family: 'neueplakCompUL';
+            font-family: 'neueplak-comp';
+            font-weight: 100;
             src:url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedUltraLight.ttf') format('truetype'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedUltraLight.woff') format('woff'),
             url('//image.reebok.co.kr/fonts/neuePlak/NeuePlakW05-CompressedUltraLight.woff2') format('woff2');
         }
 
         .neueplakWideXBlk{
-            font: 25px 'neueplakWideXBlk'
+            font: 900 25px 'neueplak-wide'
         }
         .neueplakWideBlk{
-            font: 25px 'neueplakWideBlk'
+            font: 800 25px 'neueplak-wide'
         }
         .neueplakWideBold{
-            font: 25px 'neueplakWideBold'
+            font: 700 25px 'neueplak-wide'
         }
         .neueplakWideSB{
-            font: 25px 'neueplakWideSB'
+            font: 600 25px 'neueplak-wide'
         }
         .neueplakWide{
-            font: 25px 'neueplakWide'
+            font: 400 25px 'neueplak-wide'
         }
         .neueplakWideLi{
-            font: 25px 'neueplakWideLi'
+            font: 300 25px 'neueplak-wide'
         }
         .neueplakWideThin{
-            font: 25px 'neueplakWideThin'
+            font: 200 25px 'neueplak-wide'
         }
         .neueplakWideUL{
-            font: 25px 'neueplakWideUL'
+            font: 100 25px 'neueplak-wide'
         }
         .neueplakExtXBlk{
-            font: 25px 'neueplakExtXBlk'
+            font: 900 25px 'neueplak-ext'
         }
         .neueplakExtBlk{
-            font: 25px 'neueplakExtBlk'
+            font: 800 25px 'neueplak-ext'
         }
         .neueplakExtBold{
-            font: 25px 'neueplakExtBold'
+            font: 700 25px 'neueplak-ext'
         }
         .neueplakExtSB{
-            font: 25px 'neueplakExtSB'
+            font: 600 25px 'neueplak-ext'
         }
         .neueplakExt{
-            font: 25px 'neueplakExt'
+            font: 400 25px 'neueplak-ext'
         }
         .neueplakExtLi{
-            font: 25px 'neueplakExtLi'
+            font: 300 25px 'neueplak-ext'
         }
         .neueplakExtThin{
-            font: 25px 'neueplakExtThin'
+            font: 200 25px 'neueplak-ext'
         }
         .neueplakExtUL{
-            font: 25px 'neueplakExtUL'
+            font: 100 25px 'neueplak-ext'
         }
         .neueplakXBlk{
-            font: 25px 'neueplakXBlk'
+            font: 900 25px 'neueplak'
         }
         .neueplakBlk{
-            font: 25px 'neueplakBlk'
+            font: 800 25px 'neueplak'
         }
         .neueplakBold{
-            font: 25px 'neueplakBold'
+            font: 700 25px 'neueplak'
         }
         .neueplakSB{
-            font: 25px 'neueplakSB'
+            font: 600 25px 'neueplak'
         }
         .neueplak{
-            font: 25px 'neueplak'
+            font: 400 25px 'neueplak'
         }
         .neueplakLi{
-            font: 25px 'neueplakLi'
+            font: 300 25px 'neueplak'
         }
         .neueplakThin{
-            font: 25px 'neueplakThin'
+            font: 200 25px 'neueplak'
         }
         .neueplakUL{
-            font: 25px 'neueplakUL'
+            font: 100 25px 'neueplak'
         }
         .neueplakNrXBlk{
-            font: 25px 'neueplakNrXBlk'
+            font: 900 25px 'neueplak-nrrw'
         }
         .neueplakNrBlk{
-            font: 25px 'neueplakNrBlk'
+            font: 800 25px 'neueplak-nrrw'
         }
         .neueplakNrBold{
-            font: 25px 'neueplakNrBold'
+            font: 700 25px 'neueplak-nrrw'
         }
         .neueplakNrSB{
-            font: 25px 'neueplakNrSB'
+            font: 600 25px 'neueplak-nrrw'
         }
         .neueplakNr{
-            font: 25px 'neueplakNr'
+            font: 400 25px 'neueplak-nrrw'
         }
         .neueplakNrLi{
-            font: 25px 'neueplakNrLi'
+            font: 300 25px 'neueplak-nrrw'
         }
         .neueplakNrThin{
-            font: 25px 'neueplakNrThin'
+            font: 200 25px 'neueplak-nrrw'
         }
         .neueplakNrUL{
-            font: 25px 'neueplakNrUL'
+            font: 100 25px 'neueplak-nrrw'
         }
         .neueplakCondXBlk{
-            font: 25px 'neueplakCondXBlk'
+            font: 900 25px 'neueplak-cond'
         }
         .neueplakCondBlk{
-            font: 25px 'neueplakCondBlk'
+            font: 800 25px 'neueplak-cond'
         }
         .neueplakCondBold{
-            font: 25px 'neueplakCondBold'
+            font: 700 25px 'neueplak-cond'
         }
         .neueplakCondSB{
-            font: 25px 'neueplakCondSB'
+            font: 600 25px 'neueplak-cond'
         }
         .neueplakCond{
-            font: 25px 'neueplakCond'
+            font: 400 25px 'neueplak-cond'
         }
         .neueplakCondLi{
-            font: 25px 'neueplakCondLi'
+            font: 300 25px 'neueplak-cond'
         }
         .neueplakCondThin{
-            font: 25px 'neueplakCondThin'
+            font: 200 25px 'neueplak-cond'
         }
         .neueplakCondUL{
-            font: 25px 'neueplakCondUL'
+            font: 100 25px 'neueplak-cond'
         }
         .neueplakCompXBlk{
-            font: 25px 'neueplakXBlk'
+            font: 900 25px 'neueplak-comp'
         }
         .neueplakCompBlk{
-            font: 25px 'neueplakBlk'
+            font: 800 25px 'neueplak-comp'
         }
         .neueplakCompBold{
-            font: 25px 'neueplakBold'
+            font: 700 25px 'neueplak-comp'
         }
         .neueplakCompSB{
-            font: 25px 'neueplakSB'
+            font: 600 25px 'neueplak-comp'
         }
         .neueplakComp{
-            font: 25px 'neueplak'
+            font: 400 25px 'neueplak-comp'
         }
         .neueplakCompLi{
-            font: 25px 'neueplakLi'
+            font: 300 25px 'neueplak-comp'
         }
         .neueplakCompThin{
-            font: 25px 'neueplakThin'
+            font: 200 25px 'neueplak-comp'
         }
         .neueplakCompUL{
-            font: 25px 'neueplakUL'
+            font: 100 25px 'neueplak-comp'
         }
 
         .notoSansBold{
@@ -1084,204 +1132,252 @@ module.exports = `
     </div>
 
     <div class="code-wrap">
-        <div class="prefix" style="font-family:neueplak">Neue Plak</div>
+        <div class="prefix" style="font-family:neueplak">Neue Plak Wide</div>
         <div class="code-box">
             <pre class="brush: css">
                 Wide Extra Black {
-                    font-family:'neueplakWideXBlk';
+                    font-family:'neueplak-wide';
+                    font-weight:900x;
                     font-size:25px;
                 }
                 Wide Black {
-                    font-family:'neueplakWideBlk';
+                    font-family:'neueplak-wide';
+                    font-weight:800x;
                     font-size:25px;
                 }
                 Wide Bold {
-                    font-family:'neueplakWideBold';
+                    font-family:'neueplak-wide';
+                    font-weight:700x;
                     font-size:25px;
                 }
                 Wide Semi Bold {
-                    font-family:'neueplakWideSB';
+                    font-family:'neueplak-wide';
+                    font-weight:600x;
                     font-size:25px;
                 }
                 Wide Regular {
-                    font-family:'neueplakWide';
+                    font-family:'neueplak-wide';
+                    font-weight:400x;
                     font-size:25px;
                 }
                 Wide Light {
-                    font-family:'neueplakWideLi';
+                    font-family:'6eueplak-wide';
+                    font-weight:900x;
                     font-size:25px;
                 }
                 Wide Thin {
-                    font-family:'neueplakWideThin';
+                    font-family:'neueplak-wide';
+                    font-weight:200x;
                     font-size:25px;
                 }
                 Wide Ultra Light {
-                    font-family:'neueplakWideUL';
+                    font-family:'neueplak-wide';
+                    font-weight:100x;
                     font-size:25px;
                 }
 
                 Extended Extra Black {
-                    font-family:'neueplakExtXBlk';
+                    font-family:'neueplak-ext';
+                    font-weight:900x;
                     font-size:25px;
                 }
                 Extended Black {
-                    font-family:'neueplakExtBlk';
+                    font-family:'neueplak-ext';
+                    font-weight:800x;
                     font-size:25px;
                 }
                 Extended Bold {
-                    font-family:'neueplakExtBold';
+                    font-family:'neueplak-ext';
+                    font-weight:700x;
                     font-size:25px;
                 }
                 Extended Semi Bold {
-                    font-family:'neueplakExtSB';
+                    font-family:'neueplak-ext';
+                    font-weight:600x;
                     font-size:25px;
                 }
                 Extended Regular {
-                    font-family:'neueplakExt';
+                    font-family:'neueplak-ext';
+                    font-weight:400x;
                     font-size:25px;
                 }
                 Extended Light {
                     font-family:'neueplakExtLi';
+                    font-weight:300x;
                     font-size:25px;
                 }
                 Extended Thin {
                     font-family:'neueplakExtThin';
+                    font-weight:200x;
                     font-size:25px;
                 }
                 Extended Ultra Light {
-                    font-family:'neueplakExtUL';
+                    font-family:'neueplak-ext';
+                    font-weight:100x;
                     font-size:25px;
                 }
 
                 Extra Black {
-                    font-family:'neueplakXBlk';
+                    font-family:'neueplak';
+                    font-weight:900x;
                     font-size:25px;
                 }
                 Black {
-                    font-family:'neueplakBlk';
+                    font-family:'neueplak';
+                    font-weight:800x;
                     font-size:25px;
                 }
                 Bold {
-                    font-family:'neueplakBold';
+                    font-family:'neueplak';
+                    font-weight:700x;
                     font-size:25px;
                 }
                 Semi Bold {
-                    font-family:'neueplakSB';
+                    font-family:'neueplak';
+                    font-weight:600x;
                     font-size:25px;
                 }
                 Regular {
                     font-family:'neueplak';
+                    font-weight:400x;
                     font-size:25px;
                 }
                 Light {
-                    font-family:'neueplakLi';
+                    font-family:'neueplak';
+                    font-weight:300x;
                     font-size:25px;
                 }
                 Thin {
-                    font-family:'neueplakThin';
+                    font-family:'neueplak';
+                    font-weight:200x;
                     font-size:25px;
                 }
                 Ultra Light {
-                    font-family:'neueplakUL';
+                    font-family:'neueplak';
+                    font-weight:100x;
                     font-size:25px;
                 }
 
                 Narrow Extra Black {
-                    font-family:'neueplakNrXBlk';
+                    font-family:'neueplak-nrrw';
+                    font-weight:900x;
                     font-size:25px;
                 }
                 Narrow Black {
-                    font-family:'neueplakNrBlk';
+                    font-family:'neueplak-nrrw';
+                    font-weight:800x;
                     font-size:25px;
                 }
                 Narrow Bold {
-                    font-family:'neueplakNrBold';
+                    font-family:'neueplak-nrrw';
+                    font-weight:700x;
                     font-size:25px;
                 }
                 Narrow Semi Bold {
-                    font-family:'neueplakNrSB';
+                    font-family:'neueplak-nrrw';
+                    font-weight:600x;
                     font-size:25px;
                 }
                 Narrow Regular {
-                    font-family:'neueplakNr';
+                    font-family:'neueplak-nrrw';
+                    font-weight:400x;
                     font-size:25px;
                 }
                 Narrow Light {
-                    font-family:'neueplakNrLi';
+                    font-family:'neueplak-nrrw';
+                    font-weight:300x;
                     font-size:25px;
                 }
                 Narrow Thin {
-                    font-family:'neueplakNrThin';
+                    font-family:'neueplak-nrrw';
+                    font-weight:200x;
                     font-size:25px;
                 }
                 Narrow Ultra Light {
-                    font-family:'neueplakNrUL';
+                    font-family:'neueplak-nrrw';
+                    font-weight:100x;
                     font-size:25px;
                 }
 
                 Condensed Extra Black {
-                    font-family:'neueplakCondXBlk';
+                    font-family:'neueplak-cond';
+                    font-weight:900x;
                     font-size:25px;
                 }
                 Condensed Black {
-                    font-family:'neueplakCondBlk';
+                    font-family:'neueplak-cond';
+                    font-weight:800x;
                     font-size:25px;
                 }
                 Condensed Bold {
-                    font-family:'neueplakCondBold';
+                    font-family:'neueplak-cond';
+                    font-weight:700x;
                     font-size:25px;
                 }
                 Condensed Semi Bold {
-                    font-family:'neueplakCondSB';
+                    font-family:'neueplak-cond';
+                    font-weight:600x;
                     font-size:25px;
                 }
                 Condensed Regular {
-                    font-family:'neueplakCond';
+                    font-family:'neueplak-cond';
+                    font-weight:400x;
                     font-size:25px;
                 }
                 Condensed Light {
-                    font-family:'neueplakCondLi';
+                    font-family:'neueplak-cond';
+                    font-weight:300x;
                     font-size:25px;
                 }
                 Condensed Thin {
-                    font-family:'neueplakCondThin';
+                    font-family:'neueplak-cond';
+                    font-weight:200x;
                     font-size:25px;
                 }
                 Condensed Ultra Light {
-                    font-family:'neueplakCondUL';
+                    font-family:'neueplak-cond';
+                    font-weight:100x;
                     font-size:25px;
                 }
 
                 Compressed Extra Black {
-                    font-family:'neueplakCompXBlk';
+                    font-family:'neueplak-comp';
+                    font-weight:900x;
                     font-size:25px;
                 }
                 Compressed Black {
-                    font-family:'neueplakCompBlk';
+                    font-family:'neueplak-comp';
+                    font-weight:800x;
                     font-size:25px;
                 }
                 Compressed Bold {
-                    font-family:'neueplakCompBold';
+                    font-family:'neueplak-comp';
+                    font-weight:700x;
                     font-size:25px;
                 }
                 Compressed Semi Bold {
-                    font-family:'neueplakCompSB';
+                    font-family:'neueplak-comp';
+                    font-weight:600x;
                     font-size:25px;
                 }
                 Compressed Regular {
-                    font-family:'neueplakComp';
+                    font-family:'neueplak-comp';
+                    font-weight:400x;
                     font-size:25px;
                 }
                 Compressed Light {
-                    font-family:'neueplakCompLi';
+                    font-family:'neueplak-comp';
+                    font-weight:300x;
                     font-size:25px;
                 }
                 Compressed Thin {
-                    font-family:'neueplakCompThin';
+                    font-family:'neueplak-comp';
+                    font-weight:200x;
                     font-size:25px;
                 }
                 Compressed Ultra Light {
-                    font-family:'neueplakCompUL';
+                    font-family:'neueplak-comp';
+                    font-weight:100x;
                     font-size:25px;
                 }
             </pre>
@@ -1335,6 +1431,299 @@ module.exports = `
 
             <div class="neueplakCompXBlk">Compressed Extra Black</div>
             <div class="neueplakCompBlk">CompressedBlack</div>
+            <div class="neueplakCompBold">Compressed Bold</div>
+            <div class="neueplakCompSB">Compressed Semi Bold</div>
+            <div class="neueplakComp">Compressed Regular</div>
+            <div class="neueplakCompLi">Compressed Light</div>
+            <div class="neueplakCompThin">Compressed Thin</div>
+            <div class="neueplakCompUL">Compressed Ultra Light</div>
+        </div>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix" style="font-family:neueplak">Neue Plak Extended</div>
+        <div class="code-box">
+            <pre class="brush: css">
+                Extended Extra Black {
+                    font-family:'neueplak-ext';
+                    font-weight:900x;
+                    font-size:25px;
+                }
+                Extended Black {
+                    font-family:'neueplak-ext';
+                    font-weight:800x;
+                    font-size:25px;
+                }
+                Extended Bold {
+                    font-family:'neueplak-ext';
+                    font-weight:700x;
+                    font-size:25px;
+                }
+                Extended Semi Bold {
+                    font-family:'neueplak-ext';
+                    font-weight:600x;
+                    font-size:25px;
+                }
+                Extended Regular {
+                    font-family:'neueplak-ext';
+                    font-weight:400x;
+                    font-size:25px;
+                }
+                Extended Light {
+                    font-family:'neueplakExtLi';
+                    font-weight:300x;
+                    font-size:25px;
+                }
+                Extended Thin {
+                    font-family:'neueplakExtThin';
+                    font-weight:200x;
+                    font-size:25px;
+                }
+                Extended Ultra Light {
+                    font-family:'neueplak-ext';
+                    font-weight:100x;
+                    font-size:25px;
+                }
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+            <div class="neueplakExtXBlk">Extended Extra Black</div>
+            <div class="neueplakExtBlk">Extended Black</div>
+            <div class="neueplakExtBold">Extended Bold</div>
+            <div class="neueplakExtSB">Extended Semi Bold</div>
+            <div class="neueplakExt">Extended Regular</div>
+            <div class="neueplakExtLi">Extended Light</div>
+            <div class="neueplakExtThin">Extended Thin</div>
+            <div class="neueplakExtUL">Extended Ultra Light</div>
+        </div>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix" style="font-family:neueplak">Neue Plak</div>
+        <div class="code-box">
+            <pre class="brush: css">
+                Extra Black {
+                    font-family:'neueplak';
+                    font-weight:900x;
+                    font-size:25px;
+                }
+                Black {
+                    font-family:'neueplak';
+                    font-weight:800x;
+                    font-size:25px;
+                }
+                Bold {
+                    font-family:'neueplak';
+                    font-weight:700x;
+                    font-size:25px;
+                }
+                Semi Bold {
+                    font-family:'neueplak';
+                    font-weight:600x;
+                    font-size:25px;
+                }
+                Regular {
+                    font-family:'neueplak';
+                    font-weight:400x;
+                    font-size:25px;
+                }
+                Light {
+                    font-family:'neueplak';
+                    font-weight:300x;
+                    font-size:25px;
+                }
+                Thin {
+                    font-family:'neueplak';
+                    font-weight:200x;
+                    font-size:25px;
+                }
+                Ultra Light {
+                    font-family:'neueplak';
+                    font-weight:100x;
+                    font-size:25px;
+                }
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+            <div class="neueplakXBlk">Extra Black</div>
+            <div class="neueplakBlk">Black</div>
+            <div class="neueplakBold">Bold</div>
+            <div class="neueplakSB">Semi Bold</div>
+            <div class="neueplak">Regular</div>
+            <div class="neueplakLi">Light</div>
+            <div class="neueplakThin">Thin</div>
+            <div class="neueplakUL">Ultra Light</div>
+        </div>
+    </div>
+
+    <div class="code-wrap">
+        <div class="prefix" style="font-family:neueplak">Neue Plak Narrow</div>
+        <div class="code-box">
+            <pre class="brush: css">
+                Narrow Extra Black {
+                    font-family:'neueplak-nrrw';
+                    font-weight:900x;
+                    font-size:25px;
+                }
+                Narrow Black {
+                    font-family:'neueplak-nrrw';
+                    font-weight:800x;
+                    font-size:25px;
+                }
+                Narrow Bold {
+                    font-family:'neueplak-nrrw';
+                    font-weight:700x;
+                    font-size:25px;
+                }
+                Narrow Semi Bold {
+                    font-family:'neueplak-nrrw';
+                    font-weight:600x;
+                    font-size:25px;
+                }
+                Narrow Regular {
+                    font-family:'neueplak-nrrw';
+                    font-weight:400x;
+                    font-size:25px;
+                }
+                Narrow Light {
+                    font-family:'neueplak-nrrw';
+                    font-weight:300x;
+                    font-size:25px;
+                }
+                Narrow Thin {
+                    font-family:'neueplak-nrrw';
+                    font-weight:200x;
+                    font-size:25px;
+                }
+                Narrow Ultra Light {
+                    font-family:'neueplak-nrrw';
+                    font-weight:100x;
+                    font-size:25px;
+                }
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+            <div class="neueplakNrXBlk">Narrow Extra Black</div>
+            <div class="neueplakNrBlk">Narrow Black</div>
+            <div class="neueplakNrBold">Narrow Bold</div>
+            <div class="neueplakNrSB">Narrow Semi Bold</div>
+            <div class="neueplakNr">Narrow Regular</div>
+            <div class="neueplakNrLi">Narrow Light</div>
+            <div class="neueplakNrThin">Narrow Thin</div>
+            <div class="neueplakNrUL">Narrow Ultra Light</div>
+        </div>
+    </div>
+    <div class="code-wrap">
+        <div class="prefix" style="font-family:neueplak">Neue Plak Condensed</div>
+        <div class="code-box">
+            <pre class="brush: css">
+                Condensed Extra Black {
+                    font-family:'neueplak-cond';
+                    font-weight:900x;
+                    font-size:25px;
+                }
+                Condensed Black {
+                    font-family:'neueplak-cond';
+                    font-weight:800x;
+                    font-size:25px;
+                }
+                Condensed Bold {
+                    font-family:'neueplak-cond';
+                    font-weight:700x;
+                    font-size:25px;
+                }
+                Condensed Semi Bold {
+                    font-family:'neueplak-cond';
+                    font-weight:600x;
+                    font-size:25px;
+                }
+                Condensed Regular {
+                    font-family:'neueplak-cond';
+                    font-weight:400x;
+                    font-size:25px;
+                }
+                Condensed Light {
+                    font-family:'neueplak-cond';
+                    font-weight:300x;
+                    font-size:25px;
+                }
+                Condensed Thin {
+                    font-family:'neueplak-cond';
+                    font-weight:200x;
+                    font-size:25px;
+                }
+                Condensed Ultra Light {
+                    font-family:'neueplak-cond';
+                    font-weight:100x;
+                    font-size:25px;
+                }
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+            <div class="neueplakCondXBlk">Condensed Extra Black</div>
+            <div class="neueplakCondBlk">Condensed Black</div>
+            <div class="neueplakCondBold">Condensed Bold</div>
+            <div class="neueplakCondSB">Condensed Semi Bold</div>
+            <div class="neueplakCond">Condensed Regular</div>
+            <div class="neueplakCondLi">Condensed Light</div>
+            <div class="neueplakCondThin">Condensed Thin</div>
+            <div class="neueplakCondUL">Condensed Ultra Light</div>
+        </div>
+    </div>
+    <div class="code-wrap">
+        <div class="prefix" style="font-family:neueplak">Neue Plak Compressed</div>
+        <div class="code-box">
+            <pre class="brush: css">
+                Compressed Extra Black {
+                    font-family:'neueplak-comp';
+                    font-weight:900x;
+                    font-size:25px;
+                }
+                Compressed Black {
+                    font-family:'neueplak-comp';
+                    font-weight:800x;
+                    font-size:25px;
+                }
+                Compressed Bold {
+                    font-family:'neueplak-comp';
+                    font-weight:700x;
+                    font-size:25px;
+                }
+                Compressed Semi Bold {
+                    font-family:'neueplak-comp';
+                    font-weight:600x;
+                    font-size:25px;
+                }
+                Compressed Regular {
+                    font-family:'neueplak-comp';
+                    font-weight:400x;
+                    font-size:25px;
+                }
+                Compressed Light {
+                    font-family:'neueplak-comp';
+                    font-weight:300x;
+                    font-size:25px;
+                }
+                Compressed Thin {
+                    font-family:'neueplak-comp';
+                    font-weight:200x;
+                    font-size:25px;
+                }
+                Compressed Ultra Light {
+                    font-family:'neueplak-comp';
+                    font-weight:100x;
+                    font-size:25px;
+                }
+            </pre>
+        </div>
+
+        <div class="result_box" style="width:400px;">
+            <div class="neueplakCompXBlk">Compressed Extra Black</div>
+            <div class="neueplakCompBlk">Compressed Black</div>
             <div class="neueplakCompBold">Compressed Bold</div>
             <div class="neueplakCompSB">Compressed Semi Bold</div>
             <div class="neueplakComp">Compressed Regular</div>
