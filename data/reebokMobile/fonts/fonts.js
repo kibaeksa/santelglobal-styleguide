@@ -1130,42 +1130,42 @@ module.exports = `
             <pre class="brush: css">
                 Wide Extra Black {
                     font-family:'neueplak-wide';
-                    font-weight:900x;
+                    font-weight:900;
                     font-size:25px;
                 }
                 Wide Black {
                     font-family:'neueplak-wide';
-                    font-weight:800x;
+                    font-weight:800;
                     font-size:25px;
                 }
                 Wide Bold {
                     font-family:'neueplak-wide';
-                    font-weight:700x;
+                    font-weight:700;
                     font-size:25px;
                 }
                 Wide Semi Bold {
                     font-family:'neueplak-wide';
-                    font-weight:600x;
+                    font-weight:600;
                     font-size:25px;
                 }
                 Wide Regular {
                     font-family:'neueplak-wide';
-                    font-weight:400x;
+                    font-weight:400;
                     font-size:25px;
                 }
                 Wide Light {
-                    font-family:'6eueplak-wide';
-                    font-weight:900x;
+                    font-family:'neueplak-wide';
+                    font-weight:900;
                     font-size:25px;
                 }
                 Wide Thin {
                     font-family:'neueplak-wide';
-                    font-weight:200x;
+                    font-weight:200;
                     font-size:25px;
                 }
                 Wide Ultra Light {
                     font-family:'neueplak-wide';
-                    font-weight:100x;
+                    font-weight:100;
                     font-size:25px;
                 }
             </pre>
@@ -1189,42 +1189,42 @@ module.exports = `
             <pre class="brush: css">
                 Extended Extra Black {
                     font-family:'neueplak-ext';
-                    font-weight:900x;
+                    font-weight:900;
                     font-size:25px;
                 }
                 Extended Black {
                     font-family:'neueplak-ext';
-                    font-weight:800x;
+                    font-weight:800;
                     font-size:25px;
                 }
                 Extended Bold {
                     font-family:'neueplak-ext';
-                    font-weight:700x;
+                    font-weight:700;
                     font-size:25px;
                 }
                 Extended Semi Bold {
                     font-family:'neueplak-ext';
-                    font-weight:600x;
+                    font-weight:600;
                     font-size:25px;
                 }
                 Extended Regular {
                     font-family:'neueplak-ext';
-                    font-weight:400x;
+                    font-weight:400;
                     font-size:25px;
                 }
                 Extended Light {
                     font-family:'neueplakExtLi';
-                    font-weight:300x;
+                    font-weight:300;
                     font-size:25px;
                 }
                 Extended Thin {
                     font-family:'neueplakExtThin';
-                    font-weight:200x;
+                    font-weight:200;
                     font-size:25px;
                 }
                 Extended Ultra Light {
                     font-family:'neueplak-ext';
-                    font-weight:100x;
+                    font-weight:100;
                     font-size:25px;
                 }
             </pre>
@@ -1248,42 +1248,42 @@ module.exports = `
             <pre class="brush: css">
                 Extra Black {
                     font-family:'neueplak';
-                    font-weight:900x;
+                    font-weight:900;
                     font-size:25px;
                 }
                 Black {
                     font-family:'neueplak';
-                    font-weight:800x;
+                    font-weight:800;
                     font-size:25px;
                 }
                 Bold {
                     font-family:'neueplak';
-                    font-weight:700x;
+                    font-weight:700;
                     font-size:25px;
                 }
                 Semi Bold {
                     font-family:'neueplak';
-                    font-weight:600x;
+                    font-weight:600;
                     font-size:25px;
                 }
                 Regular {
                     font-family:'neueplak';
-                    font-weight:400x;
+                    font-weight:400;
                     font-size:25px;
                 }
                 Light {
                     font-family:'neueplak';
-                    font-weight:300x;
+                    font-weight:300;
                     font-size:25px;
                 }
                 Thin {
                     font-family:'neueplak';
-                    font-weight:200x;
+                    font-weight:200;
                     font-size:25px;
                 }
                 Ultra Light {
                     font-family:'neueplak';
-                    font-weight:100x;
+                    font-weight:100;
                     font-size:25px;
                 }
             </pre>
@@ -1307,42 +1307,42 @@ module.exports = `
             <pre class="brush: css">
                 Narrow Extra Black {
                     font-family:'neueplak-nrrw';
-                    font-weight:900x;
+                    font-weight:900;
                     font-size:25px;
                 }
                 Narrow Black {
                     font-family:'neueplak-nrrw';
-                    font-weight:800x;
+                    font-weight:800;
                     font-size:25px;
                 }
                 Narrow Bold {
                     font-family:'neueplak-nrrw';
-                    font-weight:700x;
+                    font-weight:700;
                     font-size:25px;
                 }
                 Narrow Semi Bold {
                     font-family:'neueplak-nrrw';
-                    font-weight:600x;
+                    font-weight:600;
                     font-size:25px;
                 }
                 Narrow Regular {
                     font-family:'neueplak-nrrw';
-                    font-weight:400x;
+                    font-weight:400;
                     font-size:25px;
                 }
                 Narrow Light {
                     font-family:'neueplak-nrrw';
-                    font-weight:300x;
+                    font-weight:300;
                     font-size:25px;
                 }
                 Narrow Thin {
                     font-family:'neueplak-nrrw';
-                    font-weight:200x;
+                    font-weight:200;
                     font-size:25px;
                 }
                 Narrow Ultra Light {
                     font-family:'neueplak-nrrw';
-                    font-weight:100x;
+                    font-weight:100;
                     font-size:25px;
                 }
             </pre>
@@ -1365,42 +1365,42 @@ module.exports = `
             <pre class="brush: css">
                 Condensed Extra Black {
                     font-family:'neueplak-cond';
-                    font-weight:900x;
+                    font-weight:900;
                     font-size:25px;
                 }
                 Condensed Black {
                     font-family:'neueplak-cond';
-                    font-weight:800x;
+                    font-weight:800;
                     font-size:25px;
                 }
                 Condensed Bold {
                     font-family:'neueplak-cond';
-                    font-weight:700x;
+                    font-weight:700;
                     font-size:25px;
                 }
                 Condensed Semi Bold {
                     font-family:'neueplak-cond';
-                    font-weight:600x;
+                    font-weight:600;
                     font-size:25px;
                 }
                 Condensed Regular {
                     font-family:'neueplak-cond';
-                    font-weight:400x;
+                    font-weight:400;
                     font-size:25px;
                 }
                 Condensed Light {
                     font-family:'neueplak-cond';
-                    font-weight:300x;
+                    font-weight:300;
                     font-size:25px;
                 }
                 Condensed Thin {
                     font-family:'neueplak-cond';
-                    font-weight:200x;
+                    font-weight:200;
                     font-size:25px;
                 }
                 Condensed Ultra Light {
                     font-family:'neueplak-cond';
-                    font-weight:100x;
+                    font-weight:100;
                     font-size:25px;
                 }
             </pre>
@@ -1423,42 +1423,42 @@ module.exports = `
             <pre class="brush: css">
                 Compressed Extra Black {
                     font-family:'neueplak-comp';
-                    font-weight:900x;
+                    font-weight:900;
                     font-size:25px;
                 }
                 Compressed Black {
                     font-family:'neueplak-comp';
-                    font-weight:800x;
+                    font-weight:800;
                     font-size:25px;
                 }
                 Compressed Bold {
                     font-family:'neueplak-comp';
-                    font-weight:700x;
+                    font-weight:700;
                     font-size:25px;
                 }
                 Compressed Semi Bold {
                     font-family:'neueplak-comp';
-                    font-weight:600x;
+                    font-weight:600;
                     font-size:25px;
                 }
                 Compressed Regular {
                     font-family:'neueplak-comp';
-                    font-weight:400x;
+                    font-weight:400;
                     font-size:25px;
                 }
                 Compressed Light {
                     font-family:'neueplak-comp';
-                    font-weight:300x;
+                    font-weight:300;
                     font-size:25px;
                 }
                 Compressed Thin {
                     font-family:'neueplak-comp';
-                    font-weight:200x;
+                    font-weight:200;
                     font-size:25px;
                 }
                 Compressed Ultra Light {
                     font-family:'neueplak-comp';
-                    font-weight:100x;
+                    font-weight:100;
                     font-size:25px;
                 }
             </pre>
