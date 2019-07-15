@@ -1155,7 +1155,7 @@ module.exports = `
                 }
                 Wide Light {
                     font-family:'neueplak-wide';
-                    font-weight:900;
+                    font-weight:300;
                     font-size:25px;
                 }
                 Wide Thin {
