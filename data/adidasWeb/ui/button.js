@@ -4,26 +4,22 @@ module.exports = `
         <div class="code-box">
             <pre class="brush: html">
                 <div class="button_area_v2" style="">
-    				<div class="">
-    					<div class="bg"></div>
-    					<a href="#">
-    						아디다스 메인 가기
-    						<span class="arrow">
-    							<em class="top"></em>
-    							<em class="bottom"></em>
-    						</span>
-    					</a>
-    				</div>
-    			</div>
+                    <div class="">
+                        <a href="#" campaign-label="구매하기" class="">
+                            구매하기<span class="arrow">
+                                <em class="top"></em>
+                                <em class="bottom"></em>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </pre>
         </div>
         <div class="result_box" style="width:400px;">
             <div class="button_area_v2" style="">
                 <div class="">
-                    <div class="bg"></div>
-                    <a href="#">
-                        아디다스 메인 가기
-                        <span class="arrow">
+                    <a href="#" campaign-label="구매하기">
+                        구매하기<span class="arrow">
                             <em class="top"></em>
                             <em class="bottom"></em>
                         </span>
@@ -36,18 +32,16 @@ module.exports = `
         <div class="prefix">그림자 흰색 버튼 </div>
         <div class="code-box">
             <pre class="brush: html">
-                <div class="button_area_v2" >
-    				<div class="white">
-    					<div class="bg"></div>
-    					<a href="#">
-    						아디다스 메인 가기
-    						<span class="arrow">
-    							<em class="top"></em>
-    							<em class="bottom"></em>
-    						</span>
-    					</a>
-    				</div>
-    			</div>
+                <div class="button_area_v2" style="">
+                    <div class="white">
+                        <a href="#" campaign-label="구매하기">
+                            구매하기<span class="arrow">
+                                <em class="top"></em>
+                                <em class="bottom"></em>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </pre>
         </div>
         <div class="result_box" style="width:400px;background:#555;padding:20px;">
